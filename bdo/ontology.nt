@@ -1,0 +1,515 @@
+<https://w3id.org/ontoforge/bdo#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://w3id.org/ontoforge/bdo#> <http://purl.org/dc/terms/creator> <https://w3id.org/people/jpcik/me> .
+<https://w3id.org/ontoforge/bdo#> <http://purl.org/dc/terms/description> "This ontology aims to model Blade damage based on a white paper by EPRI. The ontology is developed in the context of the xxxx project"@en .
+<https://w3id.org/ontoforge/bdo#> <http://purl.org/dc/terms/issued> "2025-02-15"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://w3id.org/ontoforge/bdo#> <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/4.0/> .
+<https://w3id.org/ontoforge/bdo#> <http://purl.org/dc/terms/modified> "2025-02-17"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://w3id.org/ontoforge/bdo#> <http://purl.org/dc/terms/publisher> <https://ost.ch> .
+<https://w3id.org/ontoforge/bdo#> <http://purl.org/dc/terms/publisher> <https://ost.ch/> .
+<https://w3id.org/ontoforge/bdo#> <http://purl.org/dc/terms/rights> "Copyright © 2025 OST Ostschweizer Fachhochschule" .
+<https://w3id.org/ontoforge/bdo#> <http://purl.org/dc/terms/title> "Wind turbine blade damage ontology"@en .
+<https://w3id.org/ontoforge/bdo#> <http://purl.org/vocab/vann/preferredNamespacePrefix> "of-bdo" .
+<https://w3id.org/ontoforge/bdo#> <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/ontoforge/bdo#" .
+<https://w3id.org/ontoforge/bdo#> <http://www.w3.org/2000/01/rdf-schema#comment> "This ontology aims to model Blade damage based on a white paper by EPRI. The ontology is developed in the context of the xxxx project"@en .
+<https://w3id.org/ontoforge/bdo#> <http://www.w3.org/2002/07/owl#versionInfo> "0.0.2" .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/description
+<http://purl.org/dc/terms/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/issued
+<http://purl.org/dc/terms/issued> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/modified
+<http://purl.org/dc/terms/modified> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/publisher
+<http://purl.org/dc/terms/publisher> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/rights
+<http://purl.org/dc/terms/rights> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespaceUri
+<http://purl.org/vocab/vann/preferredNamespaceUri> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2004/02/skos/core#definition
+<http://www.w3.org/2004/02/skos/core#definition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Datatypes
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/2001/XMLSchema#date
+<http://www.w3.org/2001/XMLSchema#date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# https://w3id.org/ontoforge/bdo#hasDamageCategory
+<https://w3id.org/ontoforge/bdo#hasDamageCategory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/ontoforge/bdo#hasDamageCategory> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ontoforge/bdo#BladeDamage> .
+<https://w3id.org/ontoforge/bdo#hasDamageCategory> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/ontoforge/bdo#BladeDamageCategory> .
+# 
+# https://w3id.org/ontoforge/bdo#hasDamageType
+<https://w3id.org/ontoforge/bdo#hasDamageType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/ontoforge/bdo#hasDamageType> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ontoforge/bdo#BladeDamage> .
+<https://w3id.org/ontoforge/bdo#hasDamageType> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/ontoforge/bdo#DamageType> .
+# 
+# https://w3id.org/ontoforge/bdo#requiresAction
+<https://w3id.org/ontoforge/bdo#requiresAction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/ontoforge/bdo#requiresAction> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ontoforge/bdo#BladeDamageCategory> .
+<https://w3id.org/ontoforge/bdo#requiresAction> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/ontoforge/bdo#Procedure> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# https://w3id.org/ontoforge/bdo#BladeDamage
+<https://w3id.org/ontoforge/bdo#BladeDamage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/ontoforge/bdo#BladeDamage> <http://www.w3.org/2000/01/rdf-schema#comment> "Blade damage."@en .
+<https://w3id.org/ontoforge/bdo#BladeDamage> <http://www.w3.org/2000/01/rdf-schema#label> "Blade Damage"@en .
+# 
+# https://w3id.org/ontoforge/bdo#BladeDamageCategory
+<https://w3id.org/ontoforge/bdo#BladeDamageCategory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/ontoforge/bdo#BladeDamageCategory> <http://www.w3.org/2000/01/rdf-schema#comment> "Blade damage category."@en .
+<https://w3id.org/ontoforge/bdo#BladeDamageCategory> <http://www.w3.org/2000/01/rdf-schema#label> "Blade Damage category"@en .
+# 
+# https://w3id.org/ontoforge/bdo#DamageType
+<https://w3id.org/ontoforge/bdo#DamageType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/ontoforge/bdo#DamageType> <http://www.w3.org/2000/01/rdf-schema#comment> "Blade damage type."@en .
+<https://w3id.org/ontoforge/bdo#DamageType> <http://www.w3.org/2000/01/rdf-schema#label> "Blade Damage type"@en .
+# 
+# https://w3id.org/ontoforge/bdo#Procedure
+<https://w3id.org/ontoforge/bdo#Procedure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/ontoforge/bdo#Procedure> <http://www.w3.org/2000/01/rdf-schema#comment> "Proceduree."@en .
+<https://w3id.org/ontoforge/bdo#Procedure> <http://www.w3.org/2000/01/rdf-schema#label> "Procedure"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# https://w3id.org/ontoforge/bdo#AerodynamicPerfomance
+<https://w3id.org/ontoforge/bdo#AerodynamicPerfomance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ontoforge/bdo#AerodynamicPerfomance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ontoforge/bdo#DamageType> .
+# 
+# https://w3id.org/ontoforge/bdo#AerodynamicPerformance_1
+<https://w3id.org/ontoforge/bdo#AerodynamicPerformance_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ontoforge/bdo#AerodynamicPerformance_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ontoforge/bdo#BladeDamage> .
+<https://w3id.org/ontoforge/bdo#AerodynamicPerformance_1> <https://w3id.org/ontoforge/bdo#hasDamageCategory> <https://w3id.org/ontoforge/bdo#BladeDamageCategory2> .
+<https://w3id.org/ontoforge/bdo#AerodynamicPerformance_1> <https://w3id.org/ontoforge/bdo#hasDamageType> <https://w3id.org/ontoforge/bdo#AerodynamicPerfomance> .
+<https://w3id.org/ontoforge/bdo#AerodynamicPerformance_1> <http://www.w3.org/2004/02/skos/core#definition> "Several missing aerodynamic devices (e.g. vortex generators, trailing edge devices)."@en .
+# 
+# https://w3id.org/ontoforge/bdo#AerodynamicPerformance_2
+<https://w3id.org/ontoforge/bdo#AerodynamicPerformance_2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ontoforge/bdo#AerodynamicPerformance_2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ontoforge/bdo#BladeDamage> .
+<https://w3id.org/ontoforge/bdo#AerodynamicPerformance_2> <https://w3id.org/ontoforge/bdo#hasDamageCategory> <https://w3id.org/ontoforge/bdo#BladeDamageCategory2> .
+<https://w3id.org/ontoforge/bdo#AerodynamicPerformance_2> <https://w3id.org/ontoforge/bdo#hasDamageType> <https://w3id.org/ontoforge/bdo#AerodynamicPerfomance> .
+<https://w3id.org/ontoforge/bdo#AerodynamicPerformance_2> <http://www.w3.org/2004/02/skos/core#definition> "Heavy dirt, oil, grease, or insects on the blade surface."@en .
+# 
+# https://w3id.org/ontoforge/bdo#AerodynamicPerformance_3
+<https://w3id.org/ontoforge/bdo#AerodynamicPerformance_3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ontoforge/bdo#AerodynamicPerformance_3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ontoforge/bdo#BladeDamage> .
+<https://w3id.org/ontoforge/bdo#AerodynamicPerformance_3> <https://w3id.org/ontoforge/bdo#hasDamageCategory> <https://w3id.org/ontoforge/bdo#BladeDamageCategory2> .
+<https://w3id.org/ontoforge/bdo#AerodynamicPerformance_3> <https://w3id.org/ontoforge/bdo#hasDamageType> <https://w3id.org/ontoforge/bdo#AerodynamicPerfomance> .
+<https://w3id.org/ontoforge/bdo#AerodynamicPerformance_3> <http://www.w3.org/2004/02/skos/core#definition> "Early stages of leading edge erosion or other increased surface roughness."@en .
+# 
+# https://w3id.org/ontoforge/bdo#AerodynamicPerformance_4
+<https://w3id.org/ontoforge/bdo#AerodynamicPerformance_4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ontoforge/bdo#AerodynamicPerformance_4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ontoforge/bdo#BladeDamage> .
+<https://w3id.org/ontoforge/bdo#AerodynamicPerformance_4> <https://w3id.org/ontoforge/bdo#hasDamageCategory> <https://w3id.org/ontoforge/bdo#BladeDamageCategory3> .
+<https://w3id.org/ontoforge/bdo#AerodynamicPerformance_4> <https://w3id.org/ontoforge/bdo#hasDamageType> <https://w3id.org/ontoforge/bdo#AerodynamicPerfomance> .
+<https://w3id.org/ontoforge/bdo#AerodynamicPerformance_4> <http://www.w3.org/2004/02/skos/core#definition> "Extensive missing aerodynamic devices (e.g., vortex generators, trailing edge devices)."@en .
+# 
+# https://w3id.org/ontoforge/bdo#BladeDamageCategory1
+<https://w3id.org/ontoforge/bdo#BladeDamageCategory1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ontoforge/bdo#BladeDamageCategory1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ontoforge/bdo#BladeDamageCategory> .
+<https://w3id.org/ontoforge/bdo#BladeDamageCategory1> <https://w3id.org/ontoforge/bdo#requiresAction> <https://w3id.org/ontoforge/bdo#MonitoringBladeDamageCategory1> .
+<https://w3id.org/ontoforge/bdo#BladeDamageCategory1> <https://w3id.org/ontoforge/bdo#requiresAction> <https://w3id.org/ontoforge/bdo#OperationBladeDamageCategory1> .
+<https://w3id.org/ontoforge/bdo#BladeDamageCategory1> <https://w3id.org/ontoforge/bdo#requiresAction> <https://w3id.org/ontoforge/bdo#RepairBladeDamageCategory1> .
+<https://w3id.org/ontoforge/bdo#BladeDamageCategory1> <http://www.w3.org/2004/02/skos/core#definition> "Minor variances from supply specifications but within acceptable (or industry typical) tolerances; may affect the appearance of the blade or blade feature. Though minor, can be useful to identify as position references, or for blade identification."@en .
+# 
+# https://w3id.org/ontoforge/bdo#BladeDamageCategory2
+<https://w3id.org/ontoforge/bdo#BladeDamageCategory2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ontoforge/bdo#BladeDamageCategory2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ontoforge/bdo#BladeDamageCategory> .
+<https://w3id.org/ontoforge/bdo#BladeDamageCategory2> <https://w3id.org/ontoforge/bdo#requiresAction> <https://w3id.org/ontoforge/bdo#MonitoringBladeDamageCategory2> .
+<https://w3id.org/ontoforge/bdo#BladeDamageCategory2> <https://w3id.org/ontoforge/bdo#requiresAction> <https://w3id.org/ontoforge/bdo#OperationBladeDamageCategory3> .
+<https://w3id.org/ontoforge/bdo#BladeDamageCategory2> <https://w3id.org/ontoforge/bdo#requiresAction> <https://w3id.org/ontoforge/bdo#RepairBladeDamageCategory2> .
+<https://w3id.org/ontoforge/bdo#BladeDamageCategory2> <http://www.w3.org/2004/02/skos/core#definition> "Minor damage or defects that exceed supply specification acceptance criteria. Multiple cosmetic findings and/or a single major cosmetic finding that are damage, defects, or former repairs. Findings exceed tolerances of supply conditions or industry typical manufacturing variability. Repairs of more severe damage or defects can be recategorized to category 2 upon review of repair."@en .
+# 
+# https://w3id.org/ontoforge/bdo#BladeDamageCategory3
+<https://w3id.org/ontoforge/bdo#BladeDamageCategory3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ontoforge/bdo#BladeDamageCategory3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ontoforge/bdo#BladeDamageCategory> .
+<https://w3id.org/ontoforge/bdo#BladeDamageCategory3> <https://w3id.org/ontoforge/bdo#requiresAction> <https://w3id.org/ontoforge/bdo#MonitoringBladeDamageCategory3> .
+<https://w3id.org/ontoforge/bdo#BladeDamageCategory3> <https://w3id.org/ontoforge/bdo#requiresAction> <https://w3id.org/ontoforge/bdo#OperationBladeDamageCategory3> .
+<https://w3id.org/ontoforge/bdo#BladeDamageCategory3> <https://w3id.org/ontoforge/bdo#requiresAction> <https://w3id.org/ontoforge/bdo#RepairBladeDamageCategory3> .
+<https://w3id.org/ontoforge/bdo#BladeDamageCategory3> <http://www.w3.org/2004/02/skos/core#definition> "Moderate to minor structural damage or minor manufacturing defects in non-critical areas. Features are moderately out of compliance with supply conditions and/or below minimum typical industry practice. May present as surface indications when in fact there is damage to the underlying structural laminate. Internal inspection may be needed to determine the extent of the finding.\r\nMay be particularly challenging to assess criticality due to lack of design data such as load margins. Findings may be category 3 when category 4 actions seem too drastic and category 2 is not appropriate, because there is a slight risk of loss of structural capability."@en .
+# 
+# https://w3id.org/ontoforge/bdo#BladeDamageCategory4
+<https://w3id.org/ontoforge/bdo#BladeDamageCategory4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ontoforge/bdo#BladeDamageCategory4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ontoforge/bdo#BladeDamageCategory> .
+<https://w3id.org/ontoforge/bdo#BladeDamageCategory4> <https://w3id.org/ontoforge/bdo#requiresAction> <https://w3id.org/ontoforge/bdo#MonitoringBladeDamageCategory4> .
+<https://w3id.org/ontoforge/bdo#BladeDamageCategory4> <https://w3id.org/ontoforge/bdo#requiresAction> <https://w3id.org/ontoforge/bdo#OperationBladeDamageCategory4> .
+<https://w3id.org/ontoforge/bdo#BladeDamageCategory4> <https://w3id.org/ontoforge/bdo#requiresAction> <https://w3id.org/ontoforge/bdo#RepairBladeDamageCategory4> .
+<https://w3id.org/ontoforge/bdo#BladeDamageCategory4> <http://www.w3.org/2004/02/skos/core#definition> "Significant damage or defects that have notable impact to structural capability and/or aerodynamic performance."@en .
+# 
+# https://w3id.org/ontoforge/bdo#BladeDamageCategory5
+<https://w3id.org/ontoforge/bdo#BladeDamageCategory5> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ontoforge/bdo#BladeDamageCategory5> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ontoforge/bdo#BladeDamageCategory> .
+<https://w3id.org/ontoforge/bdo#BladeDamageCategory5> <https://w3id.org/ontoforge/bdo#requiresAction> <https://w3id.org/ontoforge/bdo#MonitoringBladeDamageCategory5> .
+<https://w3id.org/ontoforge/bdo#BladeDamageCategory5> <https://w3id.org/ontoforge/bdo#requiresAction> <https://w3id.org/ontoforge/bdo#OperationBladeDamageCategory5> .
+<https://w3id.org/ontoforge/bdo#BladeDamageCategory5> <https://w3id.org/ontoforge/bdo#requiresAction> <https://w3id.org/ontoforge/bdo#RepairBladeDamageCategory5> .
+<https://w3id.org/ontoforge/bdo#BladeDamageCategory5> <http://www.w3.org/2004/02/skos/core#definition> "Severe degree of damage or defect such that there is a high risk of imminent failure."@en .
+# 
+# https://w3id.org/ontoforge/bdo#CosmeticDamage
+<https://w3id.org/ontoforge/bdo#CosmeticDamage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ontoforge/bdo#CosmeticDamage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ontoforge/bdo#DamageType> .
+# 
+# https://w3id.org/ontoforge/bdo#CosmeticDamage_1
+<https://w3id.org/ontoforge/bdo#CosmeticDamage_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ontoforge/bdo#CosmeticDamage_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ontoforge/bdo#BladeDamage> .
+<https://w3id.org/ontoforge/bdo#CosmeticDamage_1> <https://w3id.org/ontoforge/bdo#hasDamageCategory> <https://w3id.org/ontoforge/bdo#BladeDamageCategory1> .
+<https://w3id.org/ontoforge/bdo#CosmeticDamage_1> <https://w3id.org/ontoforge/bdo#hasDamageType> <https://w3id.org/ontoforge/bdo#CosmeticDamage> .
+<https://w3id.org/ontoforge/bdo#CosmeticDamage_1> <http://www.w3.org/2004/02/skos/core#definition> "Marks from small mold positioning devices."@en .
+# 
+# https://w3id.org/ontoforge/bdo#CosmeticDamage_2
+<https://w3id.org/ontoforge/bdo#CosmeticDamage_2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ontoforge/bdo#CosmeticDamage_2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ontoforge/bdo#BladeDamage> .
+<https://w3id.org/ontoforge/bdo#CosmeticDamage_2> <https://w3id.org/ontoforge/bdo#hasDamageCategory> <https://w3id.org/ontoforge/bdo#BladeDamageCategory1> .
+<https://w3id.org/ontoforge/bdo#CosmeticDamage_2> <https://w3id.org/ontoforge/bdo#hasDamageType> <https://w3id.org/ontoforge/bdo#CosmeticDamage> .
+<https://w3id.org/ontoforge/bdo#CosmeticDamage_2> <http://www.w3.org/2004/02/skos/core#definition> "Small or thin foreign objects in laminate that do not form wrinkles."@en .
+# 
+# https://w3id.org/ontoforge/bdo#CosmeticDamage_3
+<https://w3id.org/ontoforge/bdo#CosmeticDamage_3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ontoforge/bdo#CosmeticDamage_3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ontoforge/bdo#BladeDamage> .
+<https://w3id.org/ontoforge/bdo#CosmeticDamage_3> <https://w3id.org/ontoforge/bdo#hasDamageCategory> <https://w3id.org/ontoforge/bdo#BladeDamageCategory1> .
+<https://w3id.org/ontoforge/bdo#CosmeticDamage_3> <https://w3id.org/ontoforge/bdo#hasDamageType> <https://w3id.org/ontoforge/bdo#CosmeticDamage> .
+<https://w3id.org/ontoforge/bdo#CosmeticDamage_3> <http://www.w3.org/2004/02/skos/core#definition> "Minor variability in thickness of coatings, detectable as translucence."@en .
+# 
+# https://w3id.org/ontoforge/bdo#CosmeticDamage_4
+<https://w3id.org/ontoforge/bdo#CosmeticDamage_4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ontoforge/bdo#CosmeticDamage_4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ontoforge/bdo#BladeDamage> .
+<https://w3id.org/ontoforge/bdo#CosmeticDamage_4> <https://w3id.org/ontoforge/bdo#hasDamageCategory> <https://w3id.org/ontoforge/bdo#BladeDamageCategory1> .
+<https://w3id.org/ontoforge/bdo#CosmeticDamage_4> <https://w3id.org/ontoforge/bdo#hasDamageType> <https://w3id.org/ontoforge/bdo#CosmeticDamage> .
+<https://w3id.org/ontoforge/bdo#CosmeticDamage_4> <http://www.w3.org/2004/02/skos/core#definition> "Minor blade surface variability due to mold features."@en .
+# 
+# https://w3id.org/ontoforge/bdo#CosmeticDamage_5
+<https://w3id.org/ontoforge/bdo#CosmeticDamage_5> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ontoforge/bdo#CosmeticDamage_5> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ontoforge/bdo#BladeDamage> .
+<https://w3id.org/ontoforge/bdo#CosmeticDamage_5> <https://w3id.org/ontoforge/bdo#hasDamageCategory> <https://w3id.org/ontoforge/bdo#BladeDamageCategory1> .
+<https://w3id.org/ontoforge/bdo#CosmeticDamage_5> <https://w3id.org/ontoforge/bdo#hasDamageType> <https://w3id.org/ontoforge/bdo#CosmeticDamage> .
+<https://w3id.org/ontoforge/bdo#CosmeticDamage_5> <http://www.w3.org/2004/02/skos/core#definition> "Light dirt, oil, grease, or insects on the blade surface."@en .
+# 
+# https://w3id.org/ontoforge/bdo#CosmeticDamage_6
+<https://w3id.org/ontoforge/bdo#CosmeticDamage_6> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ontoforge/bdo#CosmeticDamage_6> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ontoforge/bdo#BladeDamage> .
+<https://w3id.org/ontoforge/bdo#CosmeticDamage_6> <https://w3id.org/ontoforge/bdo#hasDamageCategory> <https://w3id.org/ontoforge/bdo#BladeDamageCategory1> .
+<https://w3id.org/ontoforge/bdo#CosmeticDamage_6> <https://w3id.org/ontoforge/bdo#hasDamageType> <https://w3id.org/ontoforge/bdo#CosmeticDamage> .
+<https://w3id.org/ontoforge/bdo#CosmeticDamage_6> <http://www.w3.org/2004/02/skos/core#definition> "Missing or unreadable labels or stickers."@en .
+# 
+# https://w3id.org/ontoforge/bdo#CosmeticDamage_7
+<https://w3id.org/ontoforge/bdo#CosmeticDamage_7> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ontoforge/bdo#CosmeticDamage_7> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ontoforge/bdo#BladeDamage> .
+<https://w3id.org/ontoforge/bdo#CosmeticDamage_7> <https://w3id.org/ontoforge/bdo#hasDamageCategory> <https://w3id.org/ontoforge/bdo#BladeDamageCategory2> .
+<https://w3id.org/ontoforge/bdo#CosmeticDamage_7> <https://w3id.org/ontoforge/bdo#hasDamageType> <https://w3id.org/ontoforge/bdo#CosmeticDamage> .
+<https://w3id.org/ontoforge/bdo#CosmeticDamage_7> <http://www.w3.org/2004/02/skos/core#definition> "Coating discoloration, scratches, or cracks, profile deviations in repairs, mold marks protruding from the blade surface, rough paint patches."@en .
+# 
+# https://w3id.org/ontoforge/bdo#CosmeticDamage_8
+<https://w3id.org/ontoforge/bdo#CosmeticDamage_8> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ontoforge/bdo#CosmeticDamage_8> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ontoforge/bdo#BladeDamage> .
+<https://w3id.org/ontoforge/bdo#CosmeticDamage_8> <https://w3id.org/ontoforge/bdo#hasDamageCategory> <https://w3id.org/ontoforge/bdo#BladeDamageCategory2> .
+<https://w3id.org/ontoforge/bdo#CosmeticDamage_8> <https://w3id.org/ontoforge/bdo#hasDamageType> <https://w3id.org/ontoforge/bdo#CosmeticDamage> .
+<https://w3id.org/ontoforge/bdo#CosmeticDamage_8> <http://www.w3.org/2004/02/skos/core#definition> "Thin or flaking coating."@en .
+# 
+# https://w3id.org/ontoforge/bdo#CosmeticDamage_9
+<https://w3id.org/ontoforge/bdo#CosmeticDamage_9> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ontoforge/bdo#CosmeticDamage_9> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ontoforge/bdo#BladeDamage> .
+<https://w3id.org/ontoforge/bdo#CosmeticDamage_9> <https://w3id.org/ontoforge/bdo#hasDamageCategory> <https://w3id.org/ontoforge/bdo#BladeDamageCategory2> .
+<https://w3id.org/ontoforge/bdo#CosmeticDamage_9> <https://w3id.org/ontoforge/bdo#hasDamageType> <https://w3id.org/ontoforge/bdo#CosmeticDamage> .
+<https://w3id.org/ontoforge/bdo#CosmeticDamage_9> <http://www.w3.org/2004/02/skos/core#definition> "Excessive oil on the internal surfaces of the blade."@en .
+# 
+# https://w3id.org/ontoforge/bdo#Defect
+<https://w3id.org/ontoforge/bdo#Defect> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ontoforge/bdo#Defect> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ontoforge/bdo#DamageType> .
+# 
+# https://w3id.org/ontoforge/bdo#Defect_1
+<https://w3id.org/ontoforge/bdo#Defect_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ontoforge/bdo#Defect_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ontoforge/bdo#BladeDamage> .
+<https://w3id.org/ontoforge/bdo#Defect_1> <https://w3id.org/ontoforge/bdo#hasDamageCategory> <https://w3id.org/ontoforge/bdo#BladeDamageCategory2> .
+<https://w3id.org/ontoforge/bdo#Defect_1> <https://w3id.org/ontoforge/bdo#hasDamageType> <https://w3id.org/ontoforge/bdo#Defect> .
+<https://w3id.org/ontoforge/bdo#Defect_1> <http://www.w3.org/2004/02/skos/core#definition> "Minor foreign objects in laminate resulting in small wrinkles."@en .
+# 
+# https://w3id.org/ontoforge/bdo#Defect_2
+<https://w3id.org/ontoforge/bdo#Defect_2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ontoforge/bdo#Defect_2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ontoforge/bdo#BladeDamage> .
+<https://w3id.org/ontoforge/bdo#Defect_2> <https://w3id.org/ontoforge/bdo#hasDamageCategory> <https://w3id.org/ontoforge/bdo#BladeDamageCategory2> .
+<https://w3id.org/ontoforge/bdo#Defect_2> <https://w3id.org/ontoforge/bdo#hasDamageType> <https://w3id.org/ontoforge/bdo#Defect> .
+<https://w3id.org/ontoforge/bdo#Defect_2> <http://www.w3.org/2004/02/skos/core#definition> "Minor manufacturing deviations that have been evaluated by an engineer and do not impact structural capability due to design margins or it is in an area of low structural criticality."@en .
+# 
+# https://w3id.org/ontoforge/bdo#Defect_3
+<https://w3id.org/ontoforge/bdo#Defect_3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ontoforge/bdo#Defect_3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ontoforge/bdo#BladeDamage> .
+<https://w3id.org/ontoforge/bdo#Defect_3> <https://w3id.org/ontoforge/bdo#hasDamageCategory> <https://w3id.org/ontoforge/bdo#BladeDamageCategory4> .
+<https://w3id.org/ontoforge/bdo#Defect_3> <https://w3id.org/ontoforge/bdo#hasDamageType> <https://w3id.org/ontoforge/bdo#Defect> .
+<https://w3id.org/ontoforge/bdo#Defect_3> <http://www.w3.org/2004/02/skos/core#definition> "Chordwise wrinkles of laminate fibers in highly loaded regions."@en .
+# 
+# https://w3id.org/ontoforge/bdo#Defect_4
+<https://w3id.org/ontoforge/bdo#Defect_4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ontoforge/bdo#Defect_4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ontoforge/bdo#BladeDamage> .
+<https://w3id.org/ontoforge/bdo#Defect_4> <https://w3id.org/ontoforge/bdo#hasDamageCategory> <https://w3id.org/ontoforge/bdo#BladeDamageCategory4> .
+<https://w3id.org/ontoforge/bdo#Defect_4> <https://w3id.org/ontoforge/bdo#hasDamageType> <https://w3id.org/ontoforge/bdo#Defect> .
+<https://w3id.org/ontoforge/bdo#Defect_4> <http://www.w3.org/2004/02/skos/core#definition> "Significant areas of underinfused or improperly cured laminate."@en .
+# 
+# https://w3id.org/ontoforge/bdo#Defect_5
+<https://w3id.org/ontoforge/bdo#Defect_5> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ontoforge/bdo#Defect_5> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ontoforge/bdo#BladeDamage> .
+<https://w3id.org/ontoforge/bdo#Defect_5> <https://w3id.org/ontoforge/bdo#hasDamageCategory> <https://w3id.org/ontoforge/bdo#BladeDamageCategory4> .
+<https://w3id.org/ontoforge/bdo#Defect_5> <https://w3id.org/ontoforge/bdo#hasDamageType> <https://w3id.org/ontoforge/bdo#Defect> .
+<https://w3id.org/ontoforge/bdo#Defect_5> <http://www.w3.org/2004/02/skos/core#definition> "Large gaps or underbite/overbite at shell bonded joints."@en .
+# 
+# https://w3id.org/ontoforge/bdo#Defect_6
+<https://w3id.org/ontoforge/bdo#Defect_6> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ontoforge/bdo#Defect_6> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ontoforge/bdo#BladeDamage> .
+<https://w3id.org/ontoforge/bdo#Defect_6> <https://w3id.org/ontoforge/bdo#hasDamageCategory> <https://w3id.org/ontoforge/bdo#BladeDamageCategory4> .
+<https://w3id.org/ontoforge/bdo#Defect_6> <https://w3id.org/ontoforge/bdo#hasDamageType> <https://w3id.org/ontoforge/bdo#Defect> .
+<https://w3id.org/ontoforge/bdo#Defect_6> <http://www.w3.org/2004/02/skos/core#definition> "Significant missing adhesive bond material, cavities, voids, or cracks in adhesive bonds, or significant deviations of the geometry of adhesive bonds beyond allowable limits."@en .
+# 
+# https://w3id.org/ontoforge/bdo#Defect_7
+<https://w3id.org/ontoforge/bdo#Defect_7> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ontoforge/bdo#Defect_7> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ontoforge/bdo#BladeDamage> .
+<https://w3id.org/ontoforge/bdo#Defect_7> <https://w3id.org/ontoforge/bdo#hasDamageCategory> <https://w3id.org/ontoforge/bdo#BladeDamageCategory4> .
+<https://w3id.org/ontoforge/bdo#Defect_7> <https://w3id.org/ontoforge/bdo#hasDamageType> <https://w3id.org/ontoforge/bdo#Defect> .
+<https://w3id.org/ontoforge/bdo#Defect_7> <http://www.w3.org/2004/02/skos/core#definition> "Large foreign objects in laminates that result in significant wrinkles."@en .
+# 
+# https://w3id.org/ontoforge/bdo#LightningDamage
+<https://w3id.org/ontoforge/bdo#LightningDamage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ontoforge/bdo#LightningDamage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ontoforge/bdo#DamageType> .
+# 
+# https://w3id.org/ontoforge/bdo#LightningDamage_1
+<https://w3id.org/ontoforge/bdo#LightningDamage_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ontoforge/bdo#LightningDamage_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ontoforge/bdo#BladeDamage> .
+<https://w3id.org/ontoforge/bdo#LightningDamage_1> <https://w3id.org/ontoforge/bdo#hasDamageCategory> <https://w3id.org/ontoforge/bdo#BladeDamageCategory2> .
+<https://w3id.org/ontoforge/bdo#LightningDamage_1> <https://w3id.org/ontoforge/bdo#hasDamageType> <https://w3id.org/ontoforge/bdo#LightningDamage> .
+<https://w3id.org/ontoforge/bdo#LightningDamage_1> <http://www.w3.org/2004/02/skos/core#definition> "Pin holes or very small marks on the blade shell where lightning was intercepted (not at the lightning receptor)."@en .
+# 
+# https://w3id.org/ontoforge/bdo#LightningDamage_2
+<https://w3id.org/ontoforge/bdo#LightningDamage_2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ontoforge/bdo#LightningDamage_2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ontoforge/bdo#BladeDamage> .
+<https://w3id.org/ontoforge/bdo#LightningDamage_2> <https://w3id.org/ontoforge/bdo#hasDamageCategory> <https://w3id.org/ontoforge/bdo#BladeDamageCategory4> .
+<https://w3id.org/ontoforge/bdo#LightningDamage_2> <https://w3id.org/ontoforge/bdo#hasDamageType> <https://w3id.org/ontoforge/bdo#LightningDamage> .
+<https://w3id.org/ontoforge/bdo#LightningDamage_2> <http://www.w3.org/2004/02/skos/core#definition> "Laminate damage where lightning attached to blade surface, not at the intended receptor."@en .
+# 
+# https://w3id.org/ontoforge/bdo#LightningDamage_3
+<https://w3id.org/ontoforge/bdo#LightningDamage_3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ontoforge/bdo#LightningDamage_3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ontoforge/bdo#BladeDamage> .
+<https://w3id.org/ontoforge/bdo#LightningDamage_3> <https://w3id.org/ontoforge/bdo#hasDamageCategory> <https://w3id.org/ontoforge/bdo#BladeDamageCategory4> .
+<https://w3id.org/ontoforge/bdo#LightningDamage_3> <https://w3id.org/ontoforge/bdo#hasDamageType> <https://w3id.org/ontoforge/bdo#LightningDamage> .
+<https://w3id.org/ontoforge/bdo#LightningDamage_3> <http://www.w3.org/2004/02/skos/core#definition> "Lightning penetrated the shell, however the exterior surface appears structurally adequate."@en .
+# 
+# https://w3id.org/ontoforge/bdo#MechanicalDamage
+<https://w3id.org/ontoforge/bdo#MechanicalDamage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ontoforge/bdo#MechanicalDamage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ontoforge/bdo#DamageType> .
+# 
+# https://w3id.org/ontoforge/bdo#MonitoringBladeDamageCategory1
+<https://w3id.org/ontoforge/bdo#MonitoringBladeDamageCategory1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ontoforge/bdo#MonitoringBladeDamageCategory1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ontoforge/bdo#Procedure> .
+<https://w3id.org/ontoforge/bdo#MonitoringBladeDamageCategory1> <http://www.w3.org/2004/02/skos/core#definition> "None needed."@en .
+# 
+# https://w3id.org/ontoforge/bdo#MonitoringBladeDamageCategory2
+<https://w3id.org/ontoforge/bdo#MonitoringBladeDamageCategory2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ontoforge/bdo#MonitoringBladeDamageCategory2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ontoforge/bdo#Procedure> .
+<https://w3id.org/ontoforge/bdo#MonitoringBladeDamageCategory2> <http://www.w3.org/2004/02/skos/core#definition> "Monitor during routinely scheduled maintenance for damage initiation or progression. Depending on the damage, internal inspection may be warranted to differentiate surface cracks from more severe laminate damage."@en .
+# 
+# https://w3id.org/ontoforge/bdo#MonitoringBladeDamageCategory3
+<https://w3id.org/ontoforge/bdo#MonitoringBladeDamageCategory3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ontoforge/bdo#MonitoringBladeDamageCategory3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ontoforge/bdo#Procedure> .
+<https://w3id.org/ontoforge/bdo#MonitoringBladeDamageCategory3> <http://www.w3.org/2004/02/skos/core#definition> "Inspection frequency driven by assessment of risk; may be more frequent than routinely scheduled inspections recommended by the OEM. If no growth in damage over time, an engineering assessment may downgrade finding to category 2."@en .
+# 
+# https://w3id.org/ontoforge/bdo#MonitoringBladeDamageCategory4
+<https://w3id.org/ontoforge/bdo#MonitoringBladeDamageCategory4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ontoforge/bdo#MonitoringBladeDamageCategory4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ontoforge/bdo#Procedure> .
+<https://w3id.org/ontoforge/bdo#MonitoringBladeDamageCategory4> <http://www.w3.org/2004/02/skos/core#definition> "More frequent or more comprehensive monitoring than routine inspections are required until repairs are complete."@en .
+# 
+# https://w3id.org/ontoforge/bdo#MonitoringBladeDamageCategory5
+<https://w3id.org/ontoforge/bdo#MonitoringBladeDamageCategory5> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ontoforge/bdo#MonitoringBladeDamageCategory5> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ontoforge/bdo#Procedure> .
+<https://w3id.org/ontoforge/bdo#MonitoringBladeDamageCategory5> <http://www.w3.org/2004/02/skos/core#definition> "If repair is implemented, repair should be deemed a Category 3 defect until sufficient operating experience is gained to provide confidence that the repair is sufficient to achieve expected remaining operating life."@en .
+# 
+# https://w3id.org/ontoforge/bdo#OperationBladeDamageCategory1
+<https://w3id.org/ontoforge/bdo#OperationBladeDamageCategory1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ontoforge/bdo#OperationBladeDamageCategory1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ontoforge/bdo#Procedure> .
+<https://w3id.org/ontoforge/bdo#OperationBladeDamageCategory1> <http://www.w3.org/2004/02/skos/core#definition> "Continued operation is possible."@en .
+# 
+# https://w3id.org/ontoforge/bdo#OperationBladeDamageCategory2
+<https://w3id.org/ontoforge/bdo#OperationBladeDamageCategory2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ontoforge/bdo#OperationBladeDamageCategory2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ontoforge/bdo#Procedure> .
+<https://w3id.org/ontoforge/bdo#OperationBladeDamageCategory2> <http://www.w3.org/2004/02/skos/core#definition> "Continued operation."@en .
+# 
+# https://w3id.org/ontoforge/bdo#OperationBladeDamageCategory3
+<https://w3id.org/ontoforge/bdo#OperationBladeDamageCategory3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ontoforge/bdo#OperationBladeDamageCategory3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ontoforge/bdo#Procedure> .
+<https://w3id.org/ontoforge/bdo#OperationBladeDamageCategory3> <http://www.w3.org/2004/02/skos/core#definition> "Continued operation is possible."@en .
+# 
+# https://w3id.org/ontoforge/bdo#OperationBladeDamageCategory4
+<https://w3id.org/ontoforge/bdo#OperationBladeDamageCategory4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ontoforge/bdo#OperationBladeDamageCategory4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ontoforge/bdo#Procedure> .
+<https://w3id.org/ontoforge/bdo#OperationBladeDamageCategory4> <http://www.w3.org/2004/02/skos/core#definition> "Engineering evaluation required to deem blade can operate until repair is scheduled. Operation shall stop if repair cannot be implemented within the allowable time period."@en .
+# 
+# https://w3id.org/ontoforge/bdo#OperationBladeDamageCategory5
+<https://w3id.org/ontoforge/bdo#OperationBladeDamageCategory5> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ontoforge/bdo#OperationBladeDamageCategory5> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ontoforge/bdo#Procedure> .
+<https://w3id.org/ontoforge/bdo#OperationBladeDamageCategory5> <http://www.w3.org/2004/02/skos/core#definition> "The blade is not safe to operate until the damage or defect is repaired or the blade is replaced."@en .
+# 
+# https://w3id.org/ontoforge/bdo#RepairBladeDamageCategory1
+<https://w3id.org/ontoforge/bdo#RepairBladeDamageCategory1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ontoforge/bdo#RepairBladeDamageCategory1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ontoforge/bdo#Procedure> .
+<https://w3id.org/ontoforge/bdo#RepairBladeDamageCategory1> <http://www.w3.org/2004/02/skos/core#definition> "None needed, though some can be remedied with minimal effort in conjunction with other blade maintenance activities."@en .
+# 
+# https://w3id.org/ontoforge/bdo#RepairBladeDamageCategory2
+<https://w3id.org/ontoforge/bdo#RepairBladeDamageCategory2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ontoforge/bdo#RepairBladeDamageCategory2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ontoforge/bdo#Procedure> .
+<https://w3id.org/ontoforge/bdo#RepairBladeDamageCategory2> <http://www.w3.org/2004/02/skos/core#definition> "Repair is perfomed based on cost/benefit analysis."@en .
+# 
+# https://w3id.org/ontoforge/bdo#RepairBladeDamageCategory3
+<https://w3id.org/ontoforge/bdo#RepairBladeDamageCategory3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ontoforge/bdo#RepairBladeDamageCategory3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ontoforge/bdo#Procedure> .
+<https://w3id.org/ontoforge/bdo#RepairBladeDamageCategory3> <http://www.w3.org/2004/02/skos/core#definition> "Repair is performed based on circumstances, criticality, and O&M approach. If found during manufacturing, should be repaired prior to installation. Investigation and repair or replacement of missing aerodynamic devices should be performed to regain energy capture benefits. Timing of repairs can be linked to other blade-related needs. Leading edge erosion or small external cracks should be repaired to prevent damage progression."@en .
+# 
+# https://w3id.org/ontoforge/bdo#RepairBladeDamageCategory4
+<https://w3id.org/ontoforge/bdo#RepairBladeDamageCategory4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ontoforge/bdo#RepairBladeDamageCategory4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ontoforge/bdo#Procedure> .
+<https://w3id.org/ontoforge/bdo#RepairBladeDamageCategory4> <http://www.w3.org/2004/02/skos/core#definition> "Repair within a limited number of months of initial observation. Repairs may be performed uptower or blade should be repaired prior to installation and a manufacturing quality assessment should be undertaken to find and correct root causes."@en .
+# 
+# https://w3id.org/ontoforge/bdo#RepairBladeDamageCategory5
+<https://w3id.org/ontoforge/bdo#RepairBladeDamageCategory5> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ontoforge/bdo#RepairBladeDamageCategory5> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ontoforge/bdo#Procedure> .
+<https://w3id.org/ontoforge/bdo#RepairBladeDamageCategory5> <http://www.w3.org/2004/02/skos/core#definition> "Replace, or repair depending on repair feasibility and cost/benefit relative to replacement."@en .
+# 
+# https://w3id.org/ontoforge/bdo#StructuralDamage
+<https://w3id.org/ontoforge/bdo#StructuralDamage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ontoforge/bdo#StructuralDamage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ontoforge/bdo#DamageType> .
+# 
+# https://w3id.org/ontoforge/bdo#StructuralDamage_1
+<https://w3id.org/ontoforge/bdo#StructuralDamage_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ontoforge/bdo#StructuralDamage_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ontoforge/bdo#BladeDamage> .
+<https://w3id.org/ontoforge/bdo#StructuralDamage_1> <https://w3id.org/ontoforge/bdo#hasDamageCategory> <https://w3id.org/ontoforge/bdo#BladeDamageCategory3> .
+<https://w3id.org/ontoforge/bdo#StructuralDamage_1> <https://w3id.org/ontoforge/bdo#hasDamageType> <https://w3id.org/ontoforge/bdo#StructuralDamage> .
+<https://w3id.org/ontoforge/bdo#StructuralDamage_1> <http://www.w3.org/2004/02/skos/core#definition> "Small cracks in shells or along leading or trailing edge bonds, small areas of underinfused laminate, voids in adhesive bonds."@en .
+# 
+# https://w3id.org/ontoforge/bdo#StructuralDamage_10
+<https://w3id.org/ontoforge/bdo#StructuralDamage_10> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ontoforge/bdo#StructuralDamage_10> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ontoforge/bdo#BladeDamage> .
+<https://w3id.org/ontoforge/bdo#StructuralDamage_10> <https://w3id.org/ontoforge/bdo#hasDamageCategory> <https://w3id.org/ontoforge/bdo#BladeDamageCategory5> .
+<https://w3id.org/ontoforge/bdo#StructuralDamage_10> <https://w3id.org/ontoforge/bdo#hasDamageType> <https://w3id.org/ontoforge/bdo#StructuralDamage> .
+<https://w3id.org/ontoforge/bdo#StructuralDamage_10> <http://www.w3.org/2004/02/skos/core#definition> "Separation of shear webs from spar caps."@en .
+# 
+# https://w3id.org/ontoforge/bdo#StructuralDamage_11
+<https://w3id.org/ontoforge/bdo#StructuralDamage_11> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ontoforge/bdo#StructuralDamage_11> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ontoforge/bdo#BladeDamage> .
+<https://w3id.org/ontoforge/bdo#StructuralDamage_11> <https://w3id.org/ontoforge/bdo#hasDamageCategory> <https://w3id.org/ontoforge/bdo#BladeDamageCategory5> .
+<https://w3id.org/ontoforge/bdo#StructuralDamage_11> <https://w3id.org/ontoforge/bdo#hasDamageType> <https://w3id.org/ontoforge/bdo#StructuralDamage> .
+<https://w3id.org/ontoforge/bdo#StructuralDamage_11> <http://www.w3.org/2004/02/skos/core#definition> "Numerous broken blade bolts."@en .
+# 
+# https://w3id.org/ontoforge/bdo#StructuralDamage_12
+<https://w3id.org/ontoforge/bdo#StructuralDamage_12> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ontoforge/bdo#StructuralDamage_12> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ontoforge/bdo#BladeDamage> .
+<https://w3id.org/ontoforge/bdo#StructuralDamage_12> <https://w3id.org/ontoforge/bdo#hasDamageCategory> <https://w3id.org/ontoforge/bdo#BladeDamageCategory5> .
+<https://w3id.org/ontoforge/bdo#StructuralDamage_12> <https://w3id.org/ontoforge/bdo#hasDamageType> <https://w3id.org/ontoforge/bdo#StructuralDamage> .
+<https://w3id.org/ontoforge/bdo#StructuralDamage_12> <http://www.w3.org/2004/02/skos/core#definition> "Significant chordwise or spanwise cracks or large delaminations in shells."@en .
+# 
+# https://w3id.org/ontoforge/bdo#StructuralDamage_2
+<https://w3id.org/ontoforge/bdo#StructuralDamage_2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ontoforge/bdo#StructuralDamage_2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ontoforge/bdo#BladeDamage> .
+<https://w3id.org/ontoforge/bdo#StructuralDamage_2> <https://w3id.org/ontoforge/bdo#hasDamageCategory> <https://w3id.org/ontoforge/bdo#BladeDamageCategory3> .
+<https://w3id.org/ontoforge/bdo#StructuralDamage_2> <https://w3id.org/ontoforge/bdo#hasDamageType> <https://w3id.org/ontoforge/bdo#StructuralDamage> .
+<https://w3id.org/ontoforge/bdo#StructuralDamage_2> <http://www.w3.org/2004/02/skos/core#definition> "Significant root face laminate wrinkles."@en .
+# 
+# https://w3id.org/ontoforge/bdo#StructuralDamage_3
+<https://w3id.org/ontoforge/bdo#StructuralDamage_3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ontoforge/bdo#StructuralDamage_3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ontoforge/bdo#BladeDamage> .
+<https://w3id.org/ontoforge/bdo#StructuralDamage_3> <https://w3id.org/ontoforge/bdo#hasDamageCategory> <https://w3id.org/ontoforge/bdo#BladeDamageCategory3> .
+<https://w3id.org/ontoforge/bdo#StructuralDamage_3> <https://w3id.org/ontoforge/bdo#hasDamageType> <https://w3id.org/ontoforge/bdo#StructuralDamage> .
+<https://w3id.org/ontoforge/bdo#StructuralDamage_3> <http://www.w3.org/2004/02/skos/core#definition> "Spanwise wrinkles in laminate."@en .
+# 
+# https://w3id.org/ontoforge/bdo#StructuralDamage_4
+<https://w3id.org/ontoforge/bdo#StructuralDamage_4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ontoforge/bdo#StructuralDamage_4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ontoforge/bdo#BladeDamage> .
+<https://w3id.org/ontoforge/bdo#StructuralDamage_4> <https://w3id.org/ontoforge/bdo#hasDamageCategory> <https://w3id.org/ontoforge/bdo#BladeDamageCategory4> .
+<https://w3id.org/ontoforge/bdo#StructuralDamage_4> <https://w3id.org/ontoforge/bdo#hasDamageType> <https://w3id.org/ontoforge/bdo#StructuralDamage> .
+<https://w3id.org/ontoforge/bdo#StructuralDamage_4> <http://www.w3.org/2004/02/skos/core#definition> "Significant cracks, delamination, buckling of shells."@en .
+# 
+# https://w3id.org/ontoforge/bdo#StructuralDamage_5
+<https://w3id.org/ontoforge/bdo#StructuralDamage_5> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ontoforge/bdo#StructuralDamage_5> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ontoforge/bdo#BladeDamage> .
+<https://w3id.org/ontoforge/bdo#StructuralDamage_5> <https://w3id.org/ontoforge/bdo#hasDamageCategory> <https://w3id.org/ontoforge/bdo#BladeDamageCategory4> .
+<https://w3id.org/ontoforge/bdo#StructuralDamage_5> <https://w3id.org/ontoforge/bdo#hasDamageType> <https://w3id.org/ontoforge/bdo#StructuralDamage> .
+<https://w3id.org/ontoforge/bdo#StructuralDamage_5> <http://www.w3.org/2004/02/skos/core#definition> "Significant lead edge or trailing edge separation, exposing internal structure to water ingress."@en .
+# 
+# https://w3id.org/ontoforge/bdo#StructuralDamage_6
+<https://w3id.org/ontoforge/bdo#StructuralDamage_6> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ontoforge/bdo#StructuralDamage_6> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ontoforge/bdo#BladeDamage> .
+<https://w3id.org/ontoforge/bdo#StructuralDamage_6> <https://w3id.org/ontoforge/bdo#hasDamageCategory> <https://w3id.org/ontoforge/bdo#BladeDamageCategory4> .
+<https://w3id.org/ontoforge/bdo#StructuralDamage_6> <https://w3id.org/ontoforge/bdo#hasDamageType> <https://w3id.org/ontoforge/bdo#StructuralDamage> .
+<https://w3id.org/ontoforge/bdo#StructuralDamage_6> <http://www.w3.org/2004/02/skos/core#definition> "Moderate to large core gaps or missing core material."@en .
+# 
+# https://w3id.org/ontoforge/bdo#StructuralDamage_7
+<https://w3id.org/ontoforge/bdo#StructuralDamage_7> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ontoforge/bdo#StructuralDamage_7> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ontoforge/bdo#BladeDamage> .
+<https://w3id.org/ontoforge/bdo#StructuralDamage_7> <https://w3id.org/ontoforge/bdo#hasDamageCategory> <https://w3id.org/ontoforge/bdo#BladeDamageCategory4> .
+<https://w3id.org/ontoforge/bdo#StructuralDamage_7> <https://w3id.org/ontoforge/bdo#hasDamageType> <https://w3id.org/ontoforge/bdo#StructuralDamage> .
+<https://w3id.org/ontoforge/bdo#StructuralDamage_7> <http://www.w3.org/2004/02/skos/core#definition> "Leading edge erosion through shells, exposing blade internal structure."@en .
+# 
+# https://w3id.org/ontoforge/bdo#StructuralDamage_8
+<https://w3id.org/ontoforge/bdo#StructuralDamage_8> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ontoforge/bdo#StructuralDamage_8> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ontoforge/bdo#BladeDamage> .
+<https://w3id.org/ontoforge/bdo#StructuralDamage_8> <https://w3id.org/ontoforge/bdo#hasDamageCategory> <https://w3id.org/ontoforge/bdo#BladeDamageCategory4> .
+<https://w3id.org/ontoforge/bdo#StructuralDamage_8> <https://w3id.org/ontoforge/bdo#hasDamageType> <https://w3id.org/ontoforge/bdo#StructuralDamage> .
+<https://w3id.org/ontoforge/bdo#StructuralDamage_8> <http://www.w3.org/2004/02/skos/core#definition> "Broken blade bolt."@en .
+# 
+# https://w3id.org/ontoforge/bdo#StructuralDamage_9
+<https://w3id.org/ontoforge/bdo#StructuralDamage_9> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ontoforge/bdo#StructuralDamage_9> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ontoforge/bdo#BladeDamage> .
+<https://w3id.org/ontoforge/bdo#StructuralDamage_9> <https://w3id.org/ontoforge/bdo#hasDamageCategory> <https://w3id.org/ontoforge/bdo#BladeDamageCategory5> .
+<https://w3id.org/ontoforge/bdo#StructuralDamage_9> <https://w3id.org/ontoforge/bdo#hasDamageType> <https://w3id.org/ontoforge/bdo#StructuralDamage> .
+<https://w3id.org/ontoforge/bdo#StructuralDamage_9> <http://www.w3.org/2004/02/skos/core#definition> "Buckled shear webs."@en .
+# 
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

@@ -1,12 +1,25 @@
-@prefix : <http://www.semanticweb.org/rtdt/shm#> .
+@prefix : <https://w3id.org/ontoforge/bdo#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@base <http://www.semanticweb.org/rtdt/shm> .
+@base <https://w3id.org/ontoforge/bdo#> .
 
-<http://www.semanticweb.org/rtdt/shm> rdf:type owl:Ontology .
+<https://w3id.org/ontoforge/bdo#> rdf:type owl:Ontology ;
+	dcterms:modified "2025-02-17"^^xsd:date ;
+	dc:publisher <https://ost.ch/> ;
+	dcterms:rights "Copyright © 2025 OST Ostschweizer Fachhochschule" ;
+	<http://purl.org/vocab/vann/preferredNamespacePrefix> "of-bdo" ;
+	dcterms:title "Wind turbine blade damage ontology"@en ;
+	dcterms:creator <https://w3id.org/people/jpcik/me> ;
+	owl:versionInfo "0.0.2" ;
+	dcterms:issued "2025-02-15"^^xsd:date ;
+	dcterms:publisher <https://ost.ch> ;
+	dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+	<http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/ontoforge/bdo#" ;
+	dcterms:description "This ontology aims to model Blade damage based on a white paper by EPRI. The ontology is developed in the context of the xxxx project"@en ;
+	rdfs:comment "This ontology aims to model Blade damage based on a white paper by EPRI. The ontology is developed in the context of the xxxx project"@en.
 
 #################################################################
 #    Annotation properties
@@ -43,19 +56,27 @@
 #################################################################
 
 ###  http://www.semanticweb.org/rtdt/shm#BladeDamage
-:BladeDamage rdf:type owl:Class .
+:BladeDamage a owl:Class ;
+	rdfs:comment "Blade damage."@en ;
+	rdfs:label "Blade Damage"@en .
 
 
 ###  http://www.semanticweb.org/rtdt/shm#BladeDamageCategory
-:BladeDamageCategory rdf:type owl:Class .
+:BladeDamageCategory a owl:Class ;
+	rdfs:comment "Blade damage category."@en ;
+	rdfs:label "Blade Damage category"@en .
 
 
 ###  http://www.semanticweb.org/rtdt/shm#DamageType
-:DamageType rdf:type owl:Class .
+:DamageType a owl:Class ;
+	rdfs:comment "Blade damage type."@en ;
+	rdfs:label "Blade Damage type"@en .
 
 
 ###  http://www.semanticweb.org/rtdt/shm#Procedure
-:Procedure rdf:type owl:Class .
+:Procedure a owl:Class ;
+	rdfs:comment "Proceduree."@en ;
+	rdfs:label "Procedure"@en .
 
 
 #################################################################
