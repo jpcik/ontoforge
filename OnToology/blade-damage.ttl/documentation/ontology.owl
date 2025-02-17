@@ -1,0 +1,821 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/rtdt/shm#"
+     xml:base="http://www.semanticweb.org/rtdt/shm"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:shm="http://www.semanticweb.org/rtdt/shm#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/rtdt/shm"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#definition -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#definition"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.semanticweb.org/rtdt/shm#hasDamageCategory -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/rtdt/shm#hasDamageCategory">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/rtdt/shm#BladeDamage"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/rtdt/shm#BladeDamageCategory"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/rtdt/shm#hasDamageType -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/rtdt/shm#hasDamageType">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/rtdt/shm#BladeDamage"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/rtdt/shm#DamageType"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/rtdt/shm#requiresAction -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/rtdt/shm#requiresAction">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/rtdt/shm#BladeDamageCategory"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/rtdt/shm#Procedure"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.semanticweb.org/rtdt/shm#BladeDamage -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rtdt/shm#BladeDamage"/>
+    
+
+
+    <!-- http://www.semanticweb.org/rtdt/shm#BladeDamageCategory -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rtdt/shm#BladeDamageCategory"/>
+    
+
+
+    <!-- http://www.semanticweb.org/rtdt/shm#DamageType -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rtdt/shm#DamageType"/>
+    
+
+
+    <!-- http://www.semanticweb.org/rtdt/shm#Procedure -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rtdt/shm#Procedure"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.semanticweb.org/rtdt/shm#AerodynamicPerfomance -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rtdt/shm#AerodynamicPerfomance">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rtdt/shm#DamageType"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rtdt/shm#AerodynamicPerformance_1 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rtdt/shm#AerodynamicPerformance_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rtdt/shm#BladeDamage"/>
+        <hasDamageCategory rdf:resource="http://www.semanticweb.org/rtdt/shm#BladeDamageCategory2"/>
+        <hasDamageType rdf:resource="http://www.semanticweb.org/rtdt/shm#AerodynamicPerfomance"/>
+        <skos:definition xml:lang="en">Several missing aerodynamic devices (e.g. vortex generators, trailing edge devices).</skos:definition>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rtdt/shm#AerodynamicPerformance_2 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rtdt/shm#AerodynamicPerformance_2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rtdt/shm#BladeDamage"/>
+        <hasDamageCategory rdf:resource="http://www.semanticweb.org/rtdt/shm#BladeDamageCategory2"/>
+        <hasDamageType rdf:resource="http://www.semanticweb.org/rtdt/shm#AerodynamicPerfomance"/>
+        <skos:definition xml:lang="en">Heavy dirt, oil, grease, or insects on the blade surface.</skos:definition>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rtdt/shm#AerodynamicPerformance_3 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rtdt/shm#AerodynamicPerformance_3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rtdt/shm#BladeDamage"/>
+        <hasDamageCategory rdf:resource="http://www.semanticweb.org/rtdt/shm#BladeDamageCategory2"/>
+        <hasDamageType rdf:resource="http://www.semanticweb.org/rtdt/shm#AerodynamicPerfomance"/>
+        <skos:definition xml:lang="en">Early stages of leading edge erosion or other increased surface roughness.</skos:definition>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rtdt/shm#AerodynamicPerformance_4 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rtdt/shm#AerodynamicPerformance_4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rtdt/shm#BladeDamage"/>
+        <hasDamageCategory rdf:resource="http://www.semanticweb.org/rtdt/shm#BladeDamageCategory3"/>
+        <hasDamageType rdf:resource="http://www.semanticweb.org/rtdt/shm#AerodynamicPerfomance"/>
+        <skos:definition xml:lang="en">Extensive missing aerodynamic devices (e.g., vortex generators, trailing edge devices).</skos:definition>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rtdt/shm#BladeDamageCategory1 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rtdt/shm#BladeDamageCategory1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rtdt/shm#BladeDamageCategory"/>
+        <requiresAction rdf:resource="http://www.semanticweb.org/rtdt/shm#MonitoringBladeDamageCategory1"/>
+        <requiresAction rdf:resource="http://www.semanticweb.org/rtdt/shm#OperationBladeDamageCategory1"/>
+        <requiresAction rdf:resource="http://www.semanticweb.org/rtdt/shm#RepairBladeDamageCategory1"/>
+        <skos:definition xml:lang="en">Minor variances from supply specifications but within acceptable (or industry typical) tolerances; may affect the appearance of the blade or blade feature. Though minor, can be useful to identify as position references, or for blade identification.</skos:definition>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rtdt/shm#BladeDamageCategory2 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rtdt/shm#BladeDamageCategory2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rtdt/shm#BladeDamageCategory"/>
+        <requiresAction rdf:resource="http://www.semanticweb.org/rtdt/shm#MonitoringBladeDamageCategory2"/>
+        <requiresAction rdf:resource="http://www.semanticweb.org/rtdt/shm#OperationBladeDamageCategory3"/>
+        <requiresAction rdf:resource="http://www.semanticweb.org/rtdt/shm#RepairBladeDamageCategory2"/>
+        <skos:definition xml:lang="en">Minor damage or defects that exceed supply specification acceptance criteria. Multiple cosmetic findings and/or a single major cosmetic finding that are damage, defects, or former repairs. Findings exceed tolerances of supply conditions or industry typical manufacturing variability. Repairs of more severe damage or defects can be recategorized to category 2 upon review of repair.</skos:definition>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rtdt/shm#BladeDamageCategory3 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rtdt/shm#BladeDamageCategory3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rtdt/shm#BladeDamageCategory"/>
+        <requiresAction rdf:resource="http://www.semanticweb.org/rtdt/shm#MonitoringBladeDamageCategory3"/>
+        <requiresAction rdf:resource="http://www.semanticweb.org/rtdt/shm#OperationBladeDamageCategory3"/>
+        <requiresAction rdf:resource="http://www.semanticweb.org/rtdt/shm#RepairBladeDamageCategory3"/>
+        <skos:definition xml:lang="en">Moderate to minor structural damage or minor manufacturing defects in non-critical areas. Features are moderately out of compliance with supply conditions and/or below minimum typical industry practice. May present as surface indications when in fact there is damage to the underlying structural laminate. Internal inspection may be needed to determine the extent of the finding.
+May be particularly challenging to assess criticality due to lack of design data such as load margins. Findings may be category 3 when category 4 actions seem too drastic and category 2 is not appropriate, because there is a slight risk of loss of structural capability.</skos:definition>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rtdt/shm#BladeDamageCategory4 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rtdt/shm#BladeDamageCategory4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rtdt/shm#BladeDamageCategory"/>
+        <requiresAction rdf:resource="http://www.semanticweb.org/rtdt/shm#MonitoringBladeDamageCategory4"/>
+        <requiresAction rdf:resource="http://www.semanticweb.org/rtdt/shm#OperationBladeDamageCategory4"/>
+        <requiresAction rdf:resource="http://www.semanticweb.org/rtdt/shm#RepairBladeDamageCategory4"/>
+        <skos:definition xml:lang="en">Significant damage or defects that have notable impact to structural capability and/or aerodynamic performance.</skos:definition>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rtdt/shm#BladeDamageCategory5 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rtdt/shm#BladeDamageCategory5">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rtdt/shm#BladeDamageCategory"/>
+        <requiresAction rdf:resource="http://www.semanticweb.org/rtdt/shm#MonitoringBladeDamageCategory5"/>
+        <requiresAction rdf:resource="http://www.semanticweb.org/rtdt/shm#OperationBladeDamageCategory5"/>
+        <requiresAction rdf:resource="http://www.semanticweb.org/rtdt/shm#RepairBladeDamageCategory5"/>
+        <skos:definition xml:lang="en">Severe degree of damage or defect such that there is a high risk of imminent failure.</skos:definition>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rtdt/shm#CosmeticDamage -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rtdt/shm#CosmeticDamage">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rtdt/shm#DamageType"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rtdt/shm#CosmeticDamage_1 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rtdt/shm#CosmeticDamage_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rtdt/shm#BladeDamage"/>
+        <hasDamageCategory rdf:resource="http://www.semanticweb.org/rtdt/shm#BladeDamageCategory1"/>
+        <hasDamageType rdf:resource="http://www.semanticweb.org/rtdt/shm#CosmeticDamage"/>
+        <skos:definition xml:lang="en">Marks from small mold positioning devices.</skos:definition>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rtdt/shm#CosmeticDamage_2 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rtdt/shm#CosmeticDamage_2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rtdt/shm#BladeDamage"/>
+        <hasDamageCategory rdf:resource="http://www.semanticweb.org/rtdt/shm#BladeDamageCategory1"/>
+        <hasDamageType rdf:resource="http://www.semanticweb.org/rtdt/shm#CosmeticDamage"/>
+        <skos:definition xml:lang="en">Small or thin foreign objects in laminate that do not form wrinkles.</skos:definition>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rtdt/shm#CosmeticDamage_3 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rtdt/shm#CosmeticDamage_3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rtdt/shm#BladeDamage"/>
+        <hasDamageCategory rdf:resource="http://www.semanticweb.org/rtdt/shm#BladeDamageCategory1"/>
+        <hasDamageType rdf:resource="http://www.semanticweb.org/rtdt/shm#CosmeticDamage"/>
+        <skos:definition xml:lang="en">Minor variability in thickness of coatings, detectable as translucence.</skos:definition>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rtdt/shm#CosmeticDamage_4 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rtdt/shm#CosmeticDamage_4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rtdt/shm#BladeDamage"/>
+        <hasDamageCategory rdf:resource="http://www.semanticweb.org/rtdt/shm#BladeDamageCategory1"/>
+        <hasDamageType rdf:resource="http://www.semanticweb.org/rtdt/shm#CosmeticDamage"/>
+        <skos:definition xml:lang="en">Minor blade surface variability due to mold features.</skos:definition>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rtdt/shm#CosmeticDamage_5 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rtdt/shm#CosmeticDamage_5">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rtdt/shm#BladeDamage"/>
+        <hasDamageCategory rdf:resource="http://www.semanticweb.org/rtdt/shm#BladeDamageCategory1"/>
+        <hasDamageType rdf:resource="http://www.semanticweb.org/rtdt/shm#CosmeticDamage"/>
+        <skos:definition xml:lang="en">Light dirt, oil, grease, or insects on the blade surface.</skos:definition>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rtdt/shm#CosmeticDamage_6 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rtdt/shm#CosmeticDamage_6">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rtdt/shm#BladeDamage"/>
+        <hasDamageCategory rdf:resource="http://www.semanticweb.org/rtdt/shm#BladeDamageCategory1"/>
+        <hasDamageType rdf:resource="http://www.semanticweb.org/rtdt/shm#CosmeticDamage"/>
+        <skos:definition xml:lang="en">Missing or unreadable labels or stickers.</skos:definition>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rtdt/shm#CosmeticDamage_7 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rtdt/shm#CosmeticDamage_7">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rtdt/shm#BladeDamage"/>
+        <hasDamageCategory rdf:resource="http://www.semanticweb.org/rtdt/shm#BladeDamageCategory2"/>
+        <hasDamageType rdf:resource="http://www.semanticweb.org/rtdt/shm#CosmeticDamage"/>
+        <skos:definition xml:lang="en">Coating discoloration, scratches, or cracks, profile deviations in repairs, mold marks protruding from the blade surface, rough paint patches.</skos:definition>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rtdt/shm#CosmeticDamage_8 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rtdt/shm#CosmeticDamage_8">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rtdt/shm#BladeDamage"/>
+        <hasDamageCategory rdf:resource="http://www.semanticweb.org/rtdt/shm#BladeDamageCategory2"/>
+        <hasDamageType rdf:resource="http://www.semanticweb.org/rtdt/shm#CosmeticDamage"/>
+        <skos:definition xml:lang="en">Thin or flaking coating.</skos:definition>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rtdt/shm#CosmeticDamage_9 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rtdt/shm#CosmeticDamage_9">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rtdt/shm#BladeDamage"/>
+        <hasDamageCategory rdf:resource="http://www.semanticweb.org/rtdt/shm#BladeDamageCategory2"/>
+        <hasDamageType rdf:resource="http://www.semanticweb.org/rtdt/shm#CosmeticDamage"/>
+        <skos:definition xml:lang="en">Excessive oil on the internal surfaces of the blade.</skos:definition>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rtdt/shm#Defect -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rtdt/shm#Defect">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rtdt/shm#DamageType"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rtdt/shm#Defect_1 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rtdt/shm#Defect_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rtdt/shm#BladeDamage"/>
+        <hasDamageCategory rdf:resource="http://www.semanticweb.org/rtdt/shm#BladeDamageCategory2"/>
+        <hasDamageType rdf:resource="http://www.semanticweb.org/rtdt/shm#Defect"/>
+        <skos:definition xml:lang="en">Minor foreign objects in laminate resulting in small wrinkles.</skos:definition>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rtdt/shm#Defect_2 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rtdt/shm#Defect_2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rtdt/shm#BladeDamage"/>
+        <hasDamageCategory rdf:resource="http://www.semanticweb.org/rtdt/shm#BladeDamageCategory2"/>
+        <hasDamageType rdf:resource="http://www.semanticweb.org/rtdt/shm#Defect"/>
+        <skos:definition xml:lang="en">Minor manufacturing deviations that have been evaluated by an engineer and do not impact structural capability due to design margins or it is in an area of low structural criticality.</skos:definition>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rtdt/shm#Defect_3 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rtdt/shm#Defect_3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rtdt/shm#BladeDamage"/>
+        <hasDamageCategory rdf:resource="http://www.semanticweb.org/rtdt/shm#BladeDamageCategory4"/>
+        <hasDamageType rdf:resource="http://www.semanticweb.org/rtdt/shm#Defect"/>
+        <skos:definition xml:lang="en">Chordwise wrinkles of laminate fibers in highly loaded regions.</skos:definition>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rtdt/shm#Defect_4 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rtdt/shm#Defect_4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rtdt/shm#BladeDamage"/>
+        <hasDamageCategory rdf:resource="http://www.semanticweb.org/rtdt/shm#BladeDamageCategory4"/>
+        <hasDamageType rdf:resource="http://www.semanticweb.org/rtdt/shm#Defect"/>
+        <skos:definition xml:lang="en">Significant areas of underinfused or improperly cured laminate.</skos:definition>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rtdt/shm#Defect_5 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rtdt/shm#Defect_5">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rtdt/shm#BladeDamage"/>
+        <hasDamageCategory rdf:resource="http://www.semanticweb.org/rtdt/shm#BladeDamageCategory4"/>
+        <hasDamageType rdf:resource="http://www.semanticweb.org/rtdt/shm#Defect"/>
+        <skos:definition xml:lang="en">Large gaps or underbite/overbite at shell bonded joints.</skos:definition>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rtdt/shm#Defect_6 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rtdt/shm#Defect_6">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rtdt/shm#BladeDamage"/>
+        <hasDamageCategory rdf:resource="http://www.semanticweb.org/rtdt/shm#BladeDamageCategory4"/>
+        <hasDamageType rdf:resource="http://www.semanticweb.org/rtdt/shm#Defect"/>
+        <skos:definition xml:lang="en">Significant missing adhesive bond material, cavities, voids, or cracks in adhesive bonds, or significant deviations of the geometry of adhesive bonds beyond allowable limits.</skos:definition>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rtdt/shm#Defect_7 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rtdt/shm#Defect_7">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rtdt/shm#BladeDamage"/>
+        <hasDamageCategory rdf:resource="http://www.semanticweb.org/rtdt/shm#BladeDamageCategory4"/>
+        <hasDamageType rdf:resource="http://www.semanticweb.org/rtdt/shm#Defect"/>
+        <skos:definition xml:lang="en">Large foreign objects in laminates that result in significant wrinkles.</skos:definition>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rtdt/shm#LightningDamage -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rtdt/shm#LightningDamage">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rtdt/shm#DamageType"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rtdt/shm#LightningDamage_1 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rtdt/shm#LightningDamage_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rtdt/shm#BladeDamage"/>
+        <hasDamageCategory rdf:resource="http://www.semanticweb.org/rtdt/shm#BladeDamageCategory2"/>
+        <hasDamageType rdf:resource="http://www.semanticweb.org/rtdt/shm#LightningDamage"/>
+        <skos:definition xml:lang="en">Pin holes or very small marks on the blade shell where lightning was intercepted (not at the lightning receptor).</skos:definition>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rtdt/shm#LightningDamage_2 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rtdt/shm#LightningDamage_2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rtdt/shm#BladeDamage"/>
+        <hasDamageCategory rdf:resource="http://www.semanticweb.org/rtdt/shm#BladeDamageCategory4"/>
+        <hasDamageType rdf:resource="http://www.semanticweb.org/rtdt/shm#LightningDamage"/>
+        <skos:definition xml:lang="en">Laminate damage where lightning attached to blade surface, not at the intended receptor.</skos:definition>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rtdt/shm#LightningDamage_3 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rtdt/shm#LightningDamage_3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rtdt/shm#BladeDamage"/>
+        <hasDamageCategory rdf:resource="http://www.semanticweb.org/rtdt/shm#BladeDamageCategory4"/>
+        <hasDamageType rdf:resource="http://www.semanticweb.org/rtdt/shm#LightningDamage"/>
+        <skos:definition xml:lang="en">Lightning penetrated the shell, however the exterior surface appears structurally adequate.</skos:definition>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rtdt/shm#MechanicalDamage -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rtdt/shm#MechanicalDamage">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rtdt/shm#DamageType"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rtdt/shm#MonitoringBladeDamageCategory1 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rtdt/shm#MonitoringBladeDamageCategory1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rtdt/shm#Procedure"/>
+        <skos:definition xml:lang="en">None needed.</skos:definition>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rtdt/shm#MonitoringBladeDamageCategory2 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rtdt/shm#MonitoringBladeDamageCategory2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rtdt/shm#Procedure"/>
+        <skos:definition xml:lang="en">Monitor during routinely scheduled maintenance for damage initiation or progression. Depending on the damage, internal inspection may be warranted to differentiate surface cracks from more severe laminate damage.</skos:definition>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rtdt/shm#MonitoringBladeDamageCategory3 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rtdt/shm#MonitoringBladeDamageCategory3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rtdt/shm#Procedure"/>
+        <skos:definition xml:lang="en">Inspection frequency driven by assessment of risk; may be more frequent than routinely scheduled inspections recommended by the OEM. If no growth in damage over time, an engineering assessment may downgrade finding to category 2.</skos:definition>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rtdt/shm#MonitoringBladeDamageCategory4 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rtdt/shm#MonitoringBladeDamageCategory4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rtdt/shm#Procedure"/>
+        <skos:definition xml:lang="en">More frequent or more comprehensive monitoring than routine inspections are required until repairs are complete.</skos:definition>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rtdt/shm#MonitoringBladeDamageCategory5 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rtdt/shm#MonitoringBladeDamageCategory5">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rtdt/shm#Procedure"/>
+        <skos:definition xml:lang="en">If repair is implemented, repair should be deemed a Category 3 defect until sufficient operating experience is gained to provide confidence that the repair is sufficient to achieve expected remaining operating life.</skos:definition>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rtdt/shm#OperationBladeDamageCategory1 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rtdt/shm#OperationBladeDamageCategory1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rtdt/shm#Procedure"/>
+        <skos:definition xml:lang="en">Continued operation is possible.</skos:definition>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rtdt/shm#OperationBladeDamageCategory2 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rtdt/shm#OperationBladeDamageCategory2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rtdt/shm#Procedure"/>
+        <skos:definition xml:lang="en">Continued operation.</skos:definition>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rtdt/shm#OperationBladeDamageCategory3 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rtdt/shm#OperationBladeDamageCategory3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rtdt/shm#Procedure"/>
+        <skos:definition xml:lang="en">Continued operation is possible.</skos:definition>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rtdt/shm#OperationBladeDamageCategory4 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rtdt/shm#OperationBladeDamageCategory4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rtdt/shm#Procedure"/>
+        <skos:definition xml:lang="en">Engineering evaluation required to deem blade can operate until repair is scheduled. Operation shall stop if repair cannot be implemented within the allowable time period.</skos:definition>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rtdt/shm#OperationBladeDamageCategory5 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rtdt/shm#OperationBladeDamageCategory5">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rtdt/shm#Procedure"/>
+        <skos:definition xml:lang="en">The blade is not safe to operate until the damage or defect is repaired or the blade is replaced.</skos:definition>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rtdt/shm#RepairBladeDamageCategory1 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rtdt/shm#RepairBladeDamageCategory1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rtdt/shm#Procedure"/>
+        <skos:definition xml:lang="en">None needed, though some can be remedied with minimal effort in conjunction with other blade maintenance activities.</skos:definition>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rtdt/shm#RepairBladeDamageCategory2 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rtdt/shm#RepairBladeDamageCategory2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rtdt/shm#Procedure"/>
+        <skos:definition xml:lang="en">Repair is perfomed based on cost/benefit analysis.</skos:definition>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rtdt/shm#RepairBladeDamageCategory3 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rtdt/shm#RepairBladeDamageCategory3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rtdt/shm#Procedure"/>
+        <skos:definition xml:lang="en">Repair is performed based on circumstances, criticality, and O&amp;M approach. If found during manufacturing, should be repaired prior to installation. Investigation and repair or replacement of missing aerodynamic devices should be performed to regain energy capture benefits. Timing of repairs can be linked to other blade-related needs. Leading edge erosion or small external cracks should be repaired to prevent damage progression.</skos:definition>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rtdt/shm#RepairBladeDamageCategory4 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rtdt/shm#RepairBladeDamageCategory4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rtdt/shm#Procedure"/>
+        <skos:definition xml:lang="en">Repair within a limited number of months of initial observation. Repairs may be performed uptower or blade should be repaired prior to installation and a manufacturing quality assessment should be undertaken to find and correct root causes.</skos:definition>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rtdt/shm#RepairBladeDamageCategory5 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rtdt/shm#RepairBladeDamageCategory5">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rtdt/shm#Procedure"/>
+        <skos:definition xml:lang="en">Replace, or repair depending on repair feasibility and cost/benefit relative to replacement.</skos:definition>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rtdt/shm#StructuralDamage -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rtdt/shm#StructuralDamage">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rtdt/shm#DamageType"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rtdt/shm#StructuralDamage_1 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rtdt/shm#StructuralDamage_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rtdt/shm#BladeDamage"/>
+        <hasDamageCategory rdf:resource="http://www.semanticweb.org/rtdt/shm#BladeDamageCategory3"/>
+        <hasDamageType rdf:resource="http://www.semanticweb.org/rtdt/shm#StructuralDamage"/>
+        <skos:definition xml:lang="en">Small cracks in shells or along leading or trailing edge bonds, small areas of underinfused laminate, voids in adhesive bonds.</skos:definition>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rtdt/shm#StructuralDamage_10 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rtdt/shm#StructuralDamage_10">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rtdt/shm#BladeDamage"/>
+        <hasDamageCategory rdf:resource="http://www.semanticweb.org/rtdt/shm#BladeDamageCategory5"/>
+        <hasDamageType rdf:resource="http://www.semanticweb.org/rtdt/shm#StructuralDamage"/>
+        <skos:definition xml:lang="en">Separation of shear webs from spar caps.</skos:definition>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rtdt/shm#StructuralDamage_11 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rtdt/shm#StructuralDamage_11">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rtdt/shm#BladeDamage"/>
+        <hasDamageCategory rdf:resource="http://www.semanticweb.org/rtdt/shm#BladeDamageCategory5"/>
+        <hasDamageType rdf:resource="http://www.semanticweb.org/rtdt/shm#StructuralDamage"/>
+        <skos:definition xml:lang="en">Numerous broken blade bolts.</skos:definition>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rtdt/shm#StructuralDamage_12 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rtdt/shm#StructuralDamage_12">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rtdt/shm#BladeDamage"/>
+        <hasDamageCategory rdf:resource="http://www.semanticweb.org/rtdt/shm#BladeDamageCategory5"/>
+        <hasDamageType rdf:resource="http://www.semanticweb.org/rtdt/shm#StructuralDamage"/>
+        <skos:definition xml:lang="en">Significant chordwise or spanwise cracks or large delaminations in shells.</skos:definition>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rtdt/shm#StructuralDamage_2 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rtdt/shm#StructuralDamage_2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rtdt/shm#BladeDamage"/>
+        <hasDamageCategory rdf:resource="http://www.semanticweb.org/rtdt/shm#BladeDamageCategory3"/>
+        <hasDamageType rdf:resource="http://www.semanticweb.org/rtdt/shm#StructuralDamage"/>
+        <skos:definition xml:lang="en">Significant root face laminate wrinkles.</skos:definition>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rtdt/shm#StructuralDamage_3 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rtdt/shm#StructuralDamage_3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rtdt/shm#BladeDamage"/>
+        <hasDamageCategory rdf:resource="http://www.semanticweb.org/rtdt/shm#BladeDamageCategory3"/>
+        <hasDamageType rdf:resource="http://www.semanticweb.org/rtdt/shm#StructuralDamage"/>
+        <skos:definition xml:lang="en">Spanwise wrinkles in laminate.</skos:definition>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rtdt/shm#StructuralDamage_4 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rtdt/shm#StructuralDamage_4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rtdt/shm#BladeDamage"/>
+        <hasDamageCategory rdf:resource="http://www.semanticweb.org/rtdt/shm#BladeDamageCategory4"/>
+        <hasDamageType rdf:resource="http://www.semanticweb.org/rtdt/shm#StructuralDamage"/>
+        <skos:definition xml:lang="en">Significant cracks, delamination, buckling of shells.</skos:definition>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rtdt/shm#StructuralDamage_5 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rtdt/shm#StructuralDamage_5">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rtdt/shm#BladeDamage"/>
+        <hasDamageCategory rdf:resource="http://www.semanticweb.org/rtdt/shm#BladeDamageCategory4"/>
+        <hasDamageType rdf:resource="http://www.semanticweb.org/rtdt/shm#StructuralDamage"/>
+        <skos:definition xml:lang="en">Significant lead edge or trailing edge separation, exposing internal structure to water ingress.</skos:definition>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rtdt/shm#StructuralDamage_6 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rtdt/shm#StructuralDamage_6">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rtdt/shm#BladeDamage"/>
+        <hasDamageCategory rdf:resource="http://www.semanticweb.org/rtdt/shm#BladeDamageCategory4"/>
+        <hasDamageType rdf:resource="http://www.semanticweb.org/rtdt/shm#StructuralDamage"/>
+        <skos:definition xml:lang="en">Moderate to large core gaps or missing core material.</skos:definition>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rtdt/shm#StructuralDamage_7 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rtdt/shm#StructuralDamage_7">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rtdt/shm#BladeDamage"/>
+        <hasDamageCategory rdf:resource="http://www.semanticweb.org/rtdt/shm#BladeDamageCategory4"/>
+        <hasDamageType rdf:resource="http://www.semanticweb.org/rtdt/shm#StructuralDamage"/>
+        <skos:definition xml:lang="en">Leading edge erosion through shells, exposing blade internal structure.</skos:definition>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rtdt/shm#StructuralDamage_8 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rtdt/shm#StructuralDamage_8">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rtdt/shm#BladeDamage"/>
+        <hasDamageCategory rdf:resource="http://www.semanticweb.org/rtdt/shm#BladeDamageCategory4"/>
+        <hasDamageType rdf:resource="http://www.semanticweb.org/rtdt/shm#StructuralDamage"/>
+        <skos:definition xml:lang="en">Broken blade bolt.</skos:definition>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rtdt/shm#StructuralDamage_9 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rtdt/shm#StructuralDamage_9">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rtdt/shm#BladeDamage"/>
+        <hasDamageCategory rdf:resource="http://www.semanticweb.org/rtdt/shm#BladeDamageCategory5"/>
+        <hasDamageType rdf:resource="http://www.semanticweb.org/rtdt/shm#StructuralDamage"/>
+        <skos:definition xml:lang="en">Buckled shear webs.</skos:definition>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/ -->
+
+
