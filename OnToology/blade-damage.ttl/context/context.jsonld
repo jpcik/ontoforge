@@ -1,0 +1,31 @@
+{
+  "@context" : {
+    "definition" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#definition"
+    },
+    "requiresAction" : {
+      "@id" : "http://www.semanticweb.org/rtdt/shm#requiresAction",
+      "@type" : "@id"
+    },
+    "hasDamageType" : {
+      "@id" : "http://www.semanticweb.org/rtdt/shm#hasDamageType",
+      "@type" : "@id"
+    },
+    "hasDamageCategory" : {
+      "@id" : "http://www.semanticweb.org/rtdt/shm#hasDamageCategory",
+      "@type" : "@id"
+    },
+    "BladeDamage" : {
+      "@id" : "http://www.semanticweb.org/rtdt/shm#BladeDamage"
+    },
+    "Procedure" : {
+      "@id" : "http://www.semanticweb.org/rtdt/shm#Procedure"
+    },
+    "DamageType" : {
+      "@id" : "http://www.semanticweb.org/rtdt/shm#DamageType"
+    },
+    "BladeDamageCategory" : {
+      "@id" : "http://www.semanticweb.org/rtdt/shm#BladeDamageCategory"
+    }
+  }
+}
