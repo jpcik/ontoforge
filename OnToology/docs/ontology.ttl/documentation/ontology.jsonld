@@ -1,0 +1,877 @@
+[ {
+  "@id" : "http://www.semanticweb.org/rtdt/shm",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ]
+}, {
+  "@id" : "http://www.semanticweb.org/rtdt/shm#AerodynamicPerfomance",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/rtdt/shm#DamageType"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/rtdt/shm#AerodynamicPerformance_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/rtdt/shm#hasDamageCategory" : [ {
+    "@id" : "http://www.semanticweb.org/rtdt/shm#BladeDamageCategory2"
+  } ],
+  "http://www.semanticweb.org/rtdt/shm#hasDamageType" : [ {
+    "@id" : "http://www.semanticweb.org/rtdt/shm#AerodynamicPerfomance"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/rtdt/shm#BladeDamage"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Several missing aerodynamic devices (e.g. vortex generators, trailing edge devices)."
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/rtdt/shm#AerodynamicPerformance_2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/rtdt/shm#hasDamageCategory" : [ {
+    "@id" : "http://www.semanticweb.org/rtdt/shm#BladeDamageCategory2"
+  } ],
+  "http://www.semanticweb.org/rtdt/shm#hasDamageType" : [ {
+    "@id" : "http://www.semanticweb.org/rtdt/shm#AerodynamicPerfomance"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/rtdt/shm#BladeDamage"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Heavy dirt, oil, grease, or insects on the blade surface."
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/rtdt/shm#AerodynamicPerformance_3",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/rtdt/shm#hasDamageCategory" : [ {
+    "@id" : "http://www.semanticweb.org/rtdt/shm#BladeDamageCategory2"
+  } ],
+  "http://www.semanticweb.org/rtdt/shm#hasDamageType" : [ {
+    "@id" : "http://www.semanticweb.org/rtdt/shm#AerodynamicPerfomance"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/rtdt/shm#BladeDamage"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Early stages of leading edge erosion or other increased surface roughness."
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/rtdt/shm#AerodynamicPerformance_4",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/rtdt/shm#hasDamageCategory" : [ {
+    "@id" : "http://www.semanticweb.org/rtdt/shm#BladeDamageCategory3"
+  } ],
+  "http://www.semanticweb.org/rtdt/shm#hasDamageType" : [ {
+    "@id" : "http://www.semanticweb.org/rtdt/shm#AerodynamicPerfomance"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/rtdt/shm#BladeDamage"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Extensive missing aerodynamic devices (e.g., vortex generators, trailing edge devices)."
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/rtdt/shm#BladeDamage",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.semanticweb.org/rtdt/shm#BladeDamageCategory",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.semanticweb.org/rtdt/shm#BladeDamageCategory1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/rtdt/shm#requiresAction" : [ {
+    "@id" : "http://www.semanticweb.org/rtdt/shm#MonitoringBladeDamageCategory1"
+  }, {
+    "@id" : "http://www.semanticweb.org/rtdt/shm#OperationBladeDamageCategory1"
+  }, {
+    "@id" : "http://www.semanticweb.org/rtdt/shm#RepairBladeDamageCategory1"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/rtdt/shm#BladeDamageCategory"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Minor variances from supply specifications but within acceptable (or industry typical) tolerances; may affect the appearance of the blade or blade feature. Though minor, can be useful to identify as position references, or for blade identification."
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/rtdt/shm#BladeDamageCategory2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/rtdt/shm#requiresAction" : [ {
+    "@id" : "http://www.semanticweb.org/rtdt/shm#MonitoringBladeDamageCategory2"
+  }, {
+    "@id" : "http://www.semanticweb.org/rtdt/shm#OperationBladeDamageCategory3"
+  }, {
+    "@id" : "http://www.semanticweb.org/rtdt/shm#RepairBladeDamageCategory2"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/rtdt/shm#BladeDamageCategory"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Minor damage or defects that exceed supply specification acceptance criteria. Multiple cosmetic findings and/or a single major cosmetic finding that are damage, defects, or former repairs. Findings exceed tolerances of supply conditions or industry typical manufacturing variability. Repairs of more severe damage or defects can be recategorized to category 2 upon review of repair."
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/rtdt/shm#BladeDamageCategory3",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/rtdt/shm#requiresAction" : [ {
+    "@id" : "http://www.semanticweb.org/rtdt/shm#MonitoringBladeDamageCategory3"
+  }, {
+    "@id" : "http://www.semanticweb.org/rtdt/shm#OperationBladeDamageCategory3"
+  }, {
+    "@id" : "http://www.semanticweb.org/rtdt/shm#RepairBladeDamageCategory3"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/rtdt/shm#BladeDamageCategory"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Moderate to minor structural damage or minor manufacturing defects in non-critical areas. Features are moderately out of compliance with supply conditions and/or below minimum typical industry practice. May present as surface indications when in fact there is damage to the underlying structural laminate. Internal inspection may be needed to determine the extent of the finding.\nMay be particularly challenging to assess criticality due to lack of design data such as load margins. Findings may be category 3 when category 4 actions seem too drastic and category 2 is not appropriate, because there is a slight risk of loss of structural capability."
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/rtdt/shm#BladeDamageCategory4",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/rtdt/shm#requiresAction" : [ {
+    "@id" : "http://www.semanticweb.org/rtdt/shm#MonitoringBladeDamageCategory4"
+  }, {
+    "@id" : "http://www.semanticweb.org/rtdt/shm#OperationBladeDamageCategory4"
+  }, {
+    "@id" : "http://www.semanticweb.org/rtdt/shm#RepairBladeDamageCategory4"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/rtdt/shm#BladeDamageCategory"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Significant damage or defects that have notable impact to structural capability and/or aerodynamic performance."
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/rtdt/shm#BladeDamageCategory5",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/rtdt/shm#requiresAction" : [ {
+    "@id" : "http://www.semanticweb.org/rtdt/shm#MonitoringBladeDamageCategory5"
+  }, {
+    "@id" : "http://www.semanticweb.org/rtdt/shm#OperationBladeDamageCategory5"
+  }, {
+    "@id" : "http://www.semanticweb.org/rtdt/shm#RepairBladeDamageCategory5"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/rtdt/shm#BladeDamageCategory"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Severe degree of damage or defect such that there is a high risk of imminent failure."
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/rtdt/shm#CosmeticDamage",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/rtdt/shm#DamageType"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/rtdt/shm#CosmeticDamage_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/rtdt/shm#hasDamageCategory" : [ {
+    "@id" : "http://www.semanticweb.org/rtdt/shm#BladeDamageCategory1"
+  } ],
+  "http://www.semanticweb.org/rtdt/shm#hasDamageType" : [ {
+    "@id" : "http://www.semanticweb.org/rtdt/shm#CosmeticDamage"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/rtdt/shm#BladeDamage"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Marks from small mold positioning devices."
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/rtdt/shm#CosmeticDamage_2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/rtdt/shm#hasDamageCategory" : [ {
+    "@id" : "http://www.semanticweb.org/rtdt/shm#BladeDamageCategory1"
+  } ],
+  "http://www.semanticweb.org/rtdt/shm#hasDamageType" : [ {
+    "@id" : "http://www.semanticweb.org/rtdt/shm#CosmeticDamage"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/rtdt/shm#BladeDamage"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Small or thin foreign objects in laminate that do not form wrinkles."
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/rtdt/shm#CosmeticDamage_3",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/rtdt/shm#hasDamageCategory" : [ {
+    "@id" : "http://www.semanticweb.org/rtdt/shm#BladeDamageCategory1"
+  } ],
+  "http://www.semanticweb.org/rtdt/shm#hasDamageType" : [ {
+    "@id" : "http://www.semanticweb.org/rtdt/shm#CosmeticDamage"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/rtdt/shm#BladeDamage"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Minor variability in thickness of coatings, detectable as translucence."
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/rtdt/shm#CosmeticDamage_4",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/rtdt/shm#hasDamageCategory" : [ {
+    "@id" : "http://www.semanticweb.org/rtdt/shm#BladeDamageCategory1"
+  } ],
+  "http://www.semanticweb.org/rtdt/shm#hasDamageType" : [ {
+    "@id" : "http://www.semanticweb.org/rtdt/shm#CosmeticDamage"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/rtdt/shm#BladeDamage"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Minor blade surface variability due to mold features."
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/rtdt/shm#CosmeticDamage_5",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/rtdt/shm#hasDamageCategory" : [ {
+    "@id" : "http://www.semanticweb.org/rtdt/shm#BladeDamageCategory1"
+  } ],
+  "http://www.semanticweb.org/rtdt/shm#hasDamageType" : [ {
+    "@id" : "http://www.semanticweb.org/rtdt/shm#CosmeticDamage"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/rtdt/shm#BladeDamage"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Light dirt, oil, grease, or insects on the blade surface."
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/rtdt/shm#CosmeticDamage_6",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/rtdt/shm#hasDamageCategory" : [ {
+    "@id" : "http://www.semanticweb.org/rtdt/shm#BladeDamageCategory1"
+  } ],
+  "http://www.semanticweb.org/rtdt/shm#hasDamageType" : [ {
+    "@id" : "http://www.semanticweb.org/rtdt/shm#CosmeticDamage"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/rtdt/shm#BladeDamage"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Missing or unreadable labels or stickers."
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/rtdt/shm#CosmeticDamage_7",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/rtdt/shm#hasDamageCategory" : [ {
+    "@id" : "http://www.semanticweb.org/rtdt/shm#BladeDamageCategory2"
+  } ],
+  "http://www.semanticweb.org/rtdt/shm#hasDamageType" : [ {
+    "@id" : "http://www.semanticweb.org/rtdt/shm#CosmeticDamage"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/rtdt/shm#BladeDamage"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Coating discoloration, scratches, or cracks, profile deviations in repairs, mold marks protruding from the blade surface, rough paint patches."
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/rtdt/shm#CosmeticDamage_8",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/rtdt/shm#hasDamageCategory" : [ {
+    "@id" : "http://www.semanticweb.org/rtdt/shm#BladeDamageCategory2"
+  } ],
+  "http://www.semanticweb.org/rtdt/shm#hasDamageType" : [ {
+    "@id" : "http://www.semanticweb.org/rtdt/shm#CosmeticDamage"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/rtdt/shm#BladeDamage"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Thin or flaking coating."
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/rtdt/shm#CosmeticDamage_9",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/rtdt/shm#hasDamageCategory" : [ {
+    "@id" : "http://www.semanticweb.org/rtdt/shm#BladeDamageCategory2"
+  } ],
+  "http://www.semanticweb.org/rtdt/shm#hasDamageType" : [ {
+    "@id" : "http://www.semanticweb.org/rtdt/shm#CosmeticDamage"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/rtdt/shm#BladeDamage"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Excessive oil on the internal surfaces of the blade."
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/rtdt/shm#DamageType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.semanticweb.org/rtdt/shm#Defect",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/rtdt/shm#DamageType"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/rtdt/shm#Defect_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/rtdt/shm#hasDamageCategory" : [ {
+    "@id" : "http://www.semanticweb.org/rtdt/shm#BladeDamageCategory2"
+  } ],
+  "http://www.semanticweb.org/rtdt/shm#hasDamageType" : [ {
+    "@id" : "http://www.semanticweb.org/rtdt/shm#Defect"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/rtdt/shm#BladeDamage"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Minor foreign objects in laminate resulting in small wrinkles."
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/rtdt/shm#Defect_2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/rtdt/shm#hasDamageCategory" : [ {
+    "@id" : "http://www.semanticweb.org/rtdt/shm#BladeDamageCategory2"
+  } ],
+  "http://www.semanticweb.org/rtdt/shm#hasDamageType" : [ {
+    "@id" : "http://www.semanticweb.org/rtdt/shm#Defect"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/rtdt/shm#BladeDamage"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Minor manufacturing deviations that have been evaluated by an engineer and do not impact structural capability due to design margins or it is in an area of low structural criticality."
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/rtdt/shm#Defect_3",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/rtdt/shm#hasDamageCategory" : [ {
+    "@id" : "http://www.semanticweb.org/rtdt/shm#BladeDamageCategory4"
+  } ],
+  "http://www.semanticweb.org/rtdt/shm#hasDamageType" : [ {
+    "@id" : "http://www.semanticweb.org/rtdt/shm#Defect"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/rtdt/shm#BladeDamage"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Chordwise wrinkles of laminate fibers in highly loaded regions."
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/rtdt/shm#Defect_4",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/rtdt/shm#hasDamageCategory" : [ {
+    "@id" : "http://www.semanticweb.org/rtdt/shm#BladeDamageCategory4"
+  } ],
+  "http://www.semanticweb.org/rtdt/shm#hasDamageType" : [ {
+    "@id" : "http://www.semanticweb.org/rtdt/shm#Defect"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/rtdt/shm#BladeDamage"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Significant areas of underinfused or improperly cured laminate."
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/rtdt/shm#Defect_5",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/rtdt/shm#hasDamageCategory" : [ {
+    "@id" : "http://www.semanticweb.org/rtdt/shm#BladeDamageCategory4"
+  } ],
+  "http://www.semanticweb.org/rtdt/shm#hasDamageType" : [ {
+    "@id" : "http://www.semanticweb.org/rtdt/shm#Defect"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/rtdt/shm#BladeDamage"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Large gaps or underbite/overbite at shell bonded joints."
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/rtdt/shm#Defect_6",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/rtdt/shm#hasDamageCategory" : [ {
+    "@id" : "http://www.semanticweb.org/rtdt/shm#BladeDamageCategory4"
+  } ],
+  "http://www.semanticweb.org/rtdt/shm#hasDamageType" : [ {
+    "@id" : "http://www.semanticweb.org/rtdt/shm#Defect"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/rtdt/shm#BladeDamage"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Significant missing adhesive bond material, cavities, voids, or cracks in adhesive bonds, or significant deviations of the geometry of adhesive bonds beyond allowable limits."
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/rtdt/shm#Defect_7",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/rtdt/shm#hasDamageCategory" : [ {
+    "@id" : "http://www.semanticweb.org/rtdt/shm#BladeDamageCategory4"
+  } ],
+  "http://www.semanticweb.org/rtdt/shm#hasDamageType" : [ {
+    "@id" : "http://www.semanticweb.org/rtdt/shm#Defect"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/rtdt/shm#BladeDamage"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Large foreign objects in laminates that result in significant wrinkles."
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/rtdt/shm#LightningDamage",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/rtdt/shm#DamageType"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/rtdt/shm#LightningDamage_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/rtdt/shm#hasDamageCategory" : [ {
+    "@id" : "http://www.semanticweb.org/rtdt/shm#BladeDamageCategory2"
+  } ],
+  "http://www.semanticweb.org/rtdt/shm#hasDamageType" : [ {
+    "@id" : "http://www.semanticweb.org/rtdt/shm#LightningDamage"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/rtdt/shm#BladeDamage"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Pin holes or very small marks on the blade shell where lightning was intercepted (not at the lightning receptor)."
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/rtdt/shm#LightningDamage_2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/rtdt/shm#hasDamageCategory" : [ {
+    "@id" : "http://www.semanticweb.org/rtdt/shm#BladeDamageCategory4"
+  } ],
+  "http://www.semanticweb.org/rtdt/shm#hasDamageType" : [ {
+    "@id" : "http://www.semanticweb.org/rtdt/shm#LightningDamage"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/rtdt/shm#BladeDamage"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Laminate damage where lightning attached to blade surface, not at the intended receptor."
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/rtdt/shm#LightningDamage_3",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/rtdt/shm#hasDamageCategory" : [ {
+    "@id" : "http://www.semanticweb.org/rtdt/shm#BladeDamageCategory4"
+  } ],
+  "http://www.semanticweb.org/rtdt/shm#hasDamageType" : [ {
+    "@id" : "http://www.semanticweb.org/rtdt/shm#LightningDamage"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/rtdt/shm#BladeDamage"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Lightning penetrated the shell, however the exterior surface appears structurally adequate."
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/rtdt/shm#MechanicalDamage",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/rtdt/shm#DamageType"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/rtdt/shm#MonitoringBladeDamageCategory1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/rtdt/shm#Procedure"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "None needed."
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/rtdt/shm#MonitoringBladeDamageCategory2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/rtdt/shm#Procedure"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Monitor during routinely scheduled maintenance for damage initiation or progression. Depending on the damage, internal inspection may be warranted to differentiate surface cracks from more severe laminate damage."
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/rtdt/shm#MonitoringBladeDamageCategory3",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/rtdt/shm#Procedure"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Inspection frequency driven by assessment of risk; may be more frequent than routinely scheduled inspections recommended by the OEM. If no growth in damage over time, an engineering assessment may downgrade finding to category 2."
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/rtdt/shm#MonitoringBladeDamageCategory4",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/rtdt/shm#Procedure"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "More frequent or more comprehensive monitoring than routine inspections are required until repairs are complete."
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/rtdt/shm#MonitoringBladeDamageCategory5",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/rtdt/shm#Procedure"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "If repair is implemented, repair should be deemed a Category 3 defect until sufficient operating experience is gained to provide confidence that the repair is sufficient to achieve expected remaining operating life."
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/rtdt/shm#OperationBladeDamageCategory1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/rtdt/shm#Procedure"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Continued operation is possible."
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/rtdt/shm#OperationBladeDamageCategory2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/rtdt/shm#Procedure"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Continued operation."
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/rtdt/shm#OperationBladeDamageCategory3",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/rtdt/shm#Procedure"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Continued operation is possible."
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/rtdt/shm#OperationBladeDamageCategory4",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/rtdt/shm#Procedure"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Engineering evaluation required to deem blade can operate until repair is scheduled. Operation shall stop if repair cannot be implemented within the allowable time period."
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/rtdt/shm#OperationBladeDamageCategory5",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/rtdt/shm#Procedure"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "The blade is not safe to operate until the damage or defect is repaired or the blade is replaced."
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/rtdt/shm#Procedure",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.semanticweb.org/rtdt/shm#RepairBladeDamageCategory1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/rtdt/shm#Procedure"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "None needed, though some can be remedied with minimal effort in conjunction with other blade maintenance activities."
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/rtdt/shm#RepairBladeDamageCategory2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/rtdt/shm#Procedure"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Repair is perfomed based on cost/benefit analysis."
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/rtdt/shm#RepairBladeDamageCategory3",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/rtdt/shm#Procedure"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Repair is performed based on circumstances, criticality, and O&M approach. If found during manufacturing, should be repaired prior to installation. Investigation and repair or replacement of missing aerodynamic devices should be performed to regain energy capture benefits. Timing of repairs can be linked to other blade-related needs. Leading edge erosion or small external cracks should be repaired to prevent damage progression."
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/rtdt/shm#RepairBladeDamageCategory4",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/rtdt/shm#Procedure"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Repair within a limited number of months of initial observation. Repairs may be performed uptower or blade should be repaired prior to installation and a manufacturing quality assessment should be undertaken to find and correct root causes."
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/rtdt/shm#RepairBladeDamageCategory5",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/rtdt/shm#Procedure"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Replace, or repair depending on repair feasibility and cost/benefit relative to replacement."
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/rtdt/shm#StructuralDamage",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/rtdt/shm#DamageType"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/rtdt/shm#StructuralDamage_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/rtdt/shm#hasDamageCategory" : [ {
+    "@id" : "http://www.semanticweb.org/rtdt/shm#BladeDamageCategory3"
+  } ],
+  "http://www.semanticweb.org/rtdt/shm#hasDamageType" : [ {
+    "@id" : "http://www.semanticweb.org/rtdt/shm#StructuralDamage"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/rtdt/shm#BladeDamage"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Small cracks in shells or along leading or trailing edge bonds, small areas of underinfused laminate, voids in adhesive bonds."
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/rtdt/shm#StructuralDamage_10",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/rtdt/shm#hasDamageCategory" : [ {
+    "@id" : "http://www.semanticweb.org/rtdt/shm#BladeDamageCategory5"
+  } ],
+  "http://www.semanticweb.org/rtdt/shm#hasDamageType" : [ {
+    "@id" : "http://www.semanticweb.org/rtdt/shm#StructuralDamage"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/rtdt/shm#BladeDamage"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Separation of shear webs from spar caps."
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/rtdt/shm#StructuralDamage_11",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/rtdt/shm#hasDamageCategory" : [ {
+    "@id" : "http://www.semanticweb.org/rtdt/shm#BladeDamageCategory5"
+  } ],
+  "http://www.semanticweb.org/rtdt/shm#hasDamageType" : [ {
+    "@id" : "http://www.semanticweb.org/rtdt/shm#StructuralDamage"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/rtdt/shm#BladeDamage"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Numerous broken blade bolts."
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/rtdt/shm#StructuralDamage_12",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/rtdt/shm#hasDamageCategory" : [ {
+    "@id" : "http://www.semanticweb.org/rtdt/shm#BladeDamageCategory5"
+  } ],
+  "http://www.semanticweb.org/rtdt/shm#hasDamageType" : [ {
+    "@id" : "http://www.semanticweb.org/rtdt/shm#StructuralDamage"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/rtdt/shm#BladeDamage"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Significant chordwise or spanwise cracks or large delaminations in shells."
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/rtdt/shm#StructuralDamage_2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/rtdt/shm#hasDamageCategory" : [ {
+    "@id" : "http://www.semanticweb.org/rtdt/shm#BladeDamageCategory3"
+  } ],
+  "http://www.semanticweb.org/rtdt/shm#hasDamageType" : [ {
+    "@id" : "http://www.semanticweb.org/rtdt/shm#StructuralDamage"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/rtdt/shm#BladeDamage"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Significant root face laminate wrinkles."
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/rtdt/shm#StructuralDamage_3",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/rtdt/shm#hasDamageCategory" : [ {
+    "@id" : "http://www.semanticweb.org/rtdt/shm#BladeDamageCategory3"
+  } ],
+  "http://www.semanticweb.org/rtdt/shm#hasDamageType" : [ {
+    "@id" : "http://www.semanticweb.org/rtdt/shm#StructuralDamage"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/rtdt/shm#BladeDamage"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Spanwise wrinkles in laminate."
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/rtdt/shm#StructuralDamage_4",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/rtdt/shm#hasDamageCategory" : [ {
+    "@id" : "http://www.semanticweb.org/rtdt/shm#BladeDamageCategory4"
+  } ],
+  "http://www.semanticweb.org/rtdt/shm#hasDamageType" : [ {
+    "@id" : "http://www.semanticweb.org/rtdt/shm#StructuralDamage"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/rtdt/shm#BladeDamage"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Significant cracks, delamination, buckling of shells."
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/rtdt/shm#StructuralDamage_5",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/rtdt/shm#hasDamageCategory" : [ {
+    "@id" : "http://www.semanticweb.org/rtdt/shm#BladeDamageCategory4"
+  } ],
+  "http://www.semanticweb.org/rtdt/shm#hasDamageType" : [ {
+    "@id" : "http://www.semanticweb.org/rtdt/shm#StructuralDamage"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/rtdt/shm#BladeDamage"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Significant lead edge or trailing edge separation, exposing internal structure to water ingress."
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/rtdt/shm#StructuralDamage_6",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/rtdt/shm#hasDamageCategory" : [ {
+    "@id" : "http://www.semanticweb.org/rtdt/shm#BladeDamageCategory4"
+  } ],
+  "http://www.semanticweb.org/rtdt/shm#hasDamageType" : [ {
+    "@id" : "http://www.semanticweb.org/rtdt/shm#StructuralDamage"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/rtdt/shm#BladeDamage"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Moderate to large core gaps or missing core material."
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/rtdt/shm#StructuralDamage_7",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/rtdt/shm#hasDamageCategory" : [ {
+    "@id" : "http://www.semanticweb.org/rtdt/shm#BladeDamageCategory4"
+  } ],
+  "http://www.semanticweb.org/rtdt/shm#hasDamageType" : [ {
+    "@id" : "http://www.semanticweb.org/rtdt/shm#StructuralDamage"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/rtdt/shm#BladeDamage"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Leading edge erosion through shells, exposing blade internal structure."
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/rtdt/shm#StructuralDamage_8",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/rtdt/shm#hasDamageCategory" : [ {
+    "@id" : "http://www.semanticweb.org/rtdt/shm#BladeDamageCategory4"
+  } ],
+  "http://www.semanticweb.org/rtdt/shm#hasDamageType" : [ {
+    "@id" : "http://www.semanticweb.org/rtdt/shm#StructuralDamage"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/rtdt/shm#BladeDamage"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Broken blade bolt."
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/rtdt/shm#StructuralDamage_9",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/rtdt/shm#hasDamageCategory" : [ {
+    "@id" : "http://www.semanticweb.org/rtdt/shm#BladeDamageCategory5"
+  } ],
+  "http://www.semanticweb.org/rtdt/shm#hasDamageType" : [ {
+    "@id" : "http://www.semanticweb.org/rtdt/shm#StructuralDamage"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/rtdt/shm#BladeDamage"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Buckled shear webs."
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/rtdt/shm#hasDamageCategory",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/rtdt/shm#BladeDamage"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/rtdt/shm#BladeDamageCategory"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/rtdt/shm#hasDamageType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/rtdt/shm#BladeDamage"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/rtdt/shm#DamageType"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/rtdt/shm#requiresAction",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/rtdt/shm#BladeDamageCategory"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/rtdt/shm#Procedure"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/2004/02/skos/core#definition",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+} ]
