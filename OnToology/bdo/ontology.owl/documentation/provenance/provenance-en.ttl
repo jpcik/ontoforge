@@ -1,0 +1,10 @@
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix : <> .
+<..\index-en.html> a prov:Entity;
+	 dc:title "Wind turbine blade damage ontology";
+	 prov:wasAttributedTo <https://w3id.org/people/jpcik/me>;
+	 dc:creator <https://w3id.org/people/jpcik/me>;
+	 prov:wasAttributedTo <https://github.com/dgarijo/Widoco/>,<http://www.essepuntato.it/lode/>;
+.

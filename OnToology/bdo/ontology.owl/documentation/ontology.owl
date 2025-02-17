@@ -1,0 +1,938 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://w3id.org/ontoforge/bdo#"
+     xml:base="https://w3id.org/ontoforge/bdo"
+     xmlns:bdo="https://w3id.org/ontoforge/bdo#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:terms="http://purl.org/dc/terms/">
+    <owl:Ontology rdf:about="https://w3id.org/ontoforge/bdo#">
+        <terms:creator rdf:resource="https://w3id.org/people/jpcik/me"/>
+        <terms:description xml:lang="en">This ontology aims to model Blade damage based on a white paper by EPRI. The ontology is developed in the context of the xxxx project</terms:description>
+        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-02-15</terms:issued>
+        <terms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-02-17</terms:modified>
+        <terms:publisher rdf:resource="https://ost.ch"/>
+        <terms:publisher rdf:resource="https://ost.ch/"/>
+        <terms:rights>Copyright © 2025 OST Ostschweizer Fachhochschule</terms:rights>
+        <terms:title xml:lang="en">Wind turbine blade damage ontology</terms:title>
+        <vann:preferredNamespacePrefix>of-bdo</vann:preferredNamespacePrefix>
+        <vann:preferredNamespaceUri>https://w3id.org/ontoforge/bdo#</vann:preferredNamespaceUri>
+        <rdfs:comment xml:lang="en">This ontology aims to model Blade damage based on a white paper by EPRI. The ontology is developed in the context of the xxxx project</rdfs:comment>
+        <owl:versionInfo>0.0.2</owl:versionInfo>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/description -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/issued -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/issued"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/license -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/modified -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/modified"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/publisher -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/publisher"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/rights -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/rights"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespacePrefix -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespaceUri -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespaceUri"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#definition -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#definition"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#date -->
+
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://w3id.org/ontoforge/bdo#hasDamageCategory -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/ontoforge/bdo#hasDamageCategory">
+        <rdfs:domain rdf:resource="https://w3id.org/ontoforge/bdo#BladeDamage"/>
+        <rdfs:range rdf:resource="https://w3id.org/ontoforge/bdo#BladeDamageCategory"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/ontoforge/bdo#hasDamageType -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/ontoforge/bdo#hasDamageType">
+        <rdfs:domain rdf:resource="https://w3id.org/ontoforge/bdo#BladeDamage"/>
+        <rdfs:range rdf:resource="https://w3id.org/ontoforge/bdo#DamageType"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/ontoforge/bdo#requiresAction -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/ontoforge/bdo#requiresAction">
+        <rdfs:domain rdf:resource="https://w3id.org/ontoforge/bdo#BladeDamageCategory"/>
+        <rdfs:range rdf:resource="https://w3id.org/ontoforge/bdo#Procedure"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://w3id.org/ontoforge/bdo#BladeDamage -->
+
+
+    <owl:Class rdf:about="https://w3id.org/ontoforge/bdo#BladeDamage">
+        <rdfs:comment xml:lang="en">Blade damage.</rdfs:comment>
+        <rdfs:label xml:lang="en">Blade Damage</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ontoforge/bdo#BladeDamageCategory -->
+
+
+    <owl:Class rdf:about="https://w3id.org/ontoforge/bdo#BladeDamageCategory">
+        <rdfs:comment xml:lang="en">Blade damage category.</rdfs:comment>
+        <rdfs:label xml:lang="en">Blade Damage category</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ontoforge/bdo#DamageType -->
+
+
+    <owl:Class rdf:about="https://w3id.org/ontoforge/bdo#DamageType">
+        <rdfs:comment xml:lang="en">Blade damage type.</rdfs:comment>
+        <rdfs:label xml:lang="en">Blade Damage type</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ontoforge/bdo#Procedure -->
+
+
+    <owl:Class rdf:about="https://w3id.org/ontoforge/bdo#Procedure">
+        <rdfs:comment xml:lang="en">Proceduree.</rdfs:comment>
+        <rdfs:label xml:lang="en">Procedure</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://w3id.org/ontoforge/bdo#AerodynamicPerfomance -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoforge/bdo#AerodynamicPerfomance">
+        <rdf:type rdf:resource="https://w3id.org/ontoforge/bdo#DamageType"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoforge/bdo#AerodynamicPerformance_1 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoforge/bdo#AerodynamicPerformance_1">
+        <rdf:type rdf:resource="https://w3id.org/ontoforge/bdo#BladeDamage"/>
+        <hasDamageCategory rdf:resource="https://w3id.org/ontoforge/bdo#BladeDamageCategory2"/>
+        <hasDamageType rdf:resource="https://w3id.org/ontoforge/bdo#AerodynamicPerfomance"/>
+        <skos:definition xml:lang="en">Several missing aerodynamic devices (e.g. vortex generators, trailing edge devices).</skos:definition>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoforge/bdo#AerodynamicPerformance_2 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoforge/bdo#AerodynamicPerformance_2">
+        <rdf:type rdf:resource="https://w3id.org/ontoforge/bdo#BladeDamage"/>
+        <hasDamageCategory rdf:resource="https://w3id.org/ontoforge/bdo#BladeDamageCategory2"/>
+        <hasDamageType rdf:resource="https://w3id.org/ontoforge/bdo#AerodynamicPerfomance"/>
+        <skos:definition xml:lang="en">Heavy dirt, oil, grease, or insects on the blade surface.</skos:definition>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoforge/bdo#AerodynamicPerformance_3 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoforge/bdo#AerodynamicPerformance_3">
+        <rdf:type rdf:resource="https://w3id.org/ontoforge/bdo#BladeDamage"/>
+        <hasDamageCategory rdf:resource="https://w3id.org/ontoforge/bdo#BladeDamageCategory2"/>
+        <hasDamageType rdf:resource="https://w3id.org/ontoforge/bdo#AerodynamicPerfomance"/>
+        <skos:definition xml:lang="en">Early stages of leading edge erosion or other increased surface roughness.</skos:definition>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoforge/bdo#AerodynamicPerformance_4 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoforge/bdo#AerodynamicPerformance_4">
+        <rdf:type rdf:resource="https://w3id.org/ontoforge/bdo#BladeDamage"/>
+        <hasDamageCategory rdf:resource="https://w3id.org/ontoforge/bdo#BladeDamageCategory3"/>
+        <hasDamageType rdf:resource="https://w3id.org/ontoforge/bdo#AerodynamicPerfomance"/>
+        <skos:definition xml:lang="en">Extensive missing aerodynamic devices (e.g., vortex generators, trailing edge devices).</skos:definition>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoforge/bdo#BladeDamageCategory1 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoforge/bdo#BladeDamageCategory1">
+        <rdf:type rdf:resource="https://w3id.org/ontoforge/bdo#BladeDamageCategory"/>
+        <requiresAction rdf:resource="https://w3id.org/ontoforge/bdo#MonitoringBladeDamageCategory1"/>
+        <requiresAction rdf:resource="https://w3id.org/ontoforge/bdo#OperationBladeDamageCategory1"/>
+        <requiresAction rdf:resource="https://w3id.org/ontoforge/bdo#RepairBladeDamageCategory1"/>
+        <skos:definition xml:lang="en">Minor variances from supply specifications but within acceptable (or industry typical) tolerances; may affect the appearance of the blade or blade feature. Though minor, can be useful to identify as position references, or for blade identification.</skos:definition>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoforge/bdo#BladeDamageCategory2 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoforge/bdo#BladeDamageCategory2">
+        <rdf:type rdf:resource="https://w3id.org/ontoforge/bdo#BladeDamageCategory"/>
+        <requiresAction rdf:resource="https://w3id.org/ontoforge/bdo#MonitoringBladeDamageCategory2"/>
+        <requiresAction rdf:resource="https://w3id.org/ontoforge/bdo#OperationBladeDamageCategory3"/>
+        <requiresAction rdf:resource="https://w3id.org/ontoforge/bdo#RepairBladeDamageCategory2"/>
+        <skos:definition xml:lang="en">Minor damage or defects that exceed supply specification acceptance criteria. Multiple cosmetic findings and/or a single major cosmetic finding that are damage, defects, or former repairs. Findings exceed tolerances of supply conditions or industry typical manufacturing variability. Repairs of more severe damage or defects can be recategorized to category 2 upon review of repair.</skos:definition>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoforge/bdo#BladeDamageCategory3 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoforge/bdo#BladeDamageCategory3">
+        <rdf:type rdf:resource="https://w3id.org/ontoforge/bdo#BladeDamageCategory"/>
+        <requiresAction rdf:resource="https://w3id.org/ontoforge/bdo#MonitoringBladeDamageCategory3"/>
+        <requiresAction rdf:resource="https://w3id.org/ontoforge/bdo#OperationBladeDamageCategory3"/>
+        <requiresAction rdf:resource="https://w3id.org/ontoforge/bdo#RepairBladeDamageCategory3"/>
+        <skos:definition xml:lang="en">Moderate to minor structural damage or minor manufacturing defects in non-critical areas. Features are moderately out of compliance with supply conditions and/or below minimum typical industry practice. May present as surface indications when in fact there is damage to the underlying structural laminate. Internal inspection may be needed to determine the extent of the finding.
+May be particularly challenging to assess criticality due to lack of design data such as load margins. Findings may be category 3 when category 4 actions seem too drastic and category 2 is not appropriate, because there is a slight risk of loss of structural capability.</skos:definition>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoforge/bdo#BladeDamageCategory4 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoforge/bdo#BladeDamageCategory4">
+        <rdf:type rdf:resource="https://w3id.org/ontoforge/bdo#BladeDamageCategory"/>
+        <requiresAction rdf:resource="https://w3id.org/ontoforge/bdo#MonitoringBladeDamageCategory4"/>
+        <requiresAction rdf:resource="https://w3id.org/ontoforge/bdo#OperationBladeDamageCategory4"/>
+        <requiresAction rdf:resource="https://w3id.org/ontoforge/bdo#RepairBladeDamageCategory4"/>
+        <skos:definition xml:lang="en">Significant damage or defects that have notable impact to structural capability and/or aerodynamic performance.</skos:definition>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoforge/bdo#BladeDamageCategory5 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoforge/bdo#BladeDamageCategory5">
+        <rdf:type rdf:resource="https://w3id.org/ontoforge/bdo#BladeDamageCategory"/>
+        <requiresAction rdf:resource="https://w3id.org/ontoforge/bdo#MonitoringBladeDamageCategory5"/>
+        <requiresAction rdf:resource="https://w3id.org/ontoforge/bdo#OperationBladeDamageCategory5"/>
+        <requiresAction rdf:resource="https://w3id.org/ontoforge/bdo#RepairBladeDamageCategory5"/>
+        <skos:definition xml:lang="en">Severe degree of damage or defect such that there is a high risk of imminent failure.</skos:definition>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoforge/bdo#CosmeticDamage -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoforge/bdo#CosmeticDamage">
+        <rdf:type rdf:resource="https://w3id.org/ontoforge/bdo#DamageType"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoforge/bdo#CosmeticDamage_1 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoforge/bdo#CosmeticDamage_1">
+        <rdf:type rdf:resource="https://w3id.org/ontoforge/bdo#BladeDamage"/>
+        <hasDamageCategory rdf:resource="https://w3id.org/ontoforge/bdo#BladeDamageCategory1"/>
+        <hasDamageType rdf:resource="https://w3id.org/ontoforge/bdo#CosmeticDamage"/>
+        <skos:definition xml:lang="en">Marks from small mold positioning devices.</skos:definition>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoforge/bdo#CosmeticDamage_2 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoforge/bdo#CosmeticDamage_2">
+        <rdf:type rdf:resource="https://w3id.org/ontoforge/bdo#BladeDamage"/>
+        <hasDamageCategory rdf:resource="https://w3id.org/ontoforge/bdo#BladeDamageCategory1"/>
+        <hasDamageType rdf:resource="https://w3id.org/ontoforge/bdo#CosmeticDamage"/>
+        <skos:definition xml:lang="en">Small or thin foreign objects in laminate that do not form wrinkles.</skos:definition>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoforge/bdo#CosmeticDamage_3 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoforge/bdo#CosmeticDamage_3">
+        <rdf:type rdf:resource="https://w3id.org/ontoforge/bdo#BladeDamage"/>
+        <hasDamageCategory rdf:resource="https://w3id.org/ontoforge/bdo#BladeDamageCategory1"/>
+        <hasDamageType rdf:resource="https://w3id.org/ontoforge/bdo#CosmeticDamage"/>
+        <skos:definition xml:lang="en">Minor variability in thickness of coatings, detectable as translucence.</skos:definition>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoforge/bdo#CosmeticDamage_4 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoforge/bdo#CosmeticDamage_4">
+        <rdf:type rdf:resource="https://w3id.org/ontoforge/bdo#BladeDamage"/>
+        <hasDamageCategory rdf:resource="https://w3id.org/ontoforge/bdo#BladeDamageCategory1"/>
+        <hasDamageType rdf:resource="https://w3id.org/ontoforge/bdo#CosmeticDamage"/>
+        <skos:definition xml:lang="en">Minor blade surface variability due to mold features.</skos:definition>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoforge/bdo#CosmeticDamage_5 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoforge/bdo#CosmeticDamage_5">
+        <rdf:type rdf:resource="https://w3id.org/ontoforge/bdo#BladeDamage"/>
+        <hasDamageCategory rdf:resource="https://w3id.org/ontoforge/bdo#BladeDamageCategory1"/>
+        <hasDamageType rdf:resource="https://w3id.org/ontoforge/bdo#CosmeticDamage"/>
+        <skos:definition xml:lang="en">Light dirt, oil, grease, or insects on the blade surface.</skos:definition>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoforge/bdo#CosmeticDamage_6 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoforge/bdo#CosmeticDamage_6">
+        <rdf:type rdf:resource="https://w3id.org/ontoforge/bdo#BladeDamage"/>
+        <hasDamageCategory rdf:resource="https://w3id.org/ontoforge/bdo#BladeDamageCategory1"/>
+        <hasDamageType rdf:resource="https://w3id.org/ontoforge/bdo#CosmeticDamage"/>
+        <skos:definition xml:lang="en">Missing or unreadable labels or stickers.</skos:definition>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoforge/bdo#CosmeticDamage_7 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoforge/bdo#CosmeticDamage_7">
+        <rdf:type rdf:resource="https://w3id.org/ontoforge/bdo#BladeDamage"/>
+        <hasDamageCategory rdf:resource="https://w3id.org/ontoforge/bdo#BladeDamageCategory2"/>
+        <hasDamageType rdf:resource="https://w3id.org/ontoforge/bdo#CosmeticDamage"/>
+        <skos:definition xml:lang="en">Coating discoloration, scratches, or cracks, profile deviations in repairs, mold marks protruding from the blade surface, rough paint patches.</skos:definition>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoforge/bdo#CosmeticDamage_8 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoforge/bdo#CosmeticDamage_8">
+        <rdf:type rdf:resource="https://w3id.org/ontoforge/bdo#BladeDamage"/>
+        <hasDamageCategory rdf:resource="https://w3id.org/ontoforge/bdo#BladeDamageCategory2"/>
+        <hasDamageType rdf:resource="https://w3id.org/ontoforge/bdo#CosmeticDamage"/>
+        <skos:definition xml:lang="en">Thin or flaking coating.</skos:definition>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoforge/bdo#CosmeticDamage_9 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoforge/bdo#CosmeticDamage_9">
+        <rdf:type rdf:resource="https://w3id.org/ontoforge/bdo#BladeDamage"/>
+        <hasDamageCategory rdf:resource="https://w3id.org/ontoforge/bdo#BladeDamageCategory2"/>
+        <hasDamageType rdf:resource="https://w3id.org/ontoforge/bdo#CosmeticDamage"/>
+        <skos:definition xml:lang="en">Excessive oil on the internal surfaces of the blade.</skos:definition>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoforge/bdo#Defect -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoforge/bdo#Defect">
+        <rdf:type rdf:resource="https://w3id.org/ontoforge/bdo#DamageType"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoforge/bdo#Defect_1 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoforge/bdo#Defect_1">
+        <rdf:type rdf:resource="https://w3id.org/ontoforge/bdo#BladeDamage"/>
+        <hasDamageCategory rdf:resource="https://w3id.org/ontoforge/bdo#BladeDamageCategory2"/>
+        <hasDamageType rdf:resource="https://w3id.org/ontoforge/bdo#Defect"/>
+        <skos:definition xml:lang="en">Minor foreign objects in laminate resulting in small wrinkles.</skos:definition>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoforge/bdo#Defect_2 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoforge/bdo#Defect_2">
+        <rdf:type rdf:resource="https://w3id.org/ontoforge/bdo#BladeDamage"/>
+        <hasDamageCategory rdf:resource="https://w3id.org/ontoforge/bdo#BladeDamageCategory2"/>
+        <hasDamageType rdf:resource="https://w3id.org/ontoforge/bdo#Defect"/>
+        <skos:definition xml:lang="en">Minor manufacturing deviations that have been evaluated by an engineer and do not impact structural capability due to design margins or it is in an area of low structural criticality.</skos:definition>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoforge/bdo#Defect_3 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoforge/bdo#Defect_3">
+        <rdf:type rdf:resource="https://w3id.org/ontoforge/bdo#BladeDamage"/>
+        <hasDamageCategory rdf:resource="https://w3id.org/ontoforge/bdo#BladeDamageCategory4"/>
+        <hasDamageType rdf:resource="https://w3id.org/ontoforge/bdo#Defect"/>
+        <skos:definition xml:lang="en">Chordwise wrinkles of laminate fibers in highly loaded regions.</skos:definition>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoforge/bdo#Defect_4 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoforge/bdo#Defect_4">
+        <rdf:type rdf:resource="https://w3id.org/ontoforge/bdo#BladeDamage"/>
+        <hasDamageCategory rdf:resource="https://w3id.org/ontoforge/bdo#BladeDamageCategory4"/>
+        <hasDamageType rdf:resource="https://w3id.org/ontoforge/bdo#Defect"/>
+        <skos:definition xml:lang="en">Significant areas of underinfused or improperly cured laminate.</skos:definition>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoforge/bdo#Defect_5 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoforge/bdo#Defect_5">
+        <rdf:type rdf:resource="https://w3id.org/ontoforge/bdo#BladeDamage"/>
+        <hasDamageCategory rdf:resource="https://w3id.org/ontoforge/bdo#BladeDamageCategory4"/>
+        <hasDamageType rdf:resource="https://w3id.org/ontoforge/bdo#Defect"/>
+        <skos:definition xml:lang="en">Large gaps or underbite/overbite at shell bonded joints.</skos:definition>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoforge/bdo#Defect_6 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoforge/bdo#Defect_6">
+        <rdf:type rdf:resource="https://w3id.org/ontoforge/bdo#BladeDamage"/>
+        <hasDamageCategory rdf:resource="https://w3id.org/ontoforge/bdo#BladeDamageCategory4"/>
+        <hasDamageType rdf:resource="https://w3id.org/ontoforge/bdo#Defect"/>
+        <skos:definition xml:lang="en">Significant missing adhesive bond material, cavities, voids, or cracks in adhesive bonds, or significant deviations of the geometry of adhesive bonds beyond allowable limits.</skos:definition>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoforge/bdo#Defect_7 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoforge/bdo#Defect_7">
+        <rdf:type rdf:resource="https://w3id.org/ontoforge/bdo#BladeDamage"/>
+        <hasDamageCategory rdf:resource="https://w3id.org/ontoforge/bdo#BladeDamageCategory4"/>
+        <hasDamageType rdf:resource="https://w3id.org/ontoforge/bdo#Defect"/>
+        <skos:definition xml:lang="en">Large foreign objects in laminates that result in significant wrinkles.</skos:definition>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoforge/bdo#LightningDamage -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoforge/bdo#LightningDamage">
+        <rdf:type rdf:resource="https://w3id.org/ontoforge/bdo#DamageType"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoforge/bdo#LightningDamage_1 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoforge/bdo#LightningDamage_1">
+        <rdf:type rdf:resource="https://w3id.org/ontoforge/bdo#BladeDamage"/>
+        <hasDamageCategory rdf:resource="https://w3id.org/ontoforge/bdo#BladeDamageCategory2"/>
+        <hasDamageType rdf:resource="https://w3id.org/ontoforge/bdo#LightningDamage"/>
+        <skos:definition xml:lang="en">Pin holes or very small marks on the blade shell where lightning was intercepted (not at the lightning receptor).</skos:definition>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoforge/bdo#LightningDamage_2 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoforge/bdo#LightningDamage_2">
+        <rdf:type rdf:resource="https://w3id.org/ontoforge/bdo#BladeDamage"/>
+        <hasDamageCategory rdf:resource="https://w3id.org/ontoforge/bdo#BladeDamageCategory4"/>
+        <hasDamageType rdf:resource="https://w3id.org/ontoforge/bdo#LightningDamage"/>
+        <skos:definition xml:lang="en">Laminate damage where lightning attached to blade surface, not at the intended receptor.</skos:definition>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoforge/bdo#LightningDamage_3 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoforge/bdo#LightningDamage_3">
+        <rdf:type rdf:resource="https://w3id.org/ontoforge/bdo#BladeDamage"/>
+        <hasDamageCategory rdf:resource="https://w3id.org/ontoforge/bdo#BladeDamageCategory4"/>
+        <hasDamageType rdf:resource="https://w3id.org/ontoforge/bdo#LightningDamage"/>
+        <skos:definition xml:lang="en">Lightning penetrated the shell, however the exterior surface appears structurally adequate.</skos:definition>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoforge/bdo#MechanicalDamage -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoforge/bdo#MechanicalDamage">
+        <rdf:type rdf:resource="https://w3id.org/ontoforge/bdo#DamageType"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoforge/bdo#MonitoringBladeDamageCategory1 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoforge/bdo#MonitoringBladeDamageCategory1">
+        <rdf:type rdf:resource="https://w3id.org/ontoforge/bdo#Procedure"/>
+        <skos:definition xml:lang="en">None needed.</skos:definition>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoforge/bdo#MonitoringBladeDamageCategory2 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoforge/bdo#MonitoringBladeDamageCategory2">
+        <rdf:type rdf:resource="https://w3id.org/ontoforge/bdo#Procedure"/>
+        <skos:definition xml:lang="en">Monitor during routinely scheduled maintenance for damage initiation or progression. Depending on the damage, internal inspection may be warranted to differentiate surface cracks from more severe laminate damage.</skos:definition>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoforge/bdo#MonitoringBladeDamageCategory3 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoforge/bdo#MonitoringBladeDamageCategory3">
+        <rdf:type rdf:resource="https://w3id.org/ontoforge/bdo#Procedure"/>
+        <skos:definition xml:lang="en">Inspection frequency driven by assessment of risk; may be more frequent than routinely scheduled inspections recommended by the OEM. If no growth in damage over time, an engineering assessment may downgrade finding to category 2.</skos:definition>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoforge/bdo#MonitoringBladeDamageCategory4 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoforge/bdo#MonitoringBladeDamageCategory4">
+        <rdf:type rdf:resource="https://w3id.org/ontoforge/bdo#Procedure"/>
+        <skos:definition xml:lang="en">More frequent or more comprehensive monitoring than routine inspections are required until repairs are complete.</skos:definition>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoforge/bdo#MonitoringBladeDamageCategory5 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoforge/bdo#MonitoringBladeDamageCategory5">
+        <rdf:type rdf:resource="https://w3id.org/ontoforge/bdo#Procedure"/>
+        <skos:definition xml:lang="en">If repair is implemented, repair should be deemed a Category 3 defect until sufficient operating experience is gained to provide confidence that the repair is sufficient to achieve expected remaining operating life.</skos:definition>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoforge/bdo#OperationBladeDamageCategory1 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoforge/bdo#OperationBladeDamageCategory1">
+        <rdf:type rdf:resource="https://w3id.org/ontoforge/bdo#Procedure"/>
+        <skos:definition xml:lang="en">Continued operation is possible.</skos:definition>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoforge/bdo#OperationBladeDamageCategory2 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoforge/bdo#OperationBladeDamageCategory2">
+        <rdf:type rdf:resource="https://w3id.org/ontoforge/bdo#Procedure"/>
+        <skos:definition xml:lang="en">Continued operation.</skos:definition>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoforge/bdo#OperationBladeDamageCategory3 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoforge/bdo#OperationBladeDamageCategory3">
+        <rdf:type rdf:resource="https://w3id.org/ontoforge/bdo#Procedure"/>
+        <skos:definition xml:lang="en">Continued operation is possible.</skos:definition>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoforge/bdo#OperationBladeDamageCategory4 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoforge/bdo#OperationBladeDamageCategory4">
+        <rdf:type rdf:resource="https://w3id.org/ontoforge/bdo#Procedure"/>
+        <skos:definition xml:lang="en">Engineering evaluation required to deem blade can operate until repair is scheduled. Operation shall stop if repair cannot be implemented within the allowable time period.</skos:definition>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoforge/bdo#OperationBladeDamageCategory5 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoforge/bdo#OperationBladeDamageCategory5">
+        <rdf:type rdf:resource="https://w3id.org/ontoforge/bdo#Procedure"/>
+        <skos:definition xml:lang="en">The blade is not safe to operate until the damage or defect is repaired or the blade is replaced.</skos:definition>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoforge/bdo#RepairBladeDamageCategory1 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoforge/bdo#RepairBladeDamageCategory1">
+        <rdf:type rdf:resource="https://w3id.org/ontoforge/bdo#Procedure"/>
+        <skos:definition xml:lang="en">None needed, though some can be remedied with minimal effort in conjunction with other blade maintenance activities.</skos:definition>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoforge/bdo#RepairBladeDamageCategory2 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoforge/bdo#RepairBladeDamageCategory2">
+        <rdf:type rdf:resource="https://w3id.org/ontoforge/bdo#Procedure"/>
+        <skos:definition xml:lang="en">Repair is perfomed based on cost/benefit analysis.</skos:definition>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoforge/bdo#RepairBladeDamageCategory3 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoforge/bdo#RepairBladeDamageCategory3">
+        <rdf:type rdf:resource="https://w3id.org/ontoforge/bdo#Procedure"/>
+        <skos:definition xml:lang="en">Repair is performed based on circumstances, criticality, and O&amp;M approach. If found during manufacturing, should be repaired prior to installation. Investigation and repair or replacement of missing aerodynamic devices should be performed to regain energy capture benefits. Timing of repairs can be linked to other blade-related needs. Leading edge erosion or small external cracks should be repaired to prevent damage progression.</skos:definition>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoforge/bdo#RepairBladeDamageCategory4 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoforge/bdo#RepairBladeDamageCategory4">
+        <rdf:type rdf:resource="https://w3id.org/ontoforge/bdo#Procedure"/>
+        <skos:definition xml:lang="en">Repair within a limited number of months of initial observation. Repairs may be performed uptower or blade should be repaired prior to installation and a manufacturing quality assessment should be undertaken to find and correct root causes.</skos:definition>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoforge/bdo#RepairBladeDamageCategory5 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoforge/bdo#RepairBladeDamageCategory5">
+        <rdf:type rdf:resource="https://w3id.org/ontoforge/bdo#Procedure"/>
+        <skos:definition xml:lang="en">Replace, or repair depending on repair feasibility and cost/benefit relative to replacement.</skos:definition>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoforge/bdo#StructuralDamage -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoforge/bdo#StructuralDamage">
+        <rdf:type rdf:resource="https://w3id.org/ontoforge/bdo#DamageType"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoforge/bdo#StructuralDamage_1 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoforge/bdo#StructuralDamage_1">
+        <rdf:type rdf:resource="https://w3id.org/ontoforge/bdo#BladeDamage"/>
+        <hasDamageCategory rdf:resource="https://w3id.org/ontoforge/bdo#BladeDamageCategory3"/>
+        <hasDamageType rdf:resource="https://w3id.org/ontoforge/bdo#StructuralDamage"/>
+        <skos:definition xml:lang="en">Small cracks in shells or along leading or trailing edge bonds, small areas of underinfused laminate, voids in adhesive bonds.</skos:definition>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoforge/bdo#StructuralDamage_10 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoforge/bdo#StructuralDamage_10">
+        <rdf:type rdf:resource="https://w3id.org/ontoforge/bdo#BladeDamage"/>
+        <hasDamageCategory rdf:resource="https://w3id.org/ontoforge/bdo#BladeDamageCategory5"/>
+        <hasDamageType rdf:resource="https://w3id.org/ontoforge/bdo#StructuralDamage"/>
+        <skos:definition xml:lang="en">Separation of shear webs from spar caps.</skos:definition>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoforge/bdo#StructuralDamage_11 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoforge/bdo#StructuralDamage_11">
+        <rdf:type rdf:resource="https://w3id.org/ontoforge/bdo#BladeDamage"/>
+        <hasDamageCategory rdf:resource="https://w3id.org/ontoforge/bdo#BladeDamageCategory5"/>
+        <hasDamageType rdf:resource="https://w3id.org/ontoforge/bdo#StructuralDamage"/>
+        <skos:definition xml:lang="en">Numerous broken blade bolts.</skos:definition>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoforge/bdo#StructuralDamage_12 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoforge/bdo#StructuralDamage_12">
+        <rdf:type rdf:resource="https://w3id.org/ontoforge/bdo#BladeDamage"/>
+        <hasDamageCategory rdf:resource="https://w3id.org/ontoforge/bdo#BladeDamageCategory5"/>
+        <hasDamageType rdf:resource="https://w3id.org/ontoforge/bdo#StructuralDamage"/>
+        <skos:definition xml:lang="en">Significant chordwise or spanwise cracks or large delaminations in shells.</skos:definition>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoforge/bdo#StructuralDamage_2 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoforge/bdo#StructuralDamage_2">
+        <rdf:type rdf:resource="https://w3id.org/ontoforge/bdo#BladeDamage"/>
+        <hasDamageCategory rdf:resource="https://w3id.org/ontoforge/bdo#BladeDamageCategory3"/>
+        <hasDamageType rdf:resource="https://w3id.org/ontoforge/bdo#StructuralDamage"/>
+        <skos:definition xml:lang="en">Significant root face laminate wrinkles.</skos:definition>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoforge/bdo#StructuralDamage_3 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoforge/bdo#StructuralDamage_3">
+        <rdf:type rdf:resource="https://w3id.org/ontoforge/bdo#BladeDamage"/>
+        <hasDamageCategory rdf:resource="https://w3id.org/ontoforge/bdo#BladeDamageCategory3"/>
+        <hasDamageType rdf:resource="https://w3id.org/ontoforge/bdo#StructuralDamage"/>
+        <skos:definition xml:lang="en">Spanwise wrinkles in laminate.</skos:definition>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoforge/bdo#StructuralDamage_4 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoforge/bdo#StructuralDamage_4">
+        <rdf:type rdf:resource="https://w3id.org/ontoforge/bdo#BladeDamage"/>
+        <hasDamageCategory rdf:resource="https://w3id.org/ontoforge/bdo#BladeDamageCategory4"/>
+        <hasDamageType rdf:resource="https://w3id.org/ontoforge/bdo#StructuralDamage"/>
+        <skos:definition xml:lang="en">Significant cracks, delamination, buckling of shells.</skos:definition>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoforge/bdo#StructuralDamage_5 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoforge/bdo#StructuralDamage_5">
+        <rdf:type rdf:resource="https://w3id.org/ontoforge/bdo#BladeDamage"/>
+        <hasDamageCategory rdf:resource="https://w3id.org/ontoforge/bdo#BladeDamageCategory4"/>
+        <hasDamageType rdf:resource="https://w3id.org/ontoforge/bdo#StructuralDamage"/>
+        <skos:definition xml:lang="en">Significant lead edge or trailing edge separation, exposing internal structure to water ingress.</skos:definition>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoforge/bdo#StructuralDamage_6 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoforge/bdo#StructuralDamage_6">
+        <rdf:type rdf:resource="https://w3id.org/ontoforge/bdo#BladeDamage"/>
+        <hasDamageCategory rdf:resource="https://w3id.org/ontoforge/bdo#BladeDamageCategory4"/>
+        <hasDamageType rdf:resource="https://w3id.org/ontoforge/bdo#StructuralDamage"/>
+        <skos:definition xml:lang="en">Moderate to large core gaps or missing core material.</skos:definition>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoforge/bdo#StructuralDamage_7 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoforge/bdo#StructuralDamage_7">
+        <rdf:type rdf:resource="https://w3id.org/ontoforge/bdo#BladeDamage"/>
+        <hasDamageCategory rdf:resource="https://w3id.org/ontoforge/bdo#BladeDamageCategory4"/>
+        <hasDamageType rdf:resource="https://w3id.org/ontoforge/bdo#StructuralDamage"/>
+        <skos:definition xml:lang="en">Leading edge erosion through shells, exposing blade internal structure.</skos:definition>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoforge/bdo#StructuralDamage_8 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoforge/bdo#StructuralDamage_8">
+        <rdf:type rdf:resource="https://w3id.org/ontoforge/bdo#BladeDamage"/>
+        <hasDamageCategory rdf:resource="https://w3id.org/ontoforge/bdo#BladeDamageCategory4"/>
+        <hasDamageType rdf:resource="https://w3id.org/ontoforge/bdo#StructuralDamage"/>
+        <skos:definition xml:lang="en">Broken blade bolt.</skos:definition>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoforge/bdo#StructuralDamage_9 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoforge/bdo#StructuralDamage_9">
+        <rdf:type rdf:resource="https://w3id.org/ontoforge/bdo#BladeDamage"/>
+        <hasDamageCategory rdf:resource="https://w3id.org/ontoforge/bdo#BladeDamageCategory5"/>
+        <hasDamageType rdf:resource="https://w3id.org/ontoforge/bdo#StructuralDamage"/>
+        <skos:definition xml:lang="en">Buckled shear webs.</skos:definition>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/ -->
+
+

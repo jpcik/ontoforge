@@ -1,0 +1,70 @@
+{
+  "@context" : {
+    "hasDamageType" : {
+      "@id" : "https://w3id.org/ontoforge/bdo#hasDamageType",
+      "@type" : "@id"
+    },
+    "versionInfo" : {
+      "@id" : "http://www.w3.org/2002/07/owl#versionInfo"
+    },
+    "license" : {
+      "@id" : "http://purl.org/dc/terms/license"
+    },
+    "Procedure" : {
+      "@id" : "https://w3id.org/ontoforge/bdo#Procedure"
+    },
+    "requiresAction" : {
+      "@id" : "https://w3id.org/ontoforge/bdo#requiresAction",
+      "@type" : "@id"
+    },
+    "issued" : {
+      "@id" : "http://purl.org/dc/terms/issued"
+    },
+    "BladeDamage" : {
+      "@id" : "https://w3id.org/ontoforge/bdo#BladeDamage"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "creator" : {
+      "@id" : "http://purl.org/dc/terms/creator"
+    },
+    "rights" : {
+      "@id" : "http://purl.org/dc/terms/rights"
+    },
+    "preferredNamespacePrefix" : {
+      "@id" : "http://purl.org/vocab/vann/preferredNamespacePrefix"
+    },
+    "BladeDamageCategory" : {
+      "@id" : "https://w3id.org/ontoforge/bdo#BladeDamageCategory"
+    },
+    "hasDamageCategory" : {
+      "@id" : "https://w3id.org/ontoforge/bdo#hasDamageCategory",
+      "@type" : "@id"
+    },
+    "definition" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#definition"
+    },
+    "title" : {
+      "@id" : "http://purl.org/dc/terms/title"
+    },
+    "publisher" : {
+      "@id" : "http://purl.org/dc/terms/publisher"
+    },
+    "modified" : {
+      "@id" : "http://purl.org/dc/terms/modified"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "description" : {
+      "@id" : "http://purl.org/dc/terms/description"
+    },
+    "preferredNamespaceUri" : {
+      "@id" : "http://purl.org/vocab/vann/preferredNamespaceUri"
+    },
+    "DamageType" : {
+      "@id" : "https://w3id.org/ontoforge/bdo#DamageType"
+    }
+  }
+}
