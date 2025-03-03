@@ -1,0 +1,1601 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "en", "undefined" ],
+    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/2001/XMLSchema", "http://www.w3.org/2004/02/skos/core" ],
+    "title" : {
+      "en" : "Life Cycle Phase and Process Taxonomy"
+    },
+    "iri" : "https://w3id.org/ontoforge/windprofle#",
+    "version" : "0.1.2",
+    "author" : [ "IEA Wind Task 43" ],
+    "description" : {
+      "en" : "A simple SKOS Taxonomy of a processes in wind energy according to the project life-cycle phases"
+    },
+    "comments" : {
+      "en" : "This ontology aims to model a taxonomical organisation of a processes in wind energy according to the project life-cycle phases using a Simple Knoledge Organisation System (SKOS) data model."
+    },
+    "other" : {
+      "license" : [ {
+        "identifier" : "license",
+        "language" : "undefined",
+        "value" : "http://creativecommons.org/licenses/by/4.0/",
+        "type" : "iri"
+      } ],
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "en",
+        "value" : "IEA Wind Task 43",
+        "type" : "label"
+      } ],
+      "rights" : [ {
+        "identifier" : "rights",
+        "language" : "undefined",
+        "value" : "Copyright © 2025 OST Ostschweizer Fachhochschule",
+        "type" : "label"
+      } ],
+      "preferredNamespacePrefix" : [ {
+        "identifier" : "preferredNamespacePrefix",
+        "language" : "undefined",
+        "value" : "of-wpl",
+        "type" : "label"
+      } ],
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "WINDPROFILE",
+        "type" : "label"
+      } ],
+      "publisher" : [ {
+        "identifier" : "publisher",
+        "language" : "undefined",
+        "value" : "https://ost.ch/",
+        "type" : "iri"
+      }, {
+        "identifier" : "publisher",
+        "language" : "undefined",
+        "value" : "https://ost.ch",
+        "type" : "iri"
+      } ],
+      "modified" : [ {
+        "identifier" : "modified",
+        "language" : "undefined",
+        "value" : "2025-02-17",
+        "type" : "label"
+      } ],
+      "hasTopConcept" : [ {
+        "identifier" : "hasTopConcept",
+        "language" : "undefined",
+        "value" : "https://w3id.org/ontoforge/windprofile#Process",
+        "type" : "iri"
+      }, {
+        "identifier" : "hasTopConcept",
+        "language" : "undefined",
+        "value" : "https://w3id.org/ontoforge/windprofile#ProcessGroup",
+        "type" : "iri"
+      }, {
+        "identifier" : "hasTopConcept",
+        "language" : "undefined",
+        "value" : "https://w3id.org/ontoforge/windprofile#LifeCyclePhase",
+        "type" : "iri"
+      } ],
+      "preferredNamespaceUri" : [ {
+        "identifier" : "preferredNamespaceUri",
+        "language" : "undefined",
+        "value" : "https://w3id.org/ontoforge/windprofile#",
+        "type" : "label"
+      } ],
+      "versionInfo" : [ {
+        "identifier" : "versionInfo",
+        "language" : "en",
+        "value" : "0.1.2",
+        "type" : "label"
+      } ],
+      "title" : [ {
+        "identifier" : "title",
+        "language" : "en",
+        "value" : "Life Cycle Phase and Process Taxonomy",
+        "type" : "label"
+      } ],
+      "issued" : [ {
+        "identifier" : "issued",
+        "language" : "undefined",
+        "value" : "2025-02-15",
+        "type" : "label"
+      } ]
+    }
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "0",
+    "type" : "owl:Class"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "http://www.w3.org/2004/02/skos/core#ConceptScheme",
+    "baseIri" : "http://www.w3.org/2004/02/skos/core",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ConceptScheme"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/ontoforge/windprofle#",
+      "baseIri" : "https://w3id.org/ontoforge/windprofle",
+      "labels" : { }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "0"
+  }, {
+    "iri" : "http://www.w3.org/2004/02/skos/core#Concept",
+    "baseIri" : "http://www.w3.org/2004/02/skos/core",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Concept"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/ontoforge/windprofile#Build",
+      "baseIri" : "https://w3id.org/ontoforge/windprofile",
+      "annotations" : {
+        "creator" : [ {
+          "identifier" : "creator",
+          "language" : "undefined",
+          "value" : "https://www.pmi.org/",
+          "type" : "iri"
+        } ],
+        "inScheme" : [ {
+          "identifier" : "inScheme",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ontoforge/windprofile#",
+          "type" : "iri"
+        } ],
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Build",
+          "type" : "label"
+        } ],
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "en",
+          "value" : "Construction of the deliverable with integrated quality assurance activities is conducted.",
+          "type" : "label"
+        } ],
+        "broader" : [ {
+          "identifier" : "broader",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ontoforge/windprofile#ReferenceProjectLife-cyclePhase",
+          "type" : "iri"
+        } ],
+        "bibliographicCitation" : [ {
+          "identifier" : "bibliographicCitation",
+          "language" : "en",
+          "value" : "urn:ISBN:9781628256659",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "Build"
+      }
+    }, {
+      "iri" : "https://w3id.org/ontoforge/windprofile#Close",
+      "baseIri" : "https://w3id.org/ontoforge/windprofile",
+      "annotations" : {
+        "creator" : [ {
+          "identifier" : "creator",
+          "language" : "undefined",
+          "value" : "https://www.pmi.org/",
+          "type" : "iri"
+        } ],
+        "inScheme" : [ {
+          "identifier" : "inScheme",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ontoforge/windprofile#",
+          "type" : "iri"
+        } ],
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Close",
+          "type" : "label"
+        } ],
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "en",
+          "value" : "The project is closed, project knowledge and artifacts are archived, project team members are released, and contracts are closed.",
+          "type" : "label"
+        } ],
+        "broader" : [ {
+          "identifier" : "broader",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ontoforge/windprofile#ReferenceProjectLife-cyclePhase",
+          "type" : "iri"
+        } ],
+        "bibliographicCitation" : [ {
+          "identifier" : "bibliographicCitation",
+          "language" : "en",
+          "value" : "urn:ISBN:9781628256659",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "Close"
+      }
+    }, {
+      "iri" : "https://w3id.org/ontoforge/windprofile#Planning",
+      "baseIri" : "https://w3id.org/ontoforge/windprofile",
+      "annotations" : {
+        "creator" : [ {
+          "identifier" : "creator",
+          "language" : "undefined",
+          "value" : "https://www.pmi.org/",
+          "type" : "iri"
+        } ],
+        "inScheme" : [ {
+          "identifier" : "inScheme",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ontoforge/windprofile#",
+          "type" : "iri"
+        } ],
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Planning",
+          "type" : "label"
+        } ],
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "en",
+          "value" : "Those processes required to establish the scope of the project, refine the objectives, and define the course of action required to attain the objectives that the project was undertaken to achieve.",
+          "type" : "label"
+        } ],
+        "broader" : [ {
+          "identifier" : "broader",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ontoforge/windprofile#ProcessGroup",
+          "type" : "iri"
+        } ],
+        "bibliographicCitation" : [ {
+          "identifier" : "bibliographicCitation",
+          "language" : "en",
+          "value" : "urn:ISBN:9781628256659",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "Planning"
+      }
+    }, {
+      "iri" : "https://w3id.org/ontoforge/windprofile#Deploy",
+      "baseIri" : "https://w3id.org/ontoforge/windprofile",
+      "annotations" : {
+        "creator" : [ {
+          "identifier" : "creator",
+          "language" : "undefined",
+          "value" : "https://www.pmi.org/",
+          "type" : "iri"
+        } ],
+        "inScheme" : [ {
+          "identifier" : "inScheme",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ontoforge/windprofile#",
+          "type" : "iri"
+        } ],
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Deploy",
+          "type" : "label"
+        } ],
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "en",
+          "value" : "Project deliverables are put into use and transitional activities required for sustainment, benefits realization, and organizational change management are completed.",
+          "type" : "label"
+        } ],
+        "bibliographicCitation" : [ {
+          "identifier" : "bibliographicCitation",
+          "language" : "en",
+          "value" : "urn:ISBN:9781628256659",
+          "type" : "label"
+        } ],
+        "broader" : [ {
+          "identifier" : "broader",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ontoforge/windprofile#ReferenceProjectLife-cyclePhase",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "Deploy"
+      }
+    }, {
+      "iri" : "https://w3id.org/ontoforge/windprofile#Realisation",
+      "baseIri" : "https://w3id.org/ontoforge/windprofile",
+      "annotations" : {
+        "inScheme" : [ {
+          "identifier" : "inScheme",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ontoforge/windprofile#",
+          "type" : "iri"
+        } ],
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Realisation",
+          "type" : "label"
+        } ],
+        "broader" : [ {
+          "identifier" : "broader",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ontoforge/windprofile#ProductLife-cyclePhase",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "Realisation"
+      }
+    }, {
+      "iri" : "https://w3id.org/ontoforge/windprofile#AllProductPhases",
+      "baseIri" : "https://w3id.org/ontoforge/windprofile",
+      "annotations" : {
+        "inScheme" : [ {
+          "identifier" : "inScheme",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ontoforge/windprofile#",
+          "type" : "iri"
+        } ],
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "All Product Phases",
+          "type" : "label"
+        } ],
+        "broader" : [ {
+          "identifier" : "broader",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ontoforge/windprofile#ProductLife-cyclePhase",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "AllProductPhases"
+      }
+    }, {
+      "iri" : "https://w3id.org/ontoforge/windprofile#ProductLife-cyclePhase",
+      "baseIri" : "https://w3id.org/ontoforge/windprofile",
+      "annotations" : {
+        "inScheme" : [ {
+          "identifier" : "inScheme",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ontoforge/windprofile#",
+          "type" : "iri"
+        } ],
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Product Life-cycle Phase",
+          "type" : "label"
+        } ],
+        "narrower" : [ {
+          "identifier" : "narrower",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ontoforge/windprofile#Realisation",
+          "type" : "iri"
+        }, {
+          "identifier" : "narrower",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ontoforge/windprofile#Conception",
+          "type" : "iri"
+        }, {
+          "identifier" : "narrower",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ontoforge/windprofile#Service",
+          "type" : "iri"
+        }, {
+          "identifier" : "narrower",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ontoforge/windprofile#Design",
+          "type" : "iri"
+        }, {
+          "identifier" : "narrower",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ontoforge/windprofile#AllProductPhases",
+          "type" : "iri"
+        } ],
+        "broader" : [ {
+          "identifier" : "broader",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ontoforge/windprofile#LifeCyclePhase",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "ProductLife-cyclePhase"
+      }
+    }, {
+      "iri" : "https://w3id.org/ontoforge/windprofile#AllProjectPhases",
+      "baseIri" : "https://w3id.org/ontoforge/windprofile",
+      "annotations" : {
+        "inScheme" : [ {
+          "identifier" : "inScheme",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ontoforge/windprofile#",
+          "type" : "iri"
+        } ],
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "All Project Phases",
+          "type" : "label"
+        } ],
+        "broader" : [ {
+          "identifier" : "broader",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ontoforge/windprofile#ReferenceProjectLife-cyclePhase",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "AllProjectPhases"
+      }
+    }, {
+      "iri" : "https://w3id.org/ontoforge/windprofile#7Operation-Maintenance",
+      "baseIri" : "https://w3id.org/ontoforge/windprofile",
+      "annotations" : {
+        "inScheme" : [ {
+          "identifier" : "inScheme",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ontoforge/windprofile#",
+          "type" : "iri"
+        } ],
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "7 Operation & Maintenance",
+          "type" : "label"
+        } ],
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "en",
+          "value" : "Ongoing operation of the wind farm, including regular monitoring, maintenance, and optimization to ensure maximum energy production and efficiency.",
+          "type" : "label"
+        } ],
+        "altLabel" : [ {
+          "identifier" : "altLabel",
+          "language" : "en",
+          "value" : "Middle of life",
+          "type" : "label"
+        } ],
+        "broader" : [ {
+          "identifier" : "broader",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ontoforge/windprofile#WindEnergyProjectLife-cyclePhase",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "7Operation-Maintenance"
+      }
+    }, {
+      "iri" : "https://w3id.org/ontoforge/windprofile#ProductProcess",
+      "baseIri" : "https://w3id.org/ontoforge/windprofile",
+      "annotations" : {
+        "inScheme" : [ {
+          "identifier" : "inScheme",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ontoforge/windprofile#",
+          "type" : "iri"
+        } ],
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Product Process",
+          "type" : "label"
+        } ],
+        "narrower" : [ {
+          "identifier" : "narrower",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ontoforge/windprofile#WindTurbineProductProcess",
+          "type" : "iri"
+        }, {
+          "identifier" : "narrower",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ontoforge/windprofile#WindPowerPlantProcess",
+          "type" : "iri"
+        } ],
+        "altLabel" : [ {
+          "identifier" : "altLabel",
+          "language" : "en",
+          "value" : "Delivery Process",
+          "type" : "label"
+        } ],
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "en",
+          "value" : "Product process is not unique to project management, which results in the specification and provision of a particular product, service or result, and which varies depending on the particular project deliverable.",
+          "type" : "label"
+        } ],
+        "broader" : [ {
+          "identifier" : "broader",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ontoforge/windprofile#Process",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "ProductProcess"
+      }
+    }, {
+      "iri" : "https://w3id.org/ontoforge/windprofile#2Feasibility",
+      "baseIri" : "https://w3id.org/ontoforge/windprofile",
+      "annotations" : {
+        "inScheme" : [ {
+          "identifier" : "inScheme",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ontoforge/windprofile#",
+          "type" : "iri"
+        } ],
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "2 Feasibility",
+          "type" : "label"
+        } ],
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "en",
+          "value" : "Detailed analysis of the identified site, including technical, environmental, and financial assessments to determine project viability.",
+          "type" : "label"
+        } ],
+        "broader" : [ {
+          "identifier" : "broader",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ontoforge/windprofile#WindEnergyProjectLife-cyclePhase",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "2Feasibility"
+      }
+    }, {
+      "iri" : "https://w3id.org/ontoforge/windprofile#ProcessGroup",
+      "baseIri" : "https://w3id.org/ontoforge/windprofile",
+      "annotations" : {
+        "creator" : [ {
+          "identifier" : "creator",
+          "language" : "undefined",
+          "value" : "https://www.pmi.org/",
+          "type" : "iri"
+        } ],
+        "inScheme" : [ {
+          "identifier" : "inScheme",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ontoforge/windprofile#",
+          "type" : "iri"
+        } ],
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Process Group",
+          "type" : "label"
+        } ],
+        "narrower" : [ {
+          "identifier" : "narrower",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ontoforge/windprofile#Performance-Control",
+          "type" : "iri"
+        }, {
+          "identifier" : "narrower",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ontoforge/windprofile#Planning",
+          "type" : "iri"
+        }, {
+          "identifier" : "narrower",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ontoforge/windprofile#Closure",
+          "type" : "iri"
+        }, {
+          "identifier" : "narrower",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ontoforge/windprofile#Execution",
+          "type" : "iri"
+        }, {
+          "identifier" : "narrower",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ontoforge/windprofile#Initiation",
+          "type" : "iri"
+        } ],
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "en",
+          "value" : "Projects that follow a process-based approach may adopt project process groups. Project management processes can be organized into logical groupings of project management inputs, tools and techniques, and outputs that are tailored to meet the needs of the organization, stakeholders, and the project. Groups of processes are not project phases. The Process Groups interact within each phase of a project life cycle. In a process-based approach, the output of one process generally becomes an input to another process or is a deliverable of the project or project phase.",
+          "type" : "label"
+        } ],
+        "bibliographicCitation" : [ {
+          "identifier" : "bibliographicCitation",
+          "language" : "en",
+          "value" : "urn:ISBN:9781628256659",
+          "type" : "label"
+        } ],
+        "topConceptOf" : [ {
+          "identifier" : "topConceptOf",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ontoforge/windprofile#",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "ProcessGroup"
+      }
+    }, {
+      "iri" : "https://w3id.org/ontoforge/windprofile#LifeCyclePhase",
+      "baseIri" : "https://w3id.org/ontoforge/windprofile",
+      "annotations" : {
+        "inScheme" : [ {
+          "identifier" : "inScheme",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ontoforge/windprofile#",
+          "type" : "iri"
+        } ],
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Life Cycle Phase",
+          "type" : "label"
+        } ],
+        "narrower" : [ {
+          "identifier" : "narrower",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ontoforge/windprofile#ProductLife-cyclePhase",
+          "type" : "iri"
+        }, {
+          "identifier" : "narrower",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ontoforge/windprofile#WindEnergyProjectLife-cyclePhase",
+          "type" : "iri"
+        }, {
+          "identifier" : "narrower",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ontoforge/windprofile#ReferenceProjectLife-cyclePhase",
+          "type" : "iri"
+        } ],
+        "topConceptOf" : [ {
+          "identifier" : "topConceptOf",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ontoforge/windprofile#",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "LifeCyclePhase"
+      }
+    }, {
+      "iri" : "https://w3id.org/ontoforge/windprofile#Closure",
+      "baseIri" : "https://w3id.org/ontoforge/windprofile",
+      "annotations" : {
+        "creator" : [ {
+          "identifier" : "creator",
+          "language" : "undefined",
+          "value" : "https://www.pmi.org/",
+          "type" : "iri"
+        } ],
+        "inScheme" : [ {
+          "identifier" : "inScheme",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ontoforge/windprofile#",
+          "type" : "iri"
+        } ],
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Closure",
+          "type" : "label"
+        } ],
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "en",
+          "value" : "Those processes performed to formally complete or close a project, phase, or contract.",
+          "type" : "label"
+        } ],
+        "bibliographicCitation" : [ {
+          "identifier" : "bibliographicCitation",
+          "language" : "en",
+          "value" : "urn:ISBN:9781628256659",
+          "type" : "label"
+        } ],
+        "broader" : [ {
+          "identifier" : "broader",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ontoforge/windprofile#ProcessGroup",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "Closure"
+      }
+    }, {
+      "iri" : "https://w3id.org/ontoforge/windprofile#ProjectManagementProcess",
+      "baseIri" : "https://w3id.org/ontoforge/windprofile",
+      "annotations" : {
+        "inScheme" : [ {
+          "identifier" : "inScheme",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ontoforge/windprofile#",
+          "type" : "iri"
+        } ],
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Project Management Process",
+          "type" : "label"
+        } ],
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "en",
+          "value" : "Project management process is specific to project management. It determines how the activities selected for the project are managed.",
+          "type" : "label"
+        } ],
+        "broader" : [ {
+          "identifier" : "broader",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ontoforge/windprofile#Process",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "ProjectManagementProcess"
+      }
+    }, {
+      "iri" : "https://w3id.org/ontoforge/windprofile#Performance-Control",
+      "baseIri" : "https://w3id.org/ontoforge/windprofile",
+      "annotations" : {
+        "creator" : [ {
+          "identifier" : "creator",
+          "language" : "undefined",
+          "value" : "https://www.pmi.org/",
+          "type" : "iri"
+        } ],
+        "inScheme" : [ {
+          "identifier" : "inScheme",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ontoforge/windprofile#",
+          "type" : "iri"
+        } ],
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Performance & Control",
+          "type" : "label"
+        } ],
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "en",
+          "value" : "Those processes required to track, review, and regulate the progress and performance of the project; identify any areas in which changes to the plan are required; and initiate the corresponding changes.",
+          "type" : "label"
+        } ],
+        "bibliographicCitation" : [ {
+          "identifier" : "bibliographicCitation",
+          "language" : "en",
+          "value" : "urn:ISBN:9781628256659",
+          "type" : "label"
+        } ],
+        "broader" : [ {
+          "identifier" : "broader",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ontoforge/windprofile#ProcessGroup",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "Performance-Control"
+      }
+    }, {
+      "iri" : "https://w3id.org/ontoforge/windprofile#WindEnergyProjectLife-cyclePhase",
+      "baseIri" : "https://w3id.org/ontoforge/windprofile",
+      "annotations" : {
+        "inScheme" : [ {
+          "identifier" : "inScheme",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ontoforge/windprofile#",
+          "type" : "iri"
+        } ],
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Wind Energy Project Life-cycle Phase",
+          "type" : "label"
+        } ],
+        "narrower" : [ {
+          "identifier" : "narrower",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ontoforge/windprofile#8Decommissioning",
+          "type" : "iri"
+        }, {
+          "identifier" : "narrower",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ontoforge/windprofile#7Operation-Maintenance",
+          "type" : "iri"
+        }, {
+          "identifier" : "narrower",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ontoforge/windprofile#3Development",
+          "type" : "iri"
+        }, {
+          "identifier" : "narrower",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ontoforge/windprofile#2Feasibility",
+          "type" : "iri"
+        }, {
+          "identifier" : "narrower",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ontoforge/windprofile#4Pre-Construction",
+          "type" : "iri"
+        }, {
+          "identifier" : "narrower",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ontoforge/windprofile#1Identification",
+          "type" : "iri"
+        }, {
+          "identifier" : "narrower",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ontoforge/windprofile#6Commissioning",
+          "type" : "iri"
+        }, {
+          "identifier" : "narrower",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ontoforge/windprofile#5Construction",
+          "type" : "iri"
+        } ],
+        "broader" : [ {
+          "identifier" : "broader",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ontoforge/windprofile#LifeCyclePhase",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "WindEnergyProjectLife-cyclePhase"
+      }
+    }, {
+      "iri" : "https://w3id.org/ontoforge/windprofile#Feasibility",
+      "baseIri" : "https://w3id.org/ontoforge/windprofile",
+      "annotations" : {
+        "creator" : [ {
+          "identifier" : "creator",
+          "language" : "undefined",
+          "value" : "https://www.pmi.org/",
+          "type" : "iri"
+        } ],
+        "inScheme" : [ {
+          "identifier" : "inScheme",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ontoforge/windprofile#",
+          "type" : "iri"
+        } ],
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Feasibility",
+          "type" : "label"
+        } ],
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "en",
+          "value" : "This phase determines if the business case is valid and if the organization has the capability to deliver the intended outcome.",
+          "type" : "label"
+        } ],
+        "bibliographicCitation" : [ {
+          "identifier" : "bibliographicCitation",
+          "language" : "en",
+          "value" : "urn:ISBN:9781628256659",
+          "type" : "label"
+        } ],
+        "broader" : [ {
+          "identifier" : "broader",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ontoforge/windprofile#ReferenceProjectLife-cyclePhase",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "Feasibility"
+      }
+    }, {
+      "iri" : "https://w3id.org/ontoforge/windprofile#4Pre-Construction",
+      "baseIri" : "https://w3id.org/ontoforge/windprofile",
+      "annotations" : {
+        "inScheme" : [ {
+          "identifier" : "inScheme",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ontoforge/windprofile#",
+          "type" : "iri"
+        } ],
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "4 Pre-Construction",
+          "type" : "label"
+        } ],
+        "altLabel" : [ {
+          "identifier" : "altLabel",
+          "language" : "en",
+          "value" : "Purchase",
+          "type" : "label"
+        }, {
+          "identifier" : "altLabel",
+          "language" : "en",
+          "value" : "Procurement",
+          "type" : "label"
+        } ],
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "en",
+          "value" : "Finalizing detailed engineering designs, procurement of materials, and preparation of the site for construction, including contractor selection.",
+          "type" : "label"
+        } ],
+        "broader" : [ {
+          "identifier" : "broader",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ontoforge/windprofile#WindEnergyProjectLife-cyclePhase",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "4Pre-Construction"
+      }
+    }, {
+      "iri" : "https://w3id.org/ontoforge/windprofile#3Development",
+      "baseIri" : "https://w3id.org/ontoforge/windprofile",
+      "annotations" : {
+        "inScheme" : [ {
+          "identifier" : "inScheme",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ontoforge/windprofile#",
+          "type" : "iri"
+        } ],
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "3 Development",
+          "type" : "label"
+        } ],
+        "altLabel" : [ {
+          "identifier" : "altLabel",
+          "language" : "en",
+          "value" : "Planning & Permitting",
+          "type" : "label"
+        }, {
+          "identifier" : "altLabel",
+          "language" : "en",
+          "value" : "Design",
+          "type" : "label"
+        } ],
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "en",
+          "value" : "Preparation of detailed plans and engineering designs, wind turbine technology and vendor selection, securing permits, land leases, financing, and stakeholder agreements required to move forward with the project.",
+          "type" : "label"
+        } ],
+        "broader" : [ {
+          "identifier" : "broader",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ontoforge/windprofile#WindEnergyProjectLife-cyclePhase",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "3Development"
+      }
+    }, {
+      "iri" : "https://w3id.org/ontoforge/windprofile#8Decommissioning",
+      "baseIri" : "https://w3id.org/ontoforge/windprofile",
+      "annotations" : {
+        "inScheme" : [ {
+          "identifier" : "inScheme",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ontoforge/windprofile#",
+          "type" : "iri"
+        } ],
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "8 Decommissioning",
+          "type" : "label"
+        } ],
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "en",
+          "value" : "End-of-life activities for the wind farm, involving dismantling turbines and infrastructure, restoring the site, and recycling or disposing of materials.",
+          "type" : "label"
+        } ],
+        "altLabel" : [ {
+          "identifier" : "altLabel",
+          "language" : "en",
+          "value" : "End of life",
+          "type" : "label"
+        } ],
+        "broader" : [ {
+          "identifier" : "broader",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ontoforge/windprofile#WindEnergyProjectLife-cyclePhase",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "8Decommissioning"
+      }
+    }, {
+      "iri" : "https://w3id.org/ontoforge/windprofile#Conception",
+      "baseIri" : "https://w3id.org/ontoforge/windprofile",
+      "annotations" : {
+        "inScheme" : [ {
+          "identifier" : "inScheme",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ontoforge/windprofile#",
+          "type" : "iri"
+        } ],
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Conception",
+          "type" : "label"
+        } ],
+        "broader" : [ {
+          "identifier" : "broader",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ontoforge/windprofile#ProductLife-cyclePhase",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "Conception"
+      }
+    }, {
+      "iri" : "https://w3id.org/ontoforge/windprofile#Service",
+      "baseIri" : "https://w3id.org/ontoforge/windprofile",
+      "annotations" : {
+        "inScheme" : [ {
+          "identifier" : "inScheme",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ontoforge/windprofile#",
+          "type" : "iri"
+        } ],
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Service",
+          "type" : "label"
+        } ],
+        "broader" : [ {
+          "identifier" : "broader",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ontoforge/windprofile#ProductLife-cyclePhase",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "Service"
+      }
+    }, {
+      "iri" : "https://w3id.org/ontoforge/windprofile#5Construction",
+      "baseIri" : "https://w3id.org/ontoforge/windprofile",
+      "annotations" : {
+        "inScheme" : [ {
+          "identifier" : "inScheme",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ontoforge/windprofile#",
+          "type" : "iri"
+        } ],
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "5 Construction",
+          "type" : "label"
+        } ],
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "en",
+          "value" : "Physical construction of the wind farm, including infrastructure setup (turbines, roads, electrical connections) and project management oversight.",
+          "type" : "label"
+        } ],
+        "broader" : [ {
+          "identifier" : "broader",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ontoforge/windprofile#WindEnergyProjectLife-cyclePhase",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "5Construction"
+      }
+    }, {
+      "iri" : "https://w3id.org/ontoforge/windprofile#ReferenceProjectLife-cyclePhase",
+      "baseIri" : "https://w3id.org/ontoforge/windprofile",
+      "annotations" : {
+        "creator" : [ {
+          "identifier" : "creator",
+          "language" : "undefined",
+          "value" : "https://www.pmi.org/",
+          "type" : "iri"
+        } ],
+        "inScheme" : [ {
+          "identifier" : "inScheme",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ontoforge/windprofile#",
+          "type" : "iri"
+        } ],
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Reference Project Life-cycle Phase",
+          "type" : "label"
+        } ],
+        "narrower" : [ {
+          "identifier" : "narrower",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ontoforge/windprofile#Close",
+          "type" : "iri"
+        }, {
+          "identifier" : "narrower",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ontoforge/windprofile#Deploy",
+          "type" : "iri"
+        }, {
+          "identifier" : "narrower",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ontoforge/windprofile#Design",
+          "type" : "iri"
+        }, {
+          "identifier" : "narrower",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ontoforge/windprofile#Build",
+          "type" : "iri"
+        }, {
+          "identifier" : "narrower",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ontoforge/windprofile#Test",
+          "type" : "iri"
+        }, {
+          "identifier" : "narrower",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ontoforge/windprofile#AllProjectPhases",
+          "type" : "iri"
+        }, {
+          "identifier" : "narrower",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ontoforge/windprofile#Feasibility",
+          "type" : "iri"
+        } ],
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "en",
+          "value" : "Project phase is a collection of logically related project activities (processes) that culminates in the completion of one or more deliverables. Project Life Cycle is the series of phases that a project passes through from its start to its completion.",
+          "type" : "label"
+        } ],
+        "bibliographicCitation" : [ {
+          "identifier" : "bibliographicCitation",
+          "language" : "en",
+          "value" : "urn:ISBN:9781628256659",
+          "type" : "label"
+        } ],
+        "broader" : [ {
+          "identifier" : "broader",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ontoforge/windprofile#LifeCyclePhase",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "ReferenceProjectLife-cyclePhase"
+      }
+    }, {
+      "iri" : "https://w3id.org/ontoforge/windprofile#Design",
+      "baseIri" : "https://w3id.org/ontoforge/windprofile",
+      "annotations" : {
+        "creator" : [ {
+          "identifier" : "creator",
+          "language" : "undefined",
+          "value" : "https://www.pmi.org/",
+          "type" : "iri"
+        } ],
+        "inScheme" : [ {
+          "identifier" : "inScheme",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ontoforge/windprofile#",
+          "type" : "iri"
+        } ],
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Design",
+          "type" : "label"
+        } ],
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "en",
+          "value" : "Planning and analysis lead to the design of the project deliverable that will be developed.",
+          "type" : "label"
+        } ],
+        "broader" : [ {
+          "identifier" : "broader",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ontoforge/windprofile#ProductLife-cyclePhase",
+          "type" : "iri"
+        }, {
+          "identifier" : "broader",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ontoforge/windprofile#ReferenceProjectLife-cyclePhase",
+          "type" : "iri"
+        } ],
+        "bibliographicCitation" : [ {
+          "identifier" : "bibliographicCitation",
+          "language" : "en",
+          "value" : "urn:ISBN:9781628256659",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "Design"
+      }
+    }, {
+      "iri" : "https://w3id.org/ontoforge/windprofile#SupportingProcess",
+      "baseIri" : "https://w3id.org/ontoforge/windprofile",
+      "annotations" : {
+        "inScheme" : [ {
+          "identifier" : "inScheme",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ontoforge/windprofile#",
+          "type" : "iri"
+        } ],
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Supporting Process",
+          "type" : "label"
+        } ],
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "en",
+          "value" : "Supporting process is a process not unique to project management and which provides relevant and valuable support to product and project management processes in such disciplines as logistics, finance, accounting and safety.",
+          "type" : "label"
+        } ],
+        "altLabel" : [ {
+          "identifier" : "altLabel",
+          "language" : "en",
+          "value" : "Cross-cutting Process",
+          "type" : "label"
+        }, {
+          "identifier" : "altLabel",
+          "language" : "en",
+          "value" : "Supporting Activities",
+          "type" : "label"
+        } ],
+        "broader" : [ {
+          "identifier" : "broader",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ontoforge/windprofile#Process",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "SupportingProcess"
+      }
+    }, {
+      "iri" : "https://w3id.org/ontoforge/windprofile#WindTurbineProductProcess",
+      "baseIri" : "https://w3id.org/ontoforge/windprofile",
+      "annotations" : {
+        "inScheme" : [ {
+          "identifier" : "inScheme",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ontoforge/windprofile#",
+          "type" : "iri"
+        } ],
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Wind Turbine Product Process",
+          "type" : "label"
+        } ],
+        "broader" : [ {
+          "identifier" : "broader",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ontoforge/windprofile#ProductProcess",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "WindTurbineProductProcess"
+      }
+    }, {
+      "iri" : "https://w3id.org/ontoforge/windprofile#WindPowerPlantProcess",
+      "baseIri" : "https://w3id.org/ontoforge/windprofile",
+      "annotations" : {
+        "inScheme" : [ {
+          "identifier" : "inScheme",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ontoforge/windprofile#",
+          "type" : "iri"
+        } ],
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Wind Power Plant Process",
+          "type" : "label"
+        } ],
+        "broader" : [ {
+          "identifier" : "broader",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ontoforge/windprofile#ProductProcess",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "WindPowerPlantProcess"
+      }
+    }, {
+      "iri" : "https://w3id.org/ontoforge/windprofile#Process",
+      "baseIri" : "https://w3id.org/ontoforge/windprofile",
+      "annotations" : {
+        "inScheme" : [ {
+          "identifier" : "inScheme",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ontoforge/windprofile#",
+          "type" : "iri"
+        } ],
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Process",
+          "type" : "label"
+        } ],
+        "narrower" : [ {
+          "identifier" : "narrower",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ontoforge/windprofile#SupportingProcess",
+          "type" : "iri"
+        }, {
+          "identifier" : "narrower",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ontoforge/windprofile#ProductProcess",
+          "type" : "iri"
+        }, {
+          "identifier" : "narrower",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ontoforge/windprofile#ProjectManagementProcess",
+          "type" : "iri"
+        } ],
+        "topConceptOf" : [ {
+          "identifier" : "topConceptOf",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ontoforge/windprofile#",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "Process"
+      }
+    }, {
+      "iri" : "https://w3id.org/ontoforge/windprofile#Execution",
+      "baseIri" : "https://w3id.org/ontoforge/windprofile",
+      "annotations" : {
+        "creator" : [ {
+          "identifier" : "creator",
+          "language" : "undefined",
+          "value" : "https://www.pmi.org/",
+          "type" : "iri"
+        } ],
+        "inScheme" : [ {
+          "identifier" : "inScheme",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ontoforge/windprofile#",
+          "type" : "iri"
+        } ],
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Execution",
+          "type" : "label"
+        } ],
+        "altLabel" : [ {
+          "identifier" : "altLabel",
+          "language" : "en",
+          "value" : "Implementation",
+          "type" : "label"
+        } ],
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "en",
+          "value" : "Those processes performed to complete the work defined in the project management plan to satisfy the project requirements.",
+          "type" : "label"
+        } ],
+        "bibliographicCitation" : [ {
+          "identifier" : "bibliographicCitation",
+          "language" : "en",
+          "value" : "urn:ISBN:9781628256659",
+          "type" : "label"
+        } ],
+        "broader" : [ {
+          "identifier" : "broader",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ontoforge/windprofile#ProcessGroup",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "Execution"
+      }
+    }, {
+      "iri" : "https://w3id.org/ontoforge/windprofile#Test",
+      "baseIri" : "https://w3id.org/ontoforge/windprofile",
+      "annotations" : {
+        "creator" : [ {
+          "identifier" : "creator",
+          "language" : "undefined",
+          "value" : "https://www.pmi.org/",
+          "type" : "iri"
+        } ],
+        "inScheme" : [ {
+          "identifier" : "inScheme",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ontoforge/windprofile#",
+          "type" : "iri"
+        } ],
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Test",
+          "type" : "label"
+        } ],
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "en",
+          "value" : "Final quality review and inspection of deliverables are carried out before transition, go-live, or acceptance by the customer.",
+          "type" : "label"
+        } ],
+        "broader" : [ {
+          "identifier" : "broader",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ontoforge/windprofile#ReferenceProjectLife-cyclePhase",
+          "type" : "iri"
+        } ],
+        "bibliographicCitation" : [ {
+          "identifier" : "bibliographicCitation",
+          "language" : "en",
+          "value" : "urn:ISBN:9781628256659",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "Test"
+      }
+    }, {
+      "iri" : "https://w3id.org/ontoforge/windprofile#6Commissioning",
+      "baseIri" : "https://w3id.org/ontoforge/windprofile",
+      "annotations" : {
+        "inScheme" : [ {
+          "identifier" : "inScheme",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ontoforge/windprofile#",
+          "type" : "iri"
+        } ],
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "6 Commissioning",
+          "type" : "label"
+        } ],
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "en",
+          "value" : "Testing and certifying that the wind farm operates according to design specifications before becoming fully operational.",
+          "type" : "label"
+        } ],
+        "broader" : [ {
+          "identifier" : "broader",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ontoforge/windprofile#WindEnergyProjectLife-cyclePhase",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "6Commissioning"
+      }
+    }, {
+      "iri" : "https://w3id.org/ontoforge/windprofile#Initiation",
+      "baseIri" : "https://w3id.org/ontoforge/windprofile",
+      "annotations" : {
+        "creator" : [ {
+          "identifier" : "creator",
+          "language" : "undefined",
+          "value" : "https://www.pmi.org/",
+          "type" : "iri"
+        } ],
+        "inScheme" : [ {
+          "identifier" : "inScheme",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ontoforge/windprofile#",
+          "type" : "iri"
+        } ],
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Initiation",
+          "type" : "label"
+        } ],
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "en",
+          "value" : "Those processes performed to define a new project or a new phase of an existing project by obtaining authorization to start the project or phase.",
+          "type" : "label"
+        } ],
+        "broader" : [ {
+          "identifier" : "broader",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ontoforge/windprofile#ProcessGroup",
+          "type" : "iri"
+        } ],
+        "bibliographicCitation" : [ {
+          "identifier" : "bibliographicCitation",
+          "language" : "en",
+          "value" : "urn:ISBN:9781628256659",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "Initiation"
+      }
+    }, {
+      "iri" : "https://w3id.org/ontoforge/windprofile#1Identification",
+      "baseIri" : "https://w3id.org/ontoforge/windprofile",
+      "annotations" : {
+        "inScheme" : [ {
+          "identifier" : "inScheme",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ontoforge/windprofile#",
+          "type" : "iri"
+        } ],
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "1 Identification",
+          "type" : "label"
+        } ],
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "en",
+          "value" : "Initial stage where potential wind energy sites are identified based on criteria like wind resource, land availability, and environmental factors.",
+          "type" : "label"
+        } ],
+        "altLabel" : [ {
+          "identifier" : "altLabel",
+          "language" : "en",
+          "value" : "Pilot Study",
+          "type" : "label"
+        }, {
+          "identifier" : "altLabel",
+          "language" : "en",
+          "value" : "Screening",
+          "type" : "label"
+        }, {
+          "identifier" : "altLabel",
+          "language" : "en",
+          "value" : "Site Selection",
+          "type" : "label"
+        } ],
+        "broader" : [ {
+          "identifier" : "broader",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ontoforge/windprofile#WindEnergyProjectLife-cyclePhase",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "1Identification"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "1"
+  } ]
+}
