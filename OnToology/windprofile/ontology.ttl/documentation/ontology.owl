@@ -1,0 +1,773 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://w3id.org/ontoforge/windprofle#"
+     xml:base="https://w3id.org/ontoforge/windprofle"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:terms="http://purl.org/dc/terms/">
+    <owl:Ontology rdf:about="https://w3id.org/ontoforge/windprofle#">
+        <dc:publisher rdf:resource="https://ost.ch/"/>
+        <terms:creator xml:lang="en">IEA Wind Task 43</terms:creator>
+        <terms:description xml:lang="en">A simple SKOS Taxonomy of a processes in wind energy according to the project life-cycle phases</terms:description>
+        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-02-15</terms:issued>
+        <terms:license rdf:resource="http://creativecommons.org/licenses/by/4.0/"/>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-02-17</terms:modified>
+        <terms:publisher rdf:resource="https://ost.ch"/>
+        <terms:rights>Copyright © 2025 OST Ostschweizer Fachhochschule</terms:rights>
+        <terms:title xml:lang="en">Life Cycle Phase and Process Taxonomy</terms:title>
+        <vann:preferredNamespacePrefix>of-wpl</vann:preferredNamespacePrefix>
+        <vann:preferredNamespaceUri>https://w3id.org/ontoforge/windprofile#</vann:preferredNamespaceUri>
+        <rdfs:comment xml:lang="en">This ontology aims to model a taxonomical organisation of a processes in wind energy according to the project life-cycle phases using a Simple Knoledge Organisation System (SKOS) data model.</rdfs:comment>
+        <owl:versionInfo xml:lang="en">0.1.2</owl:versionInfo>
+        <skos:hasTopConcept rdf:resource="https://w3id.org/ontoforge/windprofile#LifeCyclePhase"/>
+        <skos:hasTopConcept rdf:resource="https://w3id.org/ontoforge/windprofile#Process"/>
+        <skos:hasTopConcept rdf:resource="https://w3id.org/ontoforge/windprofile#ProcessGroup"/>
+        <skos:prefLabel xml:lang="en">WINDPROFILE</skos:prefLabel>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/publisher -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/publisher"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/bibliographicCitation -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/bibliographicCitation"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/description -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/issued -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/issued"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/license -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/modified -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/modified"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/publisher -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/publisher"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/rights -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/rights"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespacePrefix -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespaceUri -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespaceUri"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#altLabel -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#altLabel"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#broader -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#broader"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#definition -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#definition"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#hasTopConcept -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#hasTopConcept"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#inScheme -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#inScheme"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#narrower -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#narrower"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#prefLabel -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#topConceptOf -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#topConceptOf"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#date -->
+
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#Concept -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#ConceptScheme -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://w3id.org/ontoforge/windprofile#AllProductPhases -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoforge/windprofile#AllProductPhases">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="https://w3id.org/ontoforge/windprofile#ProductLife-cyclePhase"/>
+        <skos:inScheme rdf:resource="https://w3id.org/ontoforge/windprofile#"/>
+        <skos:prefLabel xml:lang="en">All Product Phases</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoforge/windprofile#AllProjectPhases -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoforge/windprofile#AllProjectPhases">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="https://w3id.org/ontoforge/windprofile#ReferenceProjectLife-cyclePhase"/>
+        <skos:inScheme rdf:resource="https://w3id.org/ontoforge/windprofile#"/>
+        <skos:prefLabel xml:lang="en">All Project Phases</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoforge/windprofile#Build -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoforge/windprofile#Build">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <terms:bibliographicCitation xml:lang="en">urn:ISBN:9781628256659</terms:bibliographicCitation>
+        <terms:creator rdf:resource="https://www.pmi.org/"/>
+        <skos:broader rdf:resource="https://w3id.org/ontoforge/windprofile#ReferenceProjectLife-cyclePhase"/>
+        <skos:definition xml:lang="en">Construction of the deliverable with integrated quality assurance activities is conducted.</skos:definition>
+        <skos:inScheme rdf:resource="https://w3id.org/ontoforge/windprofile#"/>
+        <skos:prefLabel xml:lang="en">Build</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoforge/windprofile#Close -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoforge/windprofile#Close">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <terms:bibliographicCitation xml:lang="en">urn:ISBN:9781628256659</terms:bibliographicCitation>
+        <terms:creator rdf:resource="https://www.pmi.org/"/>
+        <skos:broader rdf:resource="https://w3id.org/ontoforge/windprofile#ReferenceProjectLife-cyclePhase"/>
+        <skos:definition xml:lang="en">The project is closed, project knowledge and artifacts are archived, project team members are released, and contracts are closed.</skos:definition>
+        <skos:inScheme rdf:resource="https://w3id.org/ontoforge/windprofile#"/>
+        <skos:prefLabel xml:lang="en">Close</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoforge/windprofile#Closure -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoforge/windprofile#Closure">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <terms:bibliographicCitation xml:lang="en">urn:ISBN:9781628256659</terms:bibliographicCitation>
+        <terms:creator rdf:resource="https://www.pmi.org/"/>
+        <skos:broader rdf:resource="https://w3id.org/ontoforge/windprofile#ProcessGroup"/>
+        <skos:definition xml:lang="en">Those processes performed to formally complete or close a project, phase, or contract.</skos:definition>
+        <skos:inScheme rdf:resource="https://w3id.org/ontoforge/windprofile#"/>
+        <skos:prefLabel xml:lang="en">Closure</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoforge/windprofile#Conception -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoforge/windprofile#Conception">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="https://w3id.org/ontoforge/windprofile#ProductLife-cyclePhase"/>
+        <skos:inScheme rdf:resource="https://w3id.org/ontoforge/windprofile#"/>
+        <skos:prefLabel xml:lang="en">Conception</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoforge/windprofile#Deploy -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoforge/windprofile#Deploy">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <terms:bibliographicCitation xml:lang="en">urn:ISBN:9781628256659</terms:bibliographicCitation>
+        <terms:creator rdf:resource="https://www.pmi.org/"/>
+        <skos:broader rdf:resource="https://w3id.org/ontoforge/windprofile#ReferenceProjectLife-cyclePhase"/>
+        <skos:definition xml:lang="en">Project deliverables are put into use and transitional activities required for sustainment, benefits realization, and organizational change management are completed.</skos:definition>
+        <skos:inScheme rdf:resource="https://w3id.org/ontoforge/windprofile#"/>
+        <skos:prefLabel xml:lang="en">Deploy</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoforge/windprofile#Design -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoforge/windprofile#Design">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <terms:bibliographicCitation xml:lang="en">urn:ISBN:9781628256659</terms:bibliographicCitation>
+        <terms:creator rdf:resource="https://www.pmi.org/"/>
+        <skos:broader rdf:resource="https://w3id.org/ontoforge/windprofile#ProductLife-cyclePhase"/>
+        <skos:broader rdf:resource="https://w3id.org/ontoforge/windprofile#ReferenceProjectLife-cyclePhase"/>
+        <skos:definition xml:lang="en">Planning and analysis lead to the design of the project deliverable that will be developed.</skos:definition>
+        <skos:inScheme rdf:resource="https://w3id.org/ontoforge/windprofile#"/>
+        <skos:prefLabel xml:lang="en">Design</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoforge/windprofile#Execution -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoforge/windprofile#Execution">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <terms:bibliographicCitation xml:lang="en">urn:ISBN:9781628256659</terms:bibliographicCitation>
+        <terms:creator rdf:resource="https://www.pmi.org/"/>
+        <skos:altLabel xml:lang="en">Implementation</skos:altLabel>
+        <skos:broader rdf:resource="https://w3id.org/ontoforge/windprofile#ProcessGroup"/>
+        <skos:definition xml:lang="en">Those processes performed to complete the work defined in the project management plan to satisfy the project requirements.</skos:definition>
+        <skos:inScheme rdf:resource="https://w3id.org/ontoforge/windprofile#"/>
+        <skos:prefLabel xml:lang="en">Execution</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoforge/windprofile#Feasibility -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoforge/windprofile#Feasibility">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <terms:bibliographicCitation xml:lang="en">urn:ISBN:9781628256659</terms:bibliographicCitation>
+        <terms:creator rdf:resource="https://www.pmi.org/"/>
+        <skos:broader rdf:resource="https://w3id.org/ontoforge/windprofile#ReferenceProjectLife-cyclePhase"/>
+        <skos:definition xml:lang="en">This phase determines if the business case is valid and if the organization has the capability to deliver the intended outcome.</skos:definition>
+        <skos:inScheme rdf:resource="https://w3id.org/ontoforge/windprofile#"/>
+        <skos:prefLabel xml:lang="en">Feasibility</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoforge/windprofile#Initiation -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoforge/windprofile#Initiation">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <terms:bibliographicCitation xml:lang="en">urn:ISBN:9781628256659</terms:bibliographicCitation>
+        <terms:creator rdf:resource="https://www.pmi.org/"/>
+        <skos:broader rdf:resource="https://w3id.org/ontoforge/windprofile#ProcessGroup"/>
+        <skos:definition xml:lang="en">Those processes performed to define a new project or a new phase of an existing project by obtaining authorization to start the project or phase.</skos:definition>
+        <skos:inScheme rdf:resource="https://w3id.org/ontoforge/windprofile#"/>
+        <skos:prefLabel xml:lang="en">Initiation</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoforge/windprofile#LifeCyclePhase -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoforge/windprofile#LifeCyclePhase">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:inScheme rdf:resource="https://w3id.org/ontoforge/windprofile#"/>
+        <skos:narrower rdf:resource="https://w3id.org/ontoforge/windprofile#ProductLife-cyclePhase"/>
+        <skos:narrower rdf:resource="https://w3id.org/ontoforge/windprofile#ReferenceProjectLife-cyclePhase"/>
+        <skos:narrower rdf:resource="https://w3id.org/ontoforge/windprofile#WindEnergyProjectLife-cyclePhase"/>
+        <skos:prefLabel xml:lang="en">Life Cycle Phase</skos:prefLabel>
+        <skos:topConceptOf rdf:resource="https://w3id.org/ontoforge/windprofile#"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoforge/windprofile#Performance-Control -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoforge/windprofile#Performance-Control">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <terms:bibliographicCitation xml:lang="en">urn:ISBN:9781628256659</terms:bibliographicCitation>
+        <terms:creator rdf:resource="https://www.pmi.org/"/>
+        <skos:broader rdf:resource="https://w3id.org/ontoforge/windprofile#ProcessGroup"/>
+        <skos:definition xml:lang="en">Those processes required to track, review, and regulate the progress and performance of the project; identify any areas in which changes to the plan are required; and initiate the corresponding changes.</skos:definition>
+        <skos:inScheme rdf:resource="https://w3id.org/ontoforge/windprofile#"/>
+        <skos:prefLabel xml:lang="en">Performance &amp; Control</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoforge/windprofile#Planning -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoforge/windprofile#Planning">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <terms:bibliographicCitation xml:lang="en">urn:ISBN:9781628256659</terms:bibliographicCitation>
+        <terms:creator rdf:resource="https://www.pmi.org/"/>
+        <skos:broader rdf:resource="https://w3id.org/ontoforge/windprofile#ProcessGroup"/>
+        <skos:definition xml:lang="en">Those processes required to establish the scope of the project, refine the objectives, and define the course of action required to attain the objectives that the project was undertaken to achieve.</skos:definition>
+        <skos:inScheme rdf:resource="https://w3id.org/ontoforge/windprofile#"/>
+        <skos:prefLabel xml:lang="en">Planning</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoforge/windprofile#Process -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoforge/windprofile#Process">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:inScheme rdf:resource="https://w3id.org/ontoforge/windprofile#"/>
+        <skos:narrower rdf:resource="https://w3id.org/ontoforge/windprofile#ProductProcess"/>
+        <skos:narrower rdf:resource="https://w3id.org/ontoforge/windprofile#ProjectManagementProcess"/>
+        <skos:narrower rdf:resource="https://w3id.org/ontoforge/windprofile#SupportingProcess"/>
+        <skos:prefLabel xml:lang="en">Process</skos:prefLabel>
+        <skos:topConceptOf rdf:resource="https://w3id.org/ontoforge/windprofile#"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoforge/windprofile#ProcessGroup -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoforge/windprofile#ProcessGroup">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <terms:bibliographicCitation xml:lang="en">urn:ISBN:9781628256659</terms:bibliographicCitation>
+        <terms:creator rdf:resource="https://www.pmi.org/"/>
+        <skos:definition xml:lang="en">Projects that follow a process-based approach may adopt project process groups. Project management processes can be organized into logical groupings of project management inputs, tools and techniques, and outputs that are tailored to meet the needs of the organization, stakeholders, and the project. Groups of processes are not project phases. The Process Groups interact within each phase of a project life cycle. In a process-based approach, the output of one process generally becomes an input to another process or is a deliverable of the project or project phase.</skos:definition>
+        <skos:inScheme rdf:resource="https://w3id.org/ontoforge/windprofile#"/>
+        <skos:narrower rdf:resource="https://w3id.org/ontoforge/windprofile#Closure"/>
+        <skos:narrower rdf:resource="https://w3id.org/ontoforge/windprofile#Execution"/>
+        <skos:narrower rdf:resource="https://w3id.org/ontoforge/windprofile#Initiation"/>
+        <skos:narrower rdf:resource="https://w3id.org/ontoforge/windprofile#Performance-Control"/>
+        <skos:narrower rdf:resource="https://w3id.org/ontoforge/windprofile#Planning"/>
+        <skos:prefLabel xml:lang="en">Process Group</skos:prefLabel>
+        <skos:topConceptOf rdf:resource="https://w3id.org/ontoforge/windprofile#"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoforge/windprofile#ProductLife-cyclePhase -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoforge/windprofile#ProductLife-cyclePhase">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="https://w3id.org/ontoforge/windprofile#LifeCyclePhase"/>
+        <skos:inScheme rdf:resource="https://w3id.org/ontoforge/windprofile#"/>
+        <skos:narrower rdf:resource="https://w3id.org/ontoforge/windprofile#AllProductPhases"/>
+        <skos:narrower rdf:resource="https://w3id.org/ontoforge/windprofile#Conception"/>
+        <skos:narrower rdf:resource="https://w3id.org/ontoforge/windprofile#Design"/>
+        <skos:narrower rdf:resource="https://w3id.org/ontoforge/windprofile#Realisation"/>
+        <skos:narrower rdf:resource="https://w3id.org/ontoforge/windprofile#Service"/>
+        <skos:prefLabel xml:lang="en">Product Life-cycle Phase</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoforge/windprofile#ProductProcess -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoforge/windprofile#ProductProcess">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:altLabel xml:lang="en">Delivery Process</skos:altLabel>
+        <skos:broader rdf:resource="https://w3id.org/ontoforge/windprofile#Process"/>
+        <skos:definition xml:lang="en">Product process is not unique to project management, which results in the specification and provision of a particular product, service or result, and which varies depending on the particular project deliverable.</skos:definition>
+        <skos:inScheme rdf:resource="https://w3id.org/ontoforge/windprofile#"/>
+        <skos:narrower rdf:resource="https://w3id.org/ontoforge/windprofile#WindPowerPlantProcess"/>
+        <skos:narrower rdf:resource="https://w3id.org/ontoforge/windprofile#WindTurbineProductProcess"/>
+        <skos:prefLabel xml:lang="en">Product Process</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoforge/windprofile#ProjectManagementProcess -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoforge/windprofile#ProjectManagementProcess">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="https://w3id.org/ontoforge/windprofile#Process"/>
+        <skos:definition xml:lang="en">Project management process is specific to project management. It determines how the activities selected for the project are managed.</skos:definition>
+        <skos:inScheme rdf:resource="https://w3id.org/ontoforge/windprofile#"/>
+        <skos:prefLabel xml:lang="en">Project Management Process</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoforge/windprofile#Realisation -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoforge/windprofile#Realisation">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="https://w3id.org/ontoforge/windprofile#ProductLife-cyclePhase"/>
+        <skos:inScheme rdf:resource="https://w3id.org/ontoforge/windprofile#"/>
+        <skos:prefLabel xml:lang="en">Realisation</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoforge/windprofile#ReferenceProjectLife-cyclePhase -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoforge/windprofile#ReferenceProjectLife-cyclePhase">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <terms:bibliographicCitation xml:lang="en">urn:ISBN:9781628256659</terms:bibliographicCitation>
+        <terms:creator rdf:resource="https://www.pmi.org/"/>
+        <skos:broader rdf:resource="https://w3id.org/ontoforge/windprofile#LifeCyclePhase"/>
+        <skos:definition xml:lang="en">Project phase is a collection of logically related project activities (processes) that culminates in the completion of one or more deliverables. Project Life Cycle is the series of phases that a project passes through from its start to its completion.</skos:definition>
+        <skos:inScheme rdf:resource="https://w3id.org/ontoforge/windprofile#"/>
+        <skos:narrower rdf:resource="https://w3id.org/ontoforge/windprofile#AllProjectPhases"/>
+        <skos:narrower rdf:resource="https://w3id.org/ontoforge/windprofile#Build"/>
+        <skos:narrower rdf:resource="https://w3id.org/ontoforge/windprofile#Close"/>
+        <skos:narrower rdf:resource="https://w3id.org/ontoforge/windprofile#Deploy"/>
+        <skos:narrower rdf:resource="https://w3id.org/ontoforge/windprofile#Design"/>
+        <skos:narrower rdf:resource="https://w3id.org/ontoforge/windprofile#Feasibility"/>
+        <skos:narrower rdf:resource="https://w3id.org/ontoforge/windprofile#Test"/>
+        <skos:prefLabel xml:lang="en">Reference Project Life-cycle Phase</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoforge/windprofile#Service -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoforge/windprofile#Service">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="https://w3id.org/ontoforge/windprofile#ProductLife-cyclePhase"/>
+        <skos:inScheme rdf:resource="https://w3id.org/ontoforge/windprofile#"/>
+        <skos:prefLabel xml:lang="en">Service</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoforge/windprofile#SupportingProcess -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoforge/windprofile#SupportingProcess">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:altLabel xml:lang="en">Cross-cutting Process</skos:altLabel>
+        <skos:altLabel xml:lang="en">Supporting Activities</skos:altLabel>
+        <skos:broader rdf:resource="https://w3id.org/ontoforge/windprofile#Process"/>
+        <skos:definition xml:lang="en">Supporting process is a process not unique to project management and which provides relevant and valuable support to product and project management processes in such disciplines as logistics, finance, accounting and safety.</skos:definition>
+        <skos:inScheme rdf:resource="https://w3id.org/ontoforge/windprofile#"/>
+        <skos:prefLabel xml:lang="en">Supporting Process</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoforge/windprofile#Test -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoforge/windprofile#Test">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <terms:bibliographicCitation xml:lang="en">urn:ISBN:9781628256659</terms:bibliographicCitation>
+        <terms:creator rdf:resource="https://www.pmi.org/"/>
+        <skos:broader rdf:resource="https://w3id.org/ontoforge/windprofile#ReferenceProjectLife-cyclePhase"/>
+        <skos:definition xml:lang="en">Final quality review and inspection of deliverables are carried out before transition, go-live, or acceptance by the customer.</skos:definition>
+        <skos:inScheme rdf:resource="https://w3id.org/ontoforge/windprofile#"/>
+        <skos:prefLabel xml:lang="en">Test</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoforge/windprofile#WindEnergyProjectLife-cyclePhase -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoforge/windprofile#WindEnergyProjectLife-cyclePhase">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="https://w3id.org/ontoforge/windprofile#LifeCyclePhase"/>
+        <skos:inScheme rdf:resource="https://w3id.org/ontoforge/windprofile#"/>
+        <skos:narrower rdf:resource="https://w3id.org/ontoforge/windprofile#1Identification"/>
+        <skos:narrower rdf:resource="https://w3id.org/ontoforge/windprofile#2Feasibility"/>
+        <skos:narrower rdf:resource="https://w3id.org/ontoforge/windprofile#3Development"/>
+        <skos:narrower rdf:resource="https://w3id.org/ontoforge/windprofile#4Pre-Construction"/>
+        <skos:narrower rdf:resource="https://w3id.org/ontoforge/windprofile#5Construction"/>
+        <skos:narrower rdf:resource="https://w3id.org/ontoforge/windprofile#6Commissioning"/>
+        <skos:narrower rdf:resource="https://w3id.org/ontoforge/windprofile#7Operation-Maintenance"/>
+        <skos:narrower rdf:resource="https://w3id.org/ontoforge/windprofile#8Decommissioning"/>
+        <skos:prefLabel xml:lang="en">Wind Energy Project Life-cycle Phase</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoforge/windprofile#WindPowerPlantProcess -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoforge/windprofile#WindPowerPlantProcess">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="https://w3id.org/ontoforge/windprofile#ProductProcess"/>
+        <skos:inScheme rdf:resource="https://w3id.org/ontoforge/windprofile#"/>
+        <skos:prefLabel xml:lang="en">Wind Power Plant Process</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoforge/windprofile#WindTurbineProductProcess -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoforge/windprofile#WindTurbineProductProcess">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="https://w3id.org/ontoforge/windprofile#ProductProcess"/>
+        <skos:inScheme rdf:resource="https://w3id.org/ontoforge/windprofile#"/>
+        <skos:prefLabel xml:lang="en">Wind Turbine Product Process</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoforge/windprofile#1Identification -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoforge/windprofile#1Identification">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:altLabel xml:lang="en">Pilot Study</skos:altLabel>
+        <skos:altLabel xml:lang="en">Screening</skos:altLabel>
+        <skos:altLabel xml:lang="en">Site Selection</skos:altLabel>
+        <skos:broader rdf:resource="https://w3id.org/ontoforge/windprofile#WindEnergyProjectLife-cyclePhase"/>
+        <skos:definition xml:lang="en">Initial stage where potential wind energy sites are identified based on criteria like wind resource, land availability, and environmental factors.</skos:definition>
+        <skos:inScheme rdf:resource="https://w3id.org/ontoforge/windprofile#"/>
+        <skos:prefLabel xml:lang="en">1 Identification</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoforge/windprofile#2Feasibility -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoforge/windprofile#2Feasibility">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="https://w3id.org/ontoforge/windprofile#WindEnergyProjectLife-cyclePhase"/>
+        <skos:definition xml:lang="en">Detailed analysis of the identified site, including technical, environmental, and financial assessments to determine project viability.</skos:definition>
+        <skos:inScheme rdf:resource="https://w3id.org/ontoforge/windprofile#"/>
+        <skos:prefLabel xml:lang="en">2 Feasibility</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoforge/windprofile#3Development -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoforge/windprofile#3Development">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:altLabel xml:lang="en">Design</skos:altLabel>
+        <skos:altLabel xml:lang="en">Planning &amp; Permitting</skos:altLabel>
+        <skos:broader rdf:resource="https://w3id.org/ontoforge/windprofile#WindEnergyProjectLife-cyclePhase"/>
+        <skos:definition xml:lang="en">Preparation of detailed plans and engineering designs, wind turbine technology and vendor selection, securing permits, land leases, financing, and stakeholder agreements required to move forward with the project.</skos:definition>
+        <skos:inScheme rdf:resource="https://w3id.org/ontoforge/windprofile#"/>
+        <skos:prefLabel xml:lang="en">3 Development</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoforge/windprofile#4Pre-Construction -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoforge/windprofile#4Pre-Construction">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:altLabel xml:lang="en">Procurement</skos:altLabel>
+        <skos:altLabel xml:lang="en">Purchase</skos:altLabel>
+        <skos:broader rdf:resource="https://w3id.org/ontoforge/windprofile#WindEnergyProjectLife-cyclePhase"/>
+        <skos:definition xml:lang="en">Finalizing detailed engineering designs, procurement of materials, and preparation of the site for construction, including contractor selection.</skos:definition>
+        <skos:inScheme rdf:resource="https://w3id.org/ontoforge/windprofile#"/>
+        <skos:prefLabel xml:lang="en">4 Pre-Construction</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoforge/windprofile#5Construction -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoforge/windprofile#5Construction">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="https://w3id.org/ontoforge/windprofile#WindEnergyProjectLife-cyclePhase"/>
+        <skos:definition xml:lang="en">Physical construction of the wind farm, including infrastructure setup (turbines, roads, electrical connections) and project management oversight.</skos:definition>
+        <skos:inScheme rdf:resource="https://w3id.org/ontoforge/windprofile#"/>
+        <skos:prefLabel xml:lang="en">5 Construction</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoforge/windprofile#6Commissioning -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoforge/windprofile#6Commissioning">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="https://w3id.org/ontoforge/windprofile#WindEnergyProjectLife-cyclePhase"/>
+        <skos:definition xml:lang="en">Testing and certifying that the wind farm operates according to design specifications before becoming fully operational.</skos:definition>
+        <skos:inScheme rdf:resource="https://w3id.org/ontoforge/windprofile#"/>
+        <skos:prefLabel xml:lang="en">6 Commissioning</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoforge/windprofile#7Operation-Maintenance -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoforge/windprofile#7Operation-Maintenance">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:altLabel xml:lang="en">Middle of life</skos:altLabel>
+        <skos:broader rdf:resource="https://w3id.org/ontoforge/windprofile#WindEnergyProjectLife-cyclePhase"/>
+        <skos:definition xml:lang="en">Ongoing operation of the wind farm, including regular monitoring, maintenance, and optimization to ensure maximum energy production and efficiency.</skos:definition>
+        <skos:inScheme rdf:resource="https://w3id.org/ontoforge/windprofile#"/>
+        <skos:prefLabel xml:lang="en">7 Operation &amp; Maintenance</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoforge/windprofile#8Decommissioning -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoforge/windprofile#8Decommissioning">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:altLabel xml:lang="en">End of life</skos:altLabel>
+        <skos:broader rdf:resource="https://w3id.org/ontoforge/windprofile#WindEnergyProjectLife-cyclePhase"/>
+        <skos:definition xml:lang="en">End-of-life activities for the wind farm, involving dismantling turbines and infrastructure, restoring the site, and recycling or disposing of materials.</skos:definition>
+        <skos:inScheme rdf:resource="https://w3id.org/ontoforge/windprofile#"/>
+        <skos:prefLabel xml:lang="en">8 Decommissioning</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoforge/windprofle# -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoforge/windprofle#">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/ -->
+
+
