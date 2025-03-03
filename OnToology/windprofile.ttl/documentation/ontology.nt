@@ -1,0 +1,470 @@
+<https://w3id.org/ontoforge/windprofle#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://w3id.org/ontoforge/windprofle#> <http://purl.org/dc/elements/1.1/publisher> <https://ost.ch/> .
+<https://w3id.org/ontoforge/windprofle#> <http://purl.org/dc/terms/creator> "IEA Wind Task 43"@en .
+<https://w3id.org/ontoforge/windprofle#> <http://purl.org/dc/terms/description> "A simple SKOS Taxonomy of a processes in wind energy according to the project life-cycle phases"@en .
+<https://w3id.org/ontoforge/windprofle#> <http://purl.org/dc/terms/issued> "2025-02-15"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://w3id.org/ontoforge/windprofle#> <http://purl.org/dc/terms/license> <http://creativecommons.org/licenses/by/4.0/> .
+<https://w3id.org/ontoforge/windprofle#> <http://purl.org/dc/terms/modified> "2025-02-17"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://w3id.org/ontoforge/windprofle#> <http://purl.org/dc/terms/publisher> <https://ost.ch> .
+<https://w3id.org/ontoforge/windprofle#> <http://purl.org/dc/terms/rights> "Copyright © 2025 OST Ostschweizer Fachhochschule" .
+<https://w3id.org/ontoforge/windprofle#> <http://purl.org/dc/terms/title> "Life Cycle Phase and Process Taxonomy"@en .
+<https://w3id.org/ontoforge/windprofle#> <http://purl.org/vocab/vann/preferredNamespacePrefix> "of-wpl" .
+<https://w3id.org/ontoforge/windprofle#> <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/ontoforge/windprofile#" .
+<https://w3id.org/ontoforge/windprofle#> <http://www.w3.org/2000/01/rdf-schema#comment> "This ontology aims to model a taxonomical organisation of a processes in wind energy according to the project life-cycle phases using a Simple Knoledge Organisation System (SKOS) data model."@en .
+<https://w3id.org/ontoforge/windprofle#> <http://www.w3.org/2002/07/owl#versionInfo> "0.1.2"@en .
+<https://w3id.org/ontoforge/windprofle#> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <https://w3id.org/ontoforge/windprofile#LifeCyclePhase> .
+<https://w3id.org/ontoforge/windprofle#> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <https://w3id.org/ontoforge/windprofile#Process> .
+<https://w3id.org/ontoforge/windprofle#> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <https://w3id.org/ontoforge/windprofile#ProcessGroup> .
+<https://w3id.org/ontoforge/windprofle#> <http://www.w3.org/2004/02/skos/core#prefLabel> "WINDPROFILE"@en .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/elements/1.1/publisher
+<http://purl.org/dc/elements/1.1/publisher> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/bibliographicCitation
+<http://purl.org/dc/terms/bibliographicCitation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/description
+<http://purl.org/dc/terms/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/issued
+<http://purl.org/dc/terms/issued> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/modified
+<http://purl.org/dc/terms/modified> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/publisher
+<http://purl.org/dc/terms/publisher> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/rights
+<http://purl.org/dc/terms/rights> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespaceUri
+<http://purl.org/vocab/vann/preferredNamespaceUri> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2004/02/skos/core#altLabel
+<http://www.w3.org/2004/02/skos/core#altLabel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2004/02/skos/core#broader
+<http://www.w3.org/2004/02/skos/core#broader> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2004/02/skos/core#definition
+<http://www.w3.org/2004/02/skos/core#definition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2004/02/skos/core#hasTopConcept
+<http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2004/02/skos/core#inScheme
+<http://www.w3.org/2004/02/skos/core#inScheme> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2004/02/skos/core#narrower
+<http://www.w3.org/2004/02/skos/core#narrower> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2004/02/skos/core#prefLabel
+<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2004/02/skos/core#topConceptOf
+<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Datatypes
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/2001/XMLSchema#date
+<http://www.w3.org/2001/XMLSchema#date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/2004/02/skos/core#Concept
+<http://www.w3.org/2004/02/skos/core#Concept> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.w3.org/2004/02/skos/core#ConceptScheme
+<http://www.w3.org/2004/02/skos/core#ConceptScheme> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# https://w3id.org/ontoforge/windprofile#AllProductPhases
+<https://w3id.org/ontoforge/windprofile#AllProductPhases> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ontoforge/windprofile#AllProductPhases> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://w3id.org/ontoforge/windprofile#AllProductPhases> <http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/ontoforge/windprofile#ProductLife-cyclePhase> .
+<https://w3id.org/ontoforge/windprofile#AllProductPhases> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/ontoforge/windprofile#> .
+<https://w3id.org/ontoforge/windprofile#AllProductPhases> <http://www.w3.org/2004/02/skos/core#prefLabel> "All Product Phases"@en .
+# 
+# https://w3id.org/ontoforge/windprofile#AllProjectPhases
+<https://w3id.org/ontoforge/windprofile#AllProjectPhases> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ontoforge/windprofile#AllProjectPhases> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://w3id.org/ontoforge/windprofile#AllProjectPhases> <http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/ontoforge/windprofile#ReferenceProjectLife-cyclePhase> .
+<https://w3id.org/ontoforge/windprofile#AllProjectPhases> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/ontoforge/windprofile#> .
+<https://w3id.org/ontoforge/windprofile#AllProjectPhases> <http://www.w3.org/2004/02/skos/core#prefLabel> "All Project Phases"@en .
+# 
+# https://w3id.org/ontoforge/windprofile#Build
+<https://w3id.org/ontoforge/windprofile#Build> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ontoforge/windprofile#Build> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://w3id.org/ontoforge/windprofile#Build> <http://purl.org/dc/terms/bibliographicCitation> "urn:ISBN:9781628256659"@en .
+<https://w3id.org/ontoforge/windprofile#Build> <http://purl.org/dc/terms/creator> <https://www.pmi.org/> .
+<https://w3id.org/ontoforge/windprofile#Build> <http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/ontoforge/windprofile#ReferenceProjectLife-cyclePhase> .
+<https://w3id.org/ontoforge/windprofile#Build> <http://www.w3.org/2004/02/skos/core#definition> "Construction of the deliverable with integrated quality assurance activities is conducted."@en .
+<https://w3id.org/ontoforge/windprofile#Build> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/ontoforge/windprofile#> .
+<https://w3id.org/ontoforge/windprofile#Build> <http://www.w3.org/2004/02/skos/core#prefLabel> "Build"@en .
+# 
+# https://w3id.org/ontoforge/windprofile#Close
+<https://w3id.org/ontoforge/windprofile#Close> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ontoforge/windprofile#Close> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://w3id.org/ontoforge/windprofile#Close> <http://purl.org/dc/terms/bibliographicCitation> "urn:ISBN:9781628256659"@en .
+<https://w3id.org/ontoforge/windprofile#Close> <http://purl.org/dc/terms/creator> <https://www.pmi.org/> .
+<https://w3id.org/ontoforge/windprofile#Close> <http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/ontoforge/windprofile#ReferenceProjectLife-cyclePhase> .
+<https://w3id.org/ontoforge/windprofile#Close> <http://www.w3.org/2004/02/skos/core#definition> "The project is closed, project knowledge and artifacts are archived, project team members are released, and contracts are closed."@en .
+<https://w3id.org/ontoforge/windprofile#Close> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/ontoforge/windprofile#> .
+<https://w3id.org/ontoforge/windprofile#Close> <http://www.w3.org/2004/02/skos/core#prefLabel> "Close"@en .
+# 
+# https://w3id.org/ontoforge/windprofile#Closure
+<https://w3id.org/ontoforge/windprofile#Closure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ontoforge/windprofile#Closure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://w3id.org/ontoforge/windprofile#Closure> <http://purl.org/dc/terms/bibliographicCitation> "urn:ISBN:9781628256659"@en .
+<https://w3id.org/ontoforge/windprofile#Closure> <http://purl.org/dc/terms/creator> <https://www.pmi.org/> .
+<https://w3id.org/ontoforge/windprofile#Closure> <http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/ontoforge/windprofile#ProcessGroup> .
+<https://w3id.org/ontoforge/windprofile#Closure> <http://www.w3.org/2004/02/skos/core#definition> "Those processes performed to formally complete or close a project, phase, or contract."@en .
+<https://w3id.org/ontoforge/windprofile#Closure> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/ontoforge/windprofile#> .
+<https://w3id.org/ontoforge/windprofile#Closure> <http://www.w3.org/2004/02/skos/core#prefLabel> "Closure"@en .
+# 
+# https://w3id.org/ontoforge/windprofile#Conception
+<https://w3id.org/ontoforge/windprofile#Conception> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ontoforge/windprofile#Conception> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://w3id.org/ontoforge/windprofile#Conception> <http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/ontoforge/windprofile#ProductLife-cyclePhase> .
+<https://w3id.org/ontoforge/windprofile#Conception> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/ontoforge/windprofile#> .
+<https://w3id.org/ontoforge/windprofile#Conception> <http://www.w3.org/2004/02/skos/core#prefLabel> "Conception"@en .
+# 
+# https://w3id.org/ontoforge/windprofile#Deploy
+<https://w3id.org/ontoforge/windprofile#Deploy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ontoforge/windprofile#Deploy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://w3id.org/ontoforge/windprofile#Deploy> <http://purl.org/dc/terms/bibliographicCitation> "urn:ISBN:9781628256659"@en .
+<https://w3id.org/ontoforge/windprofile#Deploy> <http://purl.org/dc/terms/creator> <https://www.pmi.org/> .
+<https://w3id.org/ontoforge/windprofile#Deploy> <http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/ontoforge/windprofile#ReferenceProjectLife-cyclePhase> .
+<https://w3id.org/ontoforge/windprofile#Deploy> <http://www.w3.org/2004/02/skos/core#definition> "Project deliverables are put into use and transitional activities required for sustainment, benefits realization, and organizational change management are completed."@en .
+<https://w3id.org/ontoforge/windprofile#Deploy> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/ontoforge/windprofile#> .
+<https://w3id.org/ontoforge/windprofile#Deploy> <http://www.w3.org/2004/02/skos/core#prefLabel> "Deploy"@en .
+# 
+# https://w3id.org/ontoforge/windprofile#Design
+<https://w3id.org/ontoforge/windprofile#Design> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ontoforge/windprofile#Design> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://w3id.org/ontoforge/windprofile#Design> <http://purl.org/dc/terms/bibliographicCitation> "urn:ISBN:9781628256659"@en .
+<https://w3id.org/ontoforge/windprofile#Design> <http://purl.org/dc/terms/creator> <https://www.pmi.org/> .
+<https://w3id.org/ontoforge/windprofile#Design> <http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/ontoforge/windprofile#ProductLife-cyclePhase> .
+<https://w3id.org/ontoforge/windprofile#Design> <http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/ontoforge/windprofile#ReferenceProjectLife-cyclePhase> .
+<https://w3id.org/ontoforge/windprofile#Design> <http://www.w3.org/2004/02/skos/core#definition> "Planning and analysis lead to the design of the project deliverable that will be developed."@en .
+<https://w3id.org/ontoforge/windprofile#Design> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/ontoforge/windprofile#> .
+<https://w3id.org/ontoforge/windprofile#Design> <http://www.w3.org/2004/02/skos/core#prefLabel> "Design"@en .
+# 
+# https://w3id.org/ontoforge/windprofile#Execution
+<https://w3id.org/ontoforge/windprofile#Execution> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ontoforge/windprofile#Execution> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://w3id.org/ontoforge/windprofile#Execution> <http://purl.org/dc/terms/bibliographicCitation> "urn:ISBN:9781628256659"@en .
+<https://w3id.org/ontoforge/windprofile#Execution> <http://purl.org/dc/terms/creator> <https://www.pmi.org/> .
+<https://w3id.org/ontoforge/windprofile#Execution> <http://www.w3.org/2004/02/skos/core#altLabel> "Implementation"@en .
+<https://w3id.org/ontoforge/windprofile#Execution> <http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/ontoforge/windprofile#ProcessGroup> .
+<https://w3id.org/ontoforge/windprofile#Execution> <http://www.w3.org/2004/02/skos/core#definition> "Those processes performed to complete the work defined in the project management plan to satisfy the project requirements."@en .
+<https://w3id.org/ontoforge/windprofile#Execution> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/ontoforge/windprofile#> .
+<https://w3id.org/ontoforge/windprofile#Execution> <http://www.w3.org/2004/02/skos/core#prefLabel> "Execution"@en .
+# 
+# https://w3id.org/ontoforge/windprofile#Feasibility
+<https://w3id.org/ontoforge/windprofile#Feasibility> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ontoforge/windprofile#Feasibility> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://w3id.org/ontoforge/windprofile#Feasibility> <http://purl.org/dc/terms/bibliographicCitation> "urn:ISBN:9781628256659"@en .
+<https://w3id.org/ontoforge/windprofile#Feasibility> <http://purl.org/dc/terms/creator> <https://www.pmi.org/> .
+<https://w3id.org/ontoforge/windprofile#Feasibility> <http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/ontoforge/windprofile#ReferenceProjectLife-cyclePhase> .
+<https://w3id.org/ontoforge/windprofile#Feasibility> <http://www.w3.org/2004/02/skos/core#definition> "This phase determines if the business case is valid and if the organization has the capability to deliver the intended outcome."@en .
+<https://w3id.org/ontoforge/windprofile#Feasibility> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/ontoforge/windprofile#> .
+<https://w3id.org/ontoforge/windprofile#Feasibility> <http://www.w3.org/2004/02/skos/core#prefLabel> "Feasibility"@en .
+# 
+# https://w3id.org/ontoforge/windprofile#Initiation
+<https://w3id.org/ontoforge/windprofile#Initiation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ontoforge/windprofile#Initiation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://w3id.org/ontoforge/windprofile#Initiation> <http://purl.org/dc/terms/bibliographicCitation> "urn:ISBN:9781628256659"@en .
+<https://w3id.org/ontoforge/windprofile#Initiation> <http://purl.org/dc/terms/creator> <https://www.pmi.org/> .
+<https://w3id.org/ontoforge/windprofile#Initiation> <http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/ontoforge/windprofile#ProcessGroup> .
+<https://w3id.org/ontoforge/windprofile#Initiation> <http://www.w3.org/2004/02/skos/core#definition> "Those processes performed to define a new project or a new phase of an existing project by obtaining authorization to start the project or phase."@en .
+<https://w3id.org/ontoforge/windprofile#Initiation> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/ontoforge/windprofile#> .
+<https://w3id.org/ontoforge/windprofile#Initiation> <http://www.w3.org/2004/02/skos/core#prefLabel> "Initiation"@en .
+# 
+# https://w3id.org/ontoforge/windprofile#LifeCyclePhase
+<https://w3id.org/ontoforge/windprofile#LifeCyclePhase> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ontoforge/windprofile#LifeCyclePhase> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://w3id.org/ontoforge/windprofile#LifeCyclePhase> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/ontoforge/windprofile#> .
+<https://w3id.org/ontoforge/windprofile#LifeCyclePhase> <http://www.w3.org/2004/02/skos/core#narrower> <https://w3id.org/ontoforge/windprofile#ProductLife-cyclePhase> .
+<https://w3id.org/ontoforge/windprofile#LifeCyclePhase> <http://www.w3.org/2004/02/skos/core#narrower> <https://w3id.org/ontoforge/windprofile#ReferenceProjectLife-cyclePhase> .
+<https://w3id.org/ontoforge/windprofile#LifeCyclePhase> <http://www.w3.org/2004/02/skos/core#narrower> <https://w3id.org/ontoforge/windprofile#WindEnergyProjectLife-cyclePhase> .
+<https://w3id.org/ontoforge/windprofile#LifeCyclePhase> <http://www.w3.org/2004/02/skos/core#prefLabel> "Life Cycle Phase"@en .
+<https://w3id.org/ontoforge/windprofile#LifeCyclePhase> <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://w3id.org/ontoforge/windprofile#> .
+# 
+# https://w3id.org/ontoforge/windprofile#Performance-Control
+<https://w3id.org/ontoforge/windprofile#Performance-Control> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ontoforge/windprofile#Performance-Control> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://w3id.org/ontoforge/windprofile#Performance-Control> <http://purl.org/dc/terms/bibliographicCitation> "urn:ISBN:9781628256659"@en .
+<https://w3id.org/ontoforge/windprofile#Performance-Control> <http://purl.org/dc/terms/creator> <https://www.pmi.org/> .
+<https://w3id.org/ontoforge/windprofile#Performance-Control> <http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/ontoforge/windprofile#ProcessGroup> .
+<https://w3id.org/ontoforge/windprofile#Performance-Control> <http://www.w3.org/2004/02/skos/core#definition> "Those processes required to track, review, and regulate the progress and performance of the project; identify any areas in which changes to the plan are required; and initiate the corresponding changes."@en .
+<https://w3id.org/ontoforge/windprofile#Performance-Control> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/ontoforge/windprofile#> .
+<https://w3id.org/ontoforge/windprofile#Performance-Control> <http://www.w3.org/2004/02/skos/core#prefLabel> "Performance & Control"@en .
+# 
+# https://w3id.org/ontoforge/windprofile#Planning
+<https://w3id.org/ontoforge/windprofile#Planning> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ontoforge/windprofile#Planning> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://w3id.org/ontoforge/windprofile#Planning> <http://purl.org/dc/terms/bibliographicCitation> "urn:ISBN:9781628256659"@en .
+<https://w3id.org/ontoforge/windprofile#Planning> <http://purl.org/dc/terms/creator> <https://www.pmi.org/> .
+<https://w3id.org/ontoforge/windprofile#Planning> <http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/ontoforge/windprofile#ProcessGroup> .
+<https://w3id.org/ontoforge/windprofile#Planning> <http://www.w3.org/2004/02/skos/core#definition> "Those processes required to establish the scope of the project, refine the objectives, and define the course of action required to attain the objectives that the project was undertaken to achieve."@en .
+<https://w3id.org/ontoforge/windprofile#Planning> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/ontoforge/windprofile#> .
+<https://w3id.org/ontoforge/windprofile#Planning> <http://www.w3.org/2004/02/skos/core#prefLabel> "Planning"@en .
+# 
+# https://w3id.org/ontoforge/windprofile#Process
+<https://w3id.org/ontoforge/windprofile#Process> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ontoforge/windprofile#Process> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://w3id.org/ontoforge/windprofile#Process> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/ontoforge/windprofile#> .
+<https://w3id.org/ontoforge/windprofile#Process> <http://www.w3.org/2004/02/skos/core#narrower> <https://w3id.org/ontoforge/windprofile#ProductProcess> .
+<https://w3id.org/ontoforge/windprofile#Process> <http://www.w3.org/2004/02/skos/core#narrower> <https://w3id.org/ontoforge/windprofile#ProjectManagementProcess> .
+<https://w3id.org/ontoforge/windprofile#Process> <http://www.w3.org/2004/02/skos/core#narrower> <https://w3id.org/ontoforge/windprofile#SupportingProcess> .
+<https://w3id.org/ontoforge/windprofile#Process> <http://www.w3.org/2004/02/skos/core#prefLabel> "Process"@en .
+<https://w3id.org/ontoforge/windprofile#Process> <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://w3id.org/ontoforge/windprofile#> .
+# 
+# https://w3id.org/ontoforge/windprofile#ProcessGroup
+<https://w3id.org/ontoforge/windprofile#ProcessGroup> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ontoforge/windprofile#ProcessGroup> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://w3id.org/ontoforge/windprofile#ProcessGroup> <http://purl.org/dc/terms/bibliographicCitation> "urn:ISBN:9781628256659"@en .
+<https://w3id.org/ontoforge/windprofile#ProcessGroup> <http://purl.org/dc/terms/creator> <https://www.pmi.org/> .
+<https://w3id.org/ontoforge/windprofile#ProcessGroup> <http://www.w3.org/2004/02/skos/core#definition> "Projects that follow a process-based approach may adopt project process groups. Project management processes can be organized into logical groupings of project management inputs, tools and techniques, and outputs that are tailored to meet the needs of the organization, stakeholders, and the project. Groups of processes are not project phases. The Process Groups interact within each phase of a project life cycle. In a process-based approach, the output of one process generally becomes an input to another process or is a deliverable of the project or project phase."@en .
+<https://w3id.org/ontoforge/windprofile#ProcessGroup> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/ontoforge/windprofile#> .
+<https://w3id.org/ontoforge/windprofile#ProcessGroup> <http://www.w3.org/2004/02/skos/core#narrower> <https://w3id.org/ontoforge/windprofile#Closure> .
+<https://w3id.org/ontoforge/windprofile#ProcessGroup> <http://www.w3.org/2004/02/skos/core#narrower> <https://w3id.org/ontoforge/windprofile#Execution> .
+<https://w3id.org/ontoforge/windprofile#ProcessGroup> <http://www.w3.org/2004/02/skos/core#narrower> <https://w3id.org/ontoforge/windprofile#Initiation> .
+<https://w3id.org/ontoforge/windprofile#ProcessGroup> <http://www.w3.org/2004/02/skos/core#narrower> <https://w3id.org/ontoforge/windprofile#Performance-Control> .
+<https://w3id.org/ontoforge/windprofile#ProcessGroup> <http://www.w3.org/2004/02/skos/core#narrower> <https://w3id.org/ontoforge/windprofile#Planning> .
+<https://w3id.org/ontoforge/windprofile#ProcessGroup> <http://www.w3.org/2004/02/skos/core#prefLabel> "Process Group"@en .
+<https://w3id.org/ontoforge/windprofile#ProcessGroup> <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://w3id.org/ontoforge/windprofile#> .
+# 
+# https://w3id.org/ontoforge/windprofile#ProductLife-cyclePhase
+<https://w3id.org/ontoforge/windprofile#ProductLife-cyclePhase> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ontoforge/windprofile#ProductLife-cyclePhase> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://w3id.org/ontoforge/windprofile#ProductLife-cyclePhase> <http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/ontoforge/windprofile#LifeCyclePhase> .
+<https://w3id.org/ontoforge/windprofile#ProductLife-cyclePhase> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/ontoforge/windprofile#> .
+<https://w3id.org/ontoforge/windprofile#ProductLife-cyclePhase> <http://www.w3.org/2004/02/skos/core#narrower> <https://w3id.org/ontoforge/windprofile#AllProductPhases> .
+<https://w3id.org/ontoforge/windprofile#ProductLife-cyclePhase> <http://www.w3.org/2004/02/skos/core#narrower> <https://w3id.org/ontoforge/windprofile#Conception> .
+<https://w3id.org/ontoforge/windprofile#ProductLife-cyclePhase> <http://www.w3.org/2004/02/skos/core#narrower> <https://w3id.org/ontoforge/windprofile#Design> .
+<https://w3id.org/ontoforge/windprofile#ProductLife-cyclePhase> <http://www.w3.org/2004/02/skos/core#narrower> <https://w3id.org/ontoforge/windprofile#Realisation> .
+<https://w3id.org/ontoforge/windprofile#ProductLife-cyclePhase> <http://www.w3.org/2004/02/skos/core#narrower> <https://w3id.org/ontoforge/windprofile#Service> .
+<https://w3id.org/ontoforge/windprofile#ProductLife-cyclePhase> <http://www.w3.org/2004/02/skos/core#prefLabel> "Product Life-cycle Phase"@en .
+# 
+# https://w3id.org/ontoforge/windprofile#ProductProcess
+<https://w3id.org/ontoforge/windprofile#ProductProcess> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ontoforge/windprofile#ProductProcess> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://w3id.org/ontoforge/windprofile#ProductProcess> <http://www.w3.org/2004/02/skos/core#altLabel> "Delivery Process"@en .
+<https://w3id.org/ontoforge/windprofile#ProductProcess> <http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/ontoforge/windprofile#Process> .
+<https://w3id.org/ontoforge/windprofile#ProductProcess> <http://www.w3.org/2004/02/skos/core#definition> "Product process is not unique to project management, which results in the specification and provision of a particular product, service or result, and which varies depending on the particular project deliverable."@en .
+<https://w3id.org/ontoforge/windprofile#ProductProcess> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/ontoforge/windprofile#> .
+<https://w3id.org/ontoforge/windprofile#ProductProcess> <http://www.w3.org/2004/02/skos/core#narrower> <https://w3id.org/ontoforge/windprofile#WindPowerPlantProcess> .
+<https://w3id.org/ontoforge/windprofile#ProductProcess> <http://www.w3.org/2004/02/skos/core#narrower> <https://w3id.org/ontoforge/windprofile#WindTurbineProductProcess> .
+<https://w3id.org/ontoforge/windprofile#ProductProcess> <http://www.w3.org/2004/02/skos/core#prefLabel> "Product Process"@en .
+# 
+# https://w3id.org/ontoforge/windprofile#ProjectManagementProcess
+<https://w3id.org/ontoforge/windprofile#ProjectManagementProcess> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ontoforge/windprofile#ProjectManagementProcess> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://w3id.org/ontoforge/windprofile#ProjectManagementProcess> <http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/ontoforge/windprofile#Process> .
+<https://w3id.org/ontoforge/windprofile#ProjectManagementProcess> <http://www.w3.org/2004/02/skos/core#definition> "Project management process is specific to project management. It determines how the activities selected for the project are managed."@en .
+<https://w3id.org/ontoforge/windprofile#ProjectManagementProcess> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/ontoforge/windprofile#> .
+<https://w3id.org/ontoforge/windprofile#ProjectManagementProcess> <http://www.w3.org/2004/02/skos/core#prefLabel> "Project Management Process"@en .
+# 
+# https://w3id.org/ontoforge/windprofile#Realisation
+<https://w3id.org/ontoforge/windprofile#Realisation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ontoforge/windprofile#Realisation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://w3id.org/ontoforge/windprofile#Realisation> <http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/ontoforge/windprofile#ProductLife-cyclePhase> .
+<https://w3id.org/ontoforge/windprofile#Realisation> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/ontoforge/windprofile#> .
+<https://w3id.org/ontoforge/windprofile#Realisation> <http://www.w3.org/2004/02/skos/core#prefLabel> "Realisation"@en .
+# 
+# https://w3id.org/ontoforge/windprofile#ReferenceProjectLife-cyclePhase
+<https://w3id.org/ontoforge/windprofile#ReferenceProjectLife-cyclePhase> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ontoforge/windprofile#ReferenceProjectLife-cyclePhase> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://w3id.org/ontoforge/windprofile#ReferenceProjectLife-cyclePhase> <http://purl.org/dc/terms/bibliographicCitation> "urn:ISBN:9781628256659"@en .
+<https://w3id.org/ontoforge/windprofile#ReferenceProjectLife-cyclePhase> <http://purl.org/dc/terms/creator> <https://www.pmi.org/> .
+<https://w3id.org/ontoforge/windprofile#ReferenceProjectLife-cyclePhase> <http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/ontoforge/windprofile#LifeCyclePhase> .
+<https://w3id.org/ontoforge/windprofile#ReferenceProjectLife-cyclePhase> <http://www.w3.org/2004/02/skos/core#definition> "Project phase is a collection of logically related project activities (processes) that culminates in the completion of one or more deliverables. Project Life Cycle is the series of phases that a project passes through from its start to its completion."@en .
+<https://w3id.org/ontoforge/windprofile#ReferenceProjectLife-cyclePhase> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/ontoforge/windprofile#> .
+<https://w3id.org/ontoforge/windprofile#ReferenceProjectLife-cyclePhase> <http://www.w3.org/2004/02/skos/core#narrower> <https://w3id.org/ontoforge/windprofile#AllProjectPhases> .
+<https://w3id.org/ontoforge/windprofile#ReferenceProjectLife-cyclePhase> <http://www.w3.org/2004/02/skos/core#narrower> <https://w3id.org/ontoforge/windprofile#Build> .
+<https://w3id.org/ontoforge/windprofile#ReferenceProjectLife-cyclePhase> <http://www.w3.org/2004/02/skos/core#narrower> <https://w3id.org/ontoforge/windprofile#Close> .
+<https://w3id.org/ontoforge/windprofile#ReferenceProjectLife-cyclePhase> <http://www.w3.org/2004/02/skos/core#narrower> <https://w3id.org/ontoforge/windprofile#Deploy> .
+<https://w3id.org/ontoforge/windprofile#ReferenceProjectLife-cyclePhase> <http://www.w3.org/2004/02/skos/core#narrower> <https://w3id.org/ontoforge/windprofile#Design> .
+<https://w3id.org/ontoforge/windprofile#ReferenceProjectLife-cyclePhase> <http://www.w3.org/2004/02/skos/core#narrower> <https://w3id.org/ontoforge/windprofile#Feasibility> .
+<https://w3id.org/ontoforge/windprofile#ReferenceProjectLife-cyclePhase> <http://www.w3.org/2004/02/skos/core#narrower> <https://w3id.org/ontoforge/windprofile#Test> .
+<https://w3id.org/ontoforge/windprofile#ReferenceProjectLife-cyclePhase> <http://www.w3.org/2004/02/skos/core#prefLabel> "Reference Project Life-cycle Phase"@en .
+# 
+# https://w3id.org/ontoforge/windprofile#Service
+<https://w3id.org/ontoforge/windprofile#Service> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ontoforge/windprofile#Service> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://w3id.org/ontoforge/windprofile#Service> <http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/ontoforge/windprofile#ProductLife-cyclePhase> .
+<https://w3id.org/ontoforge/windprofile#Service> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/ontoforge/windprofile#> .
+<https://w3id.org/ontoforge/windprofile#Service> <http://www.w3.org/2004/02/skos/core#prefLabel> "Service"@en .
+# 
+# https://w3id.org/ontoforge/windprofile#SupportingProcess
+<https://w3id.org/ontoforge/windprofile#SupportingProcess> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ontoforge/windprofile#SupportingProcess> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://w3id.org/ontoforge/windprofile#SupportingProcess> <http://www.w3.org/2004/02/skos/core#altLabel> "Cross-cutting Process"@en .
+<https://w3id.org/ontoforge/windprofile#SupportingProcess> <http://www.w3.org/2004/02/skos/core#altLabel> "Supporting Activities"@en .
+<https://w3id.org/ontoforge/windprofile#SupportingProcess> <http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/ontoforge/windprofile#Process> .
+<https://w3id.org/ontoforge/windprofile#SupportingProcess> <http://www.w3.org/2004/02/skos/core#definition> "Supporting process is a process not unique to project management and which provides relevant and valuable support to product and project management processes in such disciplines as logistics, finance, accounting and safety."@en .
+<https://w3id.org/ontoforge/windprofile#SupportingProcess> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/ontoforge/windprofile#> .
+<https://w3id.org/ontoforge/windprofile#SupportingProcess> <http://www.w3.org/2004/02/skos/core#prefLabel> "Supporting Process"@en .
+# 
+# https://w3id.org/ontoforge/windprofile#Test
+<https://w3id.org/ontoforge/windprofile#Test> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ontoforge/windprofile#Test> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://w3id.org/ontoforge/windprofile#Test> <http://purl.org/dc/terms/bibliographicCitation> "urn:ISBN:9781628256659"@en .
+<https://w3id.org/ontoforge/windprofile#Test> <http://purl.org/dc/terms/creator> <https://www.pmi.org/> .
+<https://w3id.org/ontoforge/windprofile#Test> <http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/ontoforge/windprofile#ReferenceProjectLife-cyclePhase> .
+<https://w3id.org/ontoforge/windprofile#Test> <http://www.w3.org/2004/02/skos/core#definition> "Final quality review and inspection of deliverables are carried out before transition, go-live, or acceptance by the customer."@en .
+<https://w3id.org/ontoforge/windprofile#Test> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/ontoforge/windprofile#> .
+<https://w3id.org/ontoforge/windprofile#Test> <http://www.w3.org/2004/02/skos/core#prefLabel> "Test"@en .
+# 
+# https://w3id.org/ontoforge/windprofile#WindEnergyProjectLife-cyclePhase
+<https://w3id.org/ontoforge/windprofile#WindEnergyProjectLife-cyclePhase> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ontoforge/windprofile#WindEnergyProjectLife-cyclePhase> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://w3id.org/ontoforge/windprofile#WindEnergyProjectLife-cyclePhase> <http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/ontoforge/windprofile#LifeCyclePhase> .
+<https://w3id.org/ontoforge/windprofile#WindEnergyProjectLife-cyclePhase> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/ontoforge/windprofile#> .
+<https://w3id.org/ontoforge/windprofile#WindEnergyProjectLife-cyclePhase> <http://www.w3.org/2004/02/skos/core#narrower> <https://w3id.org/ontoforge/windprofile#1Identification> .
+<https://w3id.org/ontoforge/windprofile#WindEnergyProjectLife-cyclePhase> <http://www.w3.org/2004/02/skos/core#narrower> <https://w3id.org/ontoforge/windprofile#2Feasibility> .
+<https://w3id.org/ontoforge/windprofile#WindEnergyProjectLife-cyclePhase> <http://www.w3.org/2004/02/skos/core#narrower> <https://w3id.org/ontoforge/windprofile#3Development> .
+<https://w3id.org/ontoforge/windprofile#WindEnergyProjectLife-cyclePhase> <http://www.w3.org/2004/02/skos/core#narrower> <https://w3id.org/ontoforge/windprofile#4Pre-Construction> .
+<https://w3id.org/ontoforge/windprofile#WindEnergyProjectLife-cyclePhase> <http://www.w3.org/2004/02/skos/core#narrower> <https://w3id.org/ontoforge/windprofile#5Construction> .
+<https://w3id.org/ontoforge/windprofile#WindEnergyProjectLife-cyclePhase> <http://www.w3.org/2004/02/skos/core#narrower> <https://w3id.org/ontoforge/windprofile#6Commissioning> .
+<https://w3id.org/ontoforge/windprofile#WindEnergyProjectLife-cyclePhase> <http://www.w3.org/2004/02/skos/core#narrower> <https://w3id.org/ontoforge/windprofile#7Operation-Maintenance> .
+<https://w3id.org/ontoforge/windprofile#WindEnergyProjectLife-cyclePhase> <http://www.w3.org/2004/02/skos/core#narrower> <https://w3id.org/ontoforge/windprofile#8Decommissioning> .
+<https://w3id.org/ontoforge/windprofile#WindEnergyProjectLife-cyclePhase> <http://www.w3.org/2004/02/skos/core#prefLabel> "Wind Energy Project Life-cycle Phase"@en .
+# 
+# https://w3id.org/ontoforge/windprofile#WindPowerPlantProcess
+<https://w3id.org/ontoforge/windprofile#WindPowerPlantProcess> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ontoforge/windprofile#WindPowerPlantProcess> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://w3id.org/ontoforge/windprofile#WindPowerPlantProcess> <http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/ontoforge/windprofile#ProductProcess> .
+<https://w3id.org/ontoforge/windprofile#WindPowerPlantProcess> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/ontoforge/windprofile#> .
+<https://w3id.org/ontoforge/windprofile#WindPowerPlantProcess> <http://www.w3.org/2004/02/skos/core#prefLabel> "Wind Power Plant Process"@en .
+# 
+# https://w3id.org/ontoforge/windprofile#WindTurbineProductProcess
+<https://w3id.org/ontoforge/windprofile#WindTurbineProductProcess> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ontoforge/windprofile#WindTurbineProductProcess> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://w3id.org/ontoforge/windprofile#WindTurbineProductProcess> <http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/ontoforge/windprofile#ProductProcess> .
+<https://w3id.org/ontoforge/windprofile#WindTurbineProductProcess> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/ontoforge/windprofile#> .
+<https://w3id.org/ontoforge/windprofile#WindTurbineProductProcess> <http://www.w3.org/2004/02/skos/core#prefLabel> "Wind Turbine Product Process"@en .
+# 
+# https://w3id.org/ontoforge/windprofile#1Identification
+<https://w3id.org/ontoforge/windprofile#1Identification> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ontoforge/windprofile#1Identification> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://w3id.org/ontoforge/windprofile#1Identification> <http://www.w3.org/2004/02/skos/core#altLabel> "Pilot Study"@en .
+<https://w3id.org/ontoforge/windprofile#1Identification> <http://www.w3.org/2004/02/skos/core#altLabel> "Screening"@en .
+<https://w3id.org/ontoforge/windprofile#1Identification> <http://www.w3.org/2004/02/skos/core#altLabel> "Site Selection"@en .
+<https://w3id.org/ontoforge/windprofile#1Identification> <http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/ontoforge/windprofile#WindEnergyProjectLife-cyclePhase> .
+<https://w3id.org/ontoforge/windprofile#1Identification> <http://www.w3.org/2004/02/skos/core#definition> "Initial stage where potential wind energy sites are identified based on criteria like wind resource, land availability, and environmental factors."@en .
+<https://w3id.org/ontoforge/windprofile#1Identification> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/ontoforge/windprofile#> .
+<https://w3id.org/ontoforge/windprofile#1Identification> <http://www.w3.org/2004/02/skos/core#prefLabel> "1 Identification"@en .
+# 
+# https://w3id.org/ontoforge/windprofile#2Feasibility
+<https://w3id.org/ontoforge/windprofile#2Feasibility> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ontoforge/windprofile#2Feasibility> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://w3id.org/ontoforge/windprofile#2Feasibility> <http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/ontoforge/windprofile#WindEnergyProjectLife-cyclePhase> .
+<https://w3id.org/ontoforge/windprofile#2Feasibility> <http://www.w3.org/2004/02/skos/core#definition> "Detailed analysis of the identified site, including technical, environmental, and financial assessments to determine project viability."@en .
+<https://w3id.org/ontoforge/windprofile#2Feasibility> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/ontoforge/windprofile#> .
+<https://w3id.org/ontoforge/windprofile#2Feasibility> <http://www.w3.org/2004/02/skos/core#prefLabel> "2 Feasibility"@en .
+# 
+# https://w3id.org/ontoforge/windprofile#3Development
+<https://w3id.org/ontoforge/windprofile#3Development> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ontoforge/windprofile#3Development> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://w3id.org/ontoforge/windprofile#3Development> <http://www.w3.org/2004/02/skos/core#altLabel> "Design"@en .
+<https://w3id.org/ontoforge/windprofile#3Development> <http://www.w3.org/2004/02/skos/core#altLabel> "Planning & Permitting"@en .
+<https://w3id.org/ontoforge/windprofile#3Development> <http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/ontoforge/windprofile#WindEnergyProjectLife-cyclePhase> .
+<https://w3id.org/ontoforge/windprofile#3Development> <http://www.w3.org/2004/02/skos/core#definition> "Preparation of detailed plans and engineering designs, wind turbine technology and vendor selection, securing permits, land leases, financing, and stakeholder agreements required to move forward with the project."@en .
+<https://w3id.org/ontoforge/windprofile#3Development> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/ontoforge/windprofile#> .
+<https://w3id.org/ontoforge/windprofile#3Development> <http://www.w3.org/2004/02/skos/core#prefLabel> "3 Development"@en .
+# 
+# https://w3id.org/ontoforge/windprofile#4Pre-Construction
+<https://w3id.org/ontoforge/windprofile#4Pre-Construction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ontoforge/windprofile#4Pre-Construction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://w3id.org/ontoforge/windprofile#4Pre-Construction> <http://www.w3.org/2004/02/skos/core#altLabel> "Procurement"@en .
+<https://w3id.org/ontoforge/windprofile#4Pre-Construction> <http://www.w3.org/2004/02/skos/core#altLabel> "Purchase"@en .
+<https://w3id.org/ontoforge/windprofile#4Pre-Construction> <http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/ontoforge/windprofile#WindEnergyProjectLife-cyclePhase> .
+<https://w3id.org/ontoforge/windprofile#4Pre-Construction> <http://www.w3.org/2004/02/skos/core#definition> "Finalizing detailed engineering designs, procurement of materials, and preparation of the site for construction, including contractor selection."@en .
+<https://w3id.org/ontoforge/windprofile#4Pre-Construction> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/ontoforge/windprofile#> .
+<https://w3id.org/ontoforge/windprofile#4Pre-Construction> <http://www.w3.org/2004/02/skos/core#prefLabel> "4 Pre-Construction"@en .
+# 
+# https://w3id.org/ontoforge/windprofile#5Construction
+<https://w3id.org/ontoforge/windprofile#5Construction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ontoforge/windprofile#5Construction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://w3id.org/ontoforge/windprofile#5Construction> <http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/ontoforge/windprofile#WindEnergyProjectLife-cyclePhase> .
+<https://w3id.org/ontoforge/windprofile#5Construction> <http://www.w3.org/2004/02/skos/core#definition> "Physical construction of the wind farm, including infrastructure setup (turbines, roads, electrical connections) and project management oversight."@en .
+<https://w3id.org/ontoforge/windprofile#5Construction> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/ontoforge/windprofile#> .
+<https://w3id.org/ontoforge/windprofile#5Construction> <http://www.w3.org/2004/02/skos/core#prefLabel> "5 Construction"@en .
+# 
+# https://w3id.org/ontoforge/windprofile#6Commissioning
+<https://w3id.org/ontoforge/windprofile#6Commissioning> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ontoforge/windprofile#6Commissioning> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://w3id.org/ontoforge/windprofile#6Commissioning> <http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/ontoforge/windprofile#WindEnergyProjectLife-cyclePhase> .
+<https://w3id.org/ontoforge/windprofile#6Commissioning> <http://www.w3.org/2004/02/skos/core#definition> "Testing and certifying that the wind farm operates according to design specifications before becoming fully operational."@en .
+<https://w3id.org/ontoforge/windprofile#6Commissioning> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/ontoforge/windprofile#> .
+<https://w3id.org/ontoforge/windprofile#6Commissioning> <http://www.w3.org/2004/02/skos/core#prefLabel> "6 Commissioning"@en .
+# 
+# https://w3id.org/ontoforge/windprofile#7Operation-Maintenance
+<https://w3id.org/ontoforge/windprofile#7Operation-Maintenance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ontoforge/windprofile#7Operation-Maintenance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://w3id.org/ontoforge/windprofile#7Operation-Maintenance> <http://www.w3.org/2004/02/skos/core#altLabel> "Middle of life"@en .
+<https://w3id.org/ontoforge/windprofile#7Operation-Maintenance> <http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/ontoforge/windprofile#WindEnergyProjectLife-cyclePhase> .
+<https://w3id.org/ontoforge/windprofile#7Operation-Maintenance> <http://www.w3.org/2004/02/skos/core#definition> "Ongoing operation of the wind farm, including regular monitoring, maintenance, and optimization to ensure maximum energy production and efficiency."@en .
+<https://w3id.org/ontoforge/windprofile#7Operation-Maintenance> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/ontoforge/windprofile#> .
+<https://w3id.org/ontoforge/windprofile#7Operation-Maintenance> <http://www.w3.org/2004/02/skos/core#prefLabel> "7 Operation & Maintenance"@en .
+# 
+# https://w3id.org/ontoforge/windprofile#8Decommissioning
+<https://w3id.org/ontoforge/windprofile#8Decommissioning> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ontoforge/windprofile#8Decommissioning> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://w3id.org/ontoforge/windprofile#8Decommissioning> <http://www.w3.org/2004/02/skos/core#altLabel> "End of life"@en .
+<https://w3id.org/ontoforge/windprofile#8Decommissioning> <http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/ontoforge/windprofile#WindEnergyProjectLife-cyclePhase> .
+<https://w3id.org/ontoforge/windprofile#8Decommissioning> <http://www.w3.org/2004/02/skos/core#definition> "End-of-life activities for the wind farm, involving dismantling turbines and infrastructure, restoring the site, and recycling or disposing of materials."@en .
+<https://w3id.org/ontoforge/windprofile#8Decommissioning> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/ontoforge/windprofile#> .
+<https://w3id.org/ontoforge/windprofile#8Decommissioning> <http://www.w3.org/2004/02/skos/core#prefLabel> "8 Decommissioning"@en .
+# 
+# https://w3id.org/ontoforge/windprofle#
+<https://w3id.org/ontoforge/windprofle#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ontoforge/windprofle#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+# 
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
